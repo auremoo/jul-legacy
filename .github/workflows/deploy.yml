@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, claude/jul-fan-website-2H1yK]
+    branches: [main, master, claude/jul-fan-website-2H1yK]
   workflow_dispatch:
 
 permissions:
