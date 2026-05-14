@@ -1,6 +1,5 @@
 ---
 ---
-@import 'variables';
-@import 'base';
-@import 'components';
-@import 'main';
+@use 'base';
+@use 'components';
+@use 'main';
