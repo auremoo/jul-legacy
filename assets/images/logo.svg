@@ -1,53 +1,137 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <!-- Cercle extérieur -->
-  <circle cx="100" cy="100" r="88" stroke="currentColor" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- Fond noir -->
+  <rect width="400" height="400" fill="#000000"/>
 
-  <!-- Main gauche (miroir de la droite) -->
-  <!-- Paume + poignet gauche -->
-  <path d="M62 155 C55 145 50 130 52 115 C54 100 58 90 62 82
-             L62 68 C62 63 66 60 70 61 C74 62 76 66 76 71
-             L76 75
-             L76 62 C76 57 80 54 84 55 C88 56 90 60 90 65
-             L90 70
-             L90 62 C90 57 94 54 98 55 C102 56 104 60 104 65
-             L104 72"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Annulaire gauche replié -->
-  <path d="M76 75 C76 82 74 86 72 88 C71 90 71 94 73 96"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-  <!-- Majeur gauche droit -->
-  <path d="M90 70 L90 58 C90 53 94 50 98 51 C102 52 104 56 104 61 L104 72"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-  <!-- Index gauche levé -->
-  <path d="M62 82 L62 48 C62 43 66 40 70 41 C74 42 76 46 76 51 L76 68"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-  <!-- Auriculaire gauche -->
-  <path d="M104 72 L104 78 C104 83 108 86 112 84 C115 83 116 79 116 74 L116 85 C116 90 118 95 120 100"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-  <!-- Pouce gauche -->
-  <path d="M62 115 C56 112 52 106 54 98 C56 90 62 88 68 90"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Cercle -->
+  <circle cx="200" cy="200" r="155" stroke="white" stroke-width="7" fill="none"/>
 
-  <!-- Main droite -->
-  <!-- Paume + poignet droit -->
-  <path d="M138 155 C145 145 150 130 148 115 C146 100 142 90 138 82
-             L138 68 C138 63 134 60 130 61 C126 62 124 66 124 71
-             L124 75
-             L124 62 C124 57 120 54 116 55 C112 56 110 60 110 65
-             L110 70
-             L110 62 C110 57 106 54 102 55 C98 56 96 60 96 65
-             L96 72"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Annulaire droit replié -->
-  <path d="M124 75 C124 82 126 86 128 88 C129 90 129 94 127 96"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-  <!-- Index droit levé -->
-  <path d="M138 82 L138 48 C138 43 134 40 130 41 C126 42 124 46 124 51 L124 68"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-  <!-- Auriculaire droit -->
-  <path d="M96 72 L96 78 C96 83 92 86 88 84 C85 83 84 79 84 74 L84 85 C84 90 82 95 80 100"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-  <!-- Pouce droit -->
-  <path d="M138 115 C144 112 148 106 146 98 C144 90 138 88 132 90"
-        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- ═══════ MAIN GAUCHE ═══════ -->
+  <!-- Poignet / paume gauche -->
+  <path d="M 118 295
+           C 108 280 100 258 103 238
+           C 106 218 112 205 116 195"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Pouce gauche (écarté à gauche) -->
+  <path d="M 118 250
+           C 108 240 96 230 90 218
+           C 86 210 90 200 98 198
+           C 106 196 114 202 116 210"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Index gauche (levé, le plus haut) -->
+  <path d="M 116 195
+           C 116 180 114 160 113 140
+           C 112 122 113 108 116 100
+           C 119 92 126 89 132 91
+           C 138 93 141 100 141 110
+           C 141 122 140 140 140 158
+           L 140 178"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Majeur gauche (légèrement replié) -->
+  <path d="M 140 178
+           C 140 168 140 152 140 140
+           C 140 128 141 116 144 108
+           C 147 100 153 97 159 99
+           C 165 101 167 108 167 118
+           C 167 130 165 148 163 165
+           L 162 182"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Annulaire gauche (replié vers la paume) -->
+  <path d="M 162 182
+           C 162 172 163 162 164 154
+           C 165 145 167 138 170 133
+           C 173 128 178 126 183 129
+           C 188 132 189 140 188 150
+           C 187 160 184 172 182 183
+           L 181 195"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Auriculaire gauche (levé) -->
+  <path d="M 181 195
+           C 181 183 181 168 181 156
+           C 181 144 182 133 185 125
+           C 188 117 194 114 200 117
+           C 206 120 208 128 207 138
+           C 206 150 204 165 203 180
+           L 202 198"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Jointure paume gauche (relie les doigts en bas) -->
+  <path d="M 116 195 C 130 188 145 184 162 182 C 172 186 181 190 202 198"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Paume bas gauche -->
+  <path d="M 103 238 C 108 230 114 218 116 210
+           M 202 198 C 205 220 204 242 200 260
+           C 196 275 188 285 178 292
+           C 160 300 130 298 118 295"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- ═══════ MAIN DROITE (miroir) ═══════ -->
+  <!-- Poignet / paume droite -->
+  <path d="M 282 295
+           C 292 280 300 258 297 238
+           C 294 218 288 205 284 195"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Pouce droit (écarté à droite) -->
+  <path d="M 282 250
+           C 292 240 304 230 310 218
+           C 314 210 310 200 302 198
+           C 294 196 286 202 284 210"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Index droit (levé) -->
+  <path d="M 284 195
+           C 284 180 286 160 287 140
+           C 288 122 287 108 284 100
+           C 281 92 274 89 268 91
+           C 262 93 259 100 259 110
+           C 259 122 260 140 260 158
+           L 260 178"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Majeur droit (légèrement replié) -->
+  <path d="M 260 178
+           C 260 168 260 152 260 140
+           C 260 128 259 116 256 108
+           C 253 100 247 97 241 99
+           C 235 101 233 108 233 118
+           C 233 130 235 148 237 165
+           L 238 182"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Annulaire droit (replié vers la paume) -->
+  <path d="M 238 182
+           C 238 172 237 162 236 154
+           C 235 145 233 138 230 133
+           C 227 128 222 126 217 129
+           C 212 132 211 140 212 150
+           C 213 160 216 172 218 183
+           L 219 195"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Auriculaire droit (levé) -->
+  <path d="M 219 195
+           C 219 183 219 168 219 156
+           C 219 144 218 133 215 125
+           C 212 117 206 114 200 117
+           C 194 120 192 128 193 138
+           C 194 150 196 165 197 180
+           L 198 198"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Jointure paume droite -->
+  <path d="M 284 195 C 270 188 255 184 238 182 C 228 186 219 190 198 198"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Paume bas droite -->
+  <path d="M 297 238 C 292 230 286 218 284 210
+           M 198 198 C 195 220 196 242 200 260
+           C 204 275 212 285 222 292
+           C 240 300 270 298 282 295"
+        stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
 </svg>
