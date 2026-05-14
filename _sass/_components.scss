@@ -404,7 +404,7 @@
   &::before {
     content: '';
     position: absolute;
-    left: -$space-8 - 5px;
+    left: calc(-#{$space-8} - 5px);
     top: 6px;
     width: 12px;
     height: 12px;
@@ -413,19 +413,19 @@
     box-shadow: 0 0 10px rgba($gold, 0.5);
 
     @include respond($bp-sm) {
-      left: -$space-6 - 5px;
+      left: calc(-#{$space-6} - 5px);
     }
   }
 
   &--major::before {
     width: 16px;
     height: 16px;
-    left: -$space-8 - 7px;
+    left: calc(-#{$space-8} - 7px);
     background: $gold-light;
     box-shadow: 0 0 16px rgba($gold, 0.7);
 
     @include respond($bp-sm) {
-      left: -$space-6 - 7px;
+      left: calc(-#{$space-6} - 7px);
     }
   }
 }
