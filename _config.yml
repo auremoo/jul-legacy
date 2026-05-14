@@ -23,12 +23,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
-# Collections
-collections:
-  albums:
-    output: true
-    permalink: /discographie/:name/
-
 # Excludes
 exclude:
   - Gemfile
