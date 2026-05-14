@@ -1133,8 +1133,10 @@ h1, h2, h3, h4, h5, h6 {
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba($dark, 0.97);
+      z-index: 999;
+      background: rgba($dark, 0.98);
       backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       padding: $space-8 $space-6;
       gap: $space-2;
       justify-content: flex-start;
@@ -1183,24 +1185,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__hamburger {
   display: none;
-  flex-direction: column;
-  gap: 5px;
-  padding: $space-2;
-  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: $radius-md;
+  color: $white;
+  font-size: 22px;
+  transition: background $transition;
+  flex-shrink: 0;
 
-  span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: $white;
-    border-radius: $radius-full;
-    transition: all $transition;
-  }
+  &:hover { background: rgba($white, 0.08); }
+
+  .nav__hamburger-icon { line-height: 1; }
+  .nav__hamburger-icon--close { display: none; }
 
   &.open {
-    span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-    span:nth-child(2) { opacity: 0; transform: translateX(-8px); }
-    span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    .nav__hamburger-icon--open  { display: none; }
+    .nav__hamburger-icon--close { display: block; }
   }
 
   @include respond($bp-lg) { display: flex; }
