@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Fan Zone
-label: Quiz · Anecdotes · Records
-description: Teste tes connaissances sur Jul. Anecdotes, chiffres fous et culture Jul.
+label: Quiz · Anecdotes · Palmarès
+description: Teste tes connaissances sur Jul. Anecdotes, chiffres fous et palmarès complet.
 theme: marseille
 nav_order: 7
 nav_title: Fan Zone
@@ -46,44 +46,201 @@ permalink: /fan-zone/
         </div>
       </div>
 
-      <!-- Anecdotes -->
+      <!-- Le saviez-vous -->
       <div style="margin-top:3rem">
         <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.5rem">
           Le saviez-vous ? 🤔
         </h2>
 
-        {% assign anecdotes = "Jul n'a quasiment jamais passé à la radio. Il a bâti son empire uniquement via le streaming et les réseaux sociaux.,Jul est le seul rappeur français à avoir été artiste le plus streamé sur Spotify France 5 années de suite (2021–2025).,Il sort 2 albums par an sans exception depuis ses débuts en 2014 — une cadence jamais vue dans le rap français.,Lors du record du Stade de France en avril 2025, 25 000 personnes supplémentaires ont suivi le concert en live stream.,Jul a allumé le chaudron olympique à Marseille le 8 mai 2024 — une reconnaissance nationale pour un rappeur underground devenu légende.,Tous ses albums studio sont certifiés au minimum Platine. 5 sont certifiés Diamant.,Son vrai nom est Julien François Alain Mari Bogaert. Ses amis l'appellent 'Jul' depuis l'enfance.,Il a commencé dans le groupe Ghetto Phénomène avec Houari — son ami d'enfance qui apparaît toujours dans ses projets.,D&P à vie (2025) a réalisé le 2e meilleur démarrage du rap français depuis 2000 avec 123 691 copies la première semaine.,Jul possède plus de 2 300 sons à son actif — l'une des discographies les plus volumineuses du rap mondial." | split: "," %}
-
         <div style="display:grid;gap:1rem">
+
+          {% assign anecdotes = "Jul n'a quasiment jamais passé à la radio. Il a bâti son empire uniquement via le streaming et les réseaux sociaux.|Jul est le seul rappeur français à avoir été artiste le plus streamé sur Spotify France 5 années de suite de 2021 à 2025.|Il sort 2 albums par an sans exception depuis ses débuts en 2014 — une cadence sans précédent dans le rap français.|Lors du record du Stade de France en avril 2025 avec 97 816 spectateurs, il a battu le record absolu de la salle.|Jul a allumé le chaudron olympique à Marseille le 8 mai 2024 — une reconnaissance nationale pour un rappeur de la rue devenu légende.|Tous ses albums studio sont certifiés au minimum Platine. Cinq sont certifiés Diamant.|Son vrai nom complet est Julien François Alain Mari Bogaert. Ses amis l'appellent Jul depuis l'enfance.|Il a commencé dans le groupe Ghetto Phénomène avec Houari — son ami d'enfance qui apparaît toujours dans ses projets.|D&P à vie (2025) a réalisé le 2e meilleur démarrage du rap français depuis 2000 avec 123 691 copies vendues la première semaine.|Jul possède plus de 2 300 sons à son actif — l'une des discographies les plus volumineuses du rap mondial." | split: "|" %}
+
           {% for anecdote in anecdotes %}
           <div style="background:#fff;border:1px solid rgba(46,109,180,.1);border-radius:12px;padding:1.25rem;display:flex;gap:1rem;align-items:flex-start;box-shadow:0 2px 12px rgba(46,109,180,.05)">
             <span style="font-size:1.25rem;flex-shrink:0">💡</span>
             <p style="font-size:.9rem;color:#3A3830;line-height:1.7;margin:0">{{ anecdote }}</p>
           </div>
           {% endfor %}
+
         </div>
       </div>
 
-      <!-- Top certifications -->
-      <div style="margin-top:3rem;background:#fff;border:1px solid rgba(46,109,180,.1);border-radius:16px;padding:2rem;box-shadow:0 4px 20px rgba(46,109,180,.06)">
-        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:1.75rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.5rem">
-          Albums certifiés Diamant 💎
-        </h2>
-        <div style="display:flex;flex-direction:column;gap:.75rem">
+    </div>
+
+    <!-- Palmarès complet -->
+    <div style="margin-top:4rem">
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.5rem;text-align:center">
+        Palmarès &amp; Certifications
+      </h2>
+      <p style="text-align:center;color:#6B6860;font-size:.9rem;margin-bottom:2.5rem">71+ certifications au total · tous ses albums studio sont certifiés</p>
+
+      <!-- Certifications singles / compilations notables -->
+      <div style="background:#fff;border:1px solid rgba(161,243,252,.3);border-radius:16px;padding:2rem;margin-bottom:2rem;box-shadow:0 4px 20px rgba(46,109,180,.06)">
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.25rem">
+          💎 Certifié Diamant
+        </h3>
+        <div style="display:flex;flex-direction:column;gap:.6rem">
+
           {% assign diamant_albums = site.data.albums | where: "certification", "diamant" %}
           {% for album in diamant_albums %}
-          <div style="display:flex;align-items:center;justify-content:space-between;padding:.75rem 1rem;background:#F8F7F2;border-radius:8px;border:1px solid rgba(161,243,252,.3)">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem;background:#F8F7F2;border-radius:8px">
             <div>
-              <span style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.03em">{{ album.title }}</span>
-              <span style="color:#6B6860;font-size:.8rem;margin-left:.75rem">{{ album.year }}</span>
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.02em">{{ album.title }}</span>
+              <span style="color:#6B6860;font-size:.8rem;margin-left:.75rem">Album studio · {{ album.year }}</span>
             </div>
             <span class="badge badge--diamant">💎 Diamant</span>
+          </div>
+          {% endfor %}
+
+          {% assign diamant_compils = site.data.compilations | where: "certification", "diamant" %}
+          {% for compil in diamant_compils %}
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem;background:#F8F7F2;border-radius:8px">
+            <div>
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.02em">{{ compil.title }}</span>
+              <span style="color:#6B6860;font-size:.8rem;margin-left:.75rem">Compilation · {{ compil.year }}</span>
+            </div>
+            <span class="badge badge--diamant">💎 Diamant</span>
+          </div>
+          {% endfor %}
+
+          {% assign diamant_singles = site.data.singles | where: "certification", "diamant" %}
+          {% for s in diamant_singles %}
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem;background:#F8F7F2;border-radius:8px">
+            <div>
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.02em">{{ s.title }}</span>
+              {% if s.feat %}<span style="color:#6B6860;font-size:.8rem"> feat. {{ s.feat }}</span>{% endif %}
+              <span style="color:#6B6860;font-size:.8rem;margin-left:.75rem">Single · {{ s.year }}</span>
+            </div>
+            <span class="badge badge--diamant">💎 Diamant</span>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+
+      <!-- Triple Platine -->
+      {% assign triple_albums = site.data.albums | where: "certification", "triple-platine" %}
+      {% if triple_albums.size > 0 %}
+      <div style="background:#fff;border:1px solid rgba(201,168,76,.2);border-radius:16px;padding:2rem;margin-bottom:2rem;box-shadow:0 4px 20px rgba(201,168,76,.05)">
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.25rem">
+          🥇 Triple Platine
+        </h3>
+        <div style="display:flex;flex-direction:column;gap:.6rem">
+          {% for album in triple_albums %}
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem;background:#F8F7F2;border-radius:8px">
+            <div>
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.02em">{{ album.title }}</span>
+              <span style="color:#6B6860;font-size:.8rem;margin-left:.75rem">Album studio · {{ album.year }}</span>
+            </div>
+            <span class="badge badge--or">Triple Platine</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Double Platine -->
+      <div style="background:#fff;border:1px solid rgba(176,190,197,.3);border-radius:16px;padding:2rem;margin-bottom:2rem;box-shadow:0 4px 20px rgba(0,0,0,.04)">
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.25rem">
+          🥈 Double Platine
+        </h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.6rem">
+          {% assign double_albums = site.data.albums | where: "certification", "double-platine" %}
+          {% for album in double_albums %}
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem;background:#F8F7F2;border-radius:8px">
+            <div>
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:.95rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.02em">{{ album.title }}</span>
+              <span style="color:#6B6860;font-size:.75rem;margin-left:.5rem">{{ album.year }}</span>
+            </div>
+            <span class="badge badge--platine" style="font-size:.6rem">2× Platine</span>
           </div>
           {% endfor %}
         </div>
       </div>
 
+      <!-- Platine -->
+      <div style="background:#fff;border:1px solid rgba(176,190,197,.2);border-radius:16px;padding:2rem;margin-bottom:2rem;box-shadow:0 4px 20px rgba(0,0,0,.04)">
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.25rem">
+          Platine
+        </h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.6rem">
+          {% assign platine_albums = site.data.albums | where: "certification", "platine" %}
+          {% for album in platine_albums %}
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem;background:#F8F7F2;border-radius:8px">
+            <div>
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:.95rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.02em">{{ album.title }}</span>
+              <span style="color:#6B6860;font-size:.75rem;margin-left:.5rem">{{ album.year }}</span>
+            </div>
+            <span class="badge badge--platine" style="font-size:.6rem">Platine</span>
+          </div>
+          {% endfor %}
+          {% assign platine_singles = site.data.singles | where: "certification", "platine" %}
+          {% for s in platine_singles %}
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem;background:#F8F7F2;border-radius:8px">
+            <div>
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:.95rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.02em">{{ s.title }}</span>
+              <span style="color:#6B6860;font-size:.75rem;margin-left:.5rem">Single · {{ s.year }}</span>
+            </div>
+            <span class="badge badge--platine" style="font-size:.6rem">Platine</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Records & distinctions -->
+      <div style="background:#fff;border:1px solid rgba(245,166,35,.2);border-radius:16px;padding:2rem;box-shadow:0 4px 20px rgba(245,166,35,.05)">
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.25rem">
+          🏆 Records &amp; distinctions
+        </h3>
+        <div style="display:flex;flex-direction:column;gap:.75rem">
+          <div style="display:flex;gap:1rem;align-items:flex-start;padding:.75rem 1rem;background:#F8F7F2;border-radius:8px">
+            <span style="font-size:1.2rem">🏟️</span>
+            <div>
+              <p style="font-size:.9rem;font-weight:600;color:#1A1A1A;margin-bottom:.2rem">Record absolu du Stade de France</p>
+              <p style="font-size:.8rem;color:#6B6860">97 816 spectateurs · avril 2025 · dépasse le record d'Indochine (97 036 en 2022)</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;padding:.75rem 1rem;background:#F8F7F2;border-radius:8px">
+            <span style="font-size:1.2rem">🎧</span>
+            <div>
+              <p style="font-size:.9rem;font-weight:600;color:#1A1A1A;margin-bottom:.2rem">Artiste le plus streamé sur Spotify France</p>
+              <p style="font-size:.8rem;color:#6B6860">5 années consécutives · 2021 · 2022 · 2023 · 2024 · 2025</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;padding:.75rem 1rem;background:#F8F7F2;border-radius:8px">
+            <span style="font-size:1.2rem">🕯️</span>
+            <div>
+              <p style="font-size:.9rem;font-weight:600;color:#1A1A1A;margin-bottom:.2rem">Flamme olympique — JO Paris 2024</p>
+              <p style="font-size:.8rem;color:#6B6860">8 mai 2024 · allumage du chaudron olympique à Marseille</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;padding:.75rem 1rem;background:#F8F7F2;border-radius:8px">
+            <span style="font-size:1.2rem">💿</span>
+            <div>
+              <p style="font-size:.9rem;font-weight:600;color:#1A1A1A;margin-bottom:.2rem">Plus de 10 millions d'albums vendus</p>
+              <p style="font-size:.8rem;color:#6B6860">Artiste rap français le plus vendu de sa génération · décembre 2025</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;padding:.75rem 1rem;background:#F8F7F2;border-radius:8px">
+            <span style="font-size:1.2rem">🚀</span>
+            <div>
+              <p style="font-size:.9rem;font-weight:600;color:#1A1A1A;margin-bottom:.2rem">2e meilleur démarrage rap français depuis 2000</p>
+              <p style="font-size:.8rem;color:#6B6860">D&P à vie (2025) · 123 691 copies vendues la première semaine</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;padding:.75rem 1rem;background:#F8F7F2;border-radius:8px">
+            <span style="font-size:1.2rem">🎵</span>
+            <div>
+              <p style="font-size:.9rem;font-weight:600;color:#1A1A1A;margin-bottom:.2rem">Plus de 2 300 sons à son actif</p>
+              <p style="font-size:.8rem;color:#6B6860">L'une des discographies les plus volumineuses du rap mondial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </div>
 </div>
 
