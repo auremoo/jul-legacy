@@ -1,0 +1,61 @@
+# Featurings de Jul en tant qu'invité sur des projets d'autres artistes
+
+- artist: "Soolking"
+  song: "Fruit de la zone"
+  album: "Fruit du démon"
+  year: 2018
+  certification: platine
+  category: rap-fr
+
+- artist: "Alonzo"
+  song: "La Seleçao"
+  feat_with: "Naps"
+  album: "—"
+  year: 2021
+  certification: platine
+  category: marseille
+
+- artist: "Alonzo"
+  song: "La fusion"
+  album: "Longue Vie à Nous"
+  year: 2025
+  category: marseille
+
+- artist: "Koba LaD, PLK, SCH, Gazo, Soso Maness, Kofs, Guy2bezbar, Naps"
+  song: "Le Classico Organisé"
+  album: "Single collectif"
+  year: 2021
+  certification: platine
+  category: rap-fr
+
+- artist: "Soprano"
+  song: "Titre feat. Jul, Alonzo & SCH"
+  album: "Album Soprano"
+  year: 2020
+  category: rap-fr
+
+- artist: "Soolking"
+  song: "CNLZ"
+  album: "Vintage"
+  year: 2020
+  category: rap-fr
+
+- artist: "Naps"
+  song: "Feat avec Jul"
+  album: "Les mains faites pour l'or"
+  year: 2021
+  category: marseille
+
+- artist: "Tiakola"
+  song: "Miné sur Paname"
+  album: "—"
+  year: 2023
+  note: "Jul apparaît en tant qu'invité sur le son"
+  category: rap-fr
+
+- artist: "Ghetto Phénomène"
+  song: "Titres divers"
+  album: "Débuts (2012-2013)"
+  year: 2013
+  note: "Avant sa carrière solo"
+  category: marseille

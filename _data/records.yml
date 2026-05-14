@@ -1,0 +1,45 @@
+# Chiffres clés de Jul (animés sur la page d'accueil)
+
+stats:
+  - label: "Albums vendus"
+    value: 10000000
+    display: "10M+"
+    icon: "ph-vinyl-record"
+  - label: "Sons au total"
+    value: 2300
+    display: "+2 300"
+    icon: "ph-music-note"
+  - label: "Albums studio"
+    value: 27
+    display: "27"
+    icon: "ph-disc"
+  - label: "Années #1 Spotify FR"
+    value: 5
+    display: "5"
+    icon: "ph-spotify-logo"
+  - label: "Certifications platine"
+    value: 71
+    display: "71+"
+    icon: "ph-medal"
+  - label: "Spectateurs Stade de France"
+    value: 97816
+    display: "97 816"
+    icon: "ph-stadium"
+
+milestones:
+  - year: 2014
+    text: "Premier album solo — Dans ma paranoïa"
+  - year: 2015
+    text: "Création du label indépendant D'Or et de Platine"
+  - year: 2020
+    text: "Artiste rap le plus vendu de France"
+  - year: 2020
+    text: "Bande Organisée — #1 des charts, certifié Diamant"
+  - year: 2021
+    text: "Premier artiste le plus streamé sur Spotify France"
+  - year: 2024
+    text: "Allume le chaudron olympique à Marseille — JO Paris 2024"
+  - year: 2025
+    text: "Record Stade de France — 97 816 spectateurs"
+  - year: 2026
+    text: "Concerts Stade de France & Orange Vélodrome — 'Oubliez-moi'"

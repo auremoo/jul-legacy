@@ -1,0 +1,166 @@
+---
+layout: default
+title: Accueil
+---
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section class="hero" style="background:#0A0A0A">
+  <div class="hero__bg"></div>
+  <div class="container">
+    <div class="hero__content anim-fade-up">
+      <p class="hero__eyebrow">Marseille · D'Or et de Platine · Depuis 2014</p>
+      <h1 class="hero__title">
+        <span>Jul</span><br>
+        La Légende<br>Marseillaise
+      </h1>
+      <p class="hero__sub">Artiste le plus streamé de France 5 années de suite. 10M+ albums vendus. 27 albums studio. Un seul nom.</p>
+      <div class="hero__actions">
+        <a href="{{ '/discographie/' | relative_url }}" class="btn btn--gold btn--lg">
+          <i class="ph ph-vinyl-record"></i> Discographie
+        </a>
+        <a href="{{ '/biographie/' | relative_url }}" class="btn btn--outline-gold btn--lg">
+          La légende
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);text-align:center;color:rgba(245,245,240,.3);font-size:.75rem;letter-spacing:.15em;text-transform:uppercase">
+    <div style="width:1px;height:40px;background:linear-gradient(to bottom,rgba(201,168,76,.6),transparent);margin:0 auto .75rem"></div>
+    Défiler
+  </div>
+</section>
+
+<!-- ═══════════════════════ ALBUM SORTANT ═══════════════════════ -->
+{% assign upcoming = site.data.albums | where: "status", "upcoming" | first %}
+{% if upcoming %}
+<section style="background:#111111;border-top:1px solid rgba(201,168,76,.1);border-bottom:1px solid rgba(201,168,76,.1)">
+  <div class="container" style="padding-top:3rem;padding-bottom:3rem">
+    <div class="upcoming-banner">
+      <div class="upcoming-banner__cover" style="background:linear-gradient(135deg,#1a1a1a,#2a2a2a);display:flex;align-items:center;justify-content:center;color:rgba(201,168,76,.3);font-size:3rem">
+        <i class="ph ph-disc"></i>
+      </div>
+      <div>
+        <p class="upcoming-banner__label">🔥 Nouvel album — {{ upcoming.date | date: "%d %B %Y" }}</p>
+        <h2 class="upcoming-banner__title">{{ upcoming.title }}</h2>
+        <p class="upcoming-banner__date">{{ upcoming.tracks_count }} titres · {{ upcoming.note }}</p>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+          <a href="{{ '/discographie/' | relative_url }}#{{ upcoming.slug }}" class="btn btn--gold">
+            <i class="ph ph-list-music"></i> Voir la tracklist
+          </a>
+          <span class="badge badge--upcoming">Disponible demain</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- ═══════════════════════ RECORDS / STATS ═══════════════════════ -->
+<section class="section" style="background:#0A0A0A">
+  <div class="container">
+    <div class="section__header text-center">
+      <h2 class="section__title text-gold">Les chiffres parlent</h2>
+      <p class="section__subtitle">Jul en chiffres, c'est une légende en temps réel.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem" class="stats-grid">
+      {% for stat in site.data.records.stats %}
+      <div class="stat-block" style="border:1px solid rgba(201,168,76,.08);border-radius:16px;background:#111">
+        <i class="ph {{ stat.icon }}" style="font-size:2rem;color:#C9A84C;display:block;margin-bottom:.5rem"></i>
+        <span class="stat-block__number" data-count="{{ stat.value }}">{{ stat.display }}</span>
+        <span class="stat-block__label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ DERNIERS ALBUMS ══════════════════════ -->
+<section class="section" style="background:#111111">
+  <div class="container">
+    <div class="section__header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+      <div>
+        <h2 class="section__title" style="color:#F5F5F0">Dernières sorties</h2>
+        <div class="divider-gold"></div>
+      </div>
+      <a href="{{ '/discographie/' | relative_url }}" class="btn btn--outline-gold btn--sm">Toute la disco →</a>
+    </div>
+
+    <div class="grid-albums">
+      {% assign recent_albums = site.data.albums | sort: "date" | reverse | limit: 6 %}
+      {% for album in recent_albums %}
+      <a href="{{ '/discographie/' | relative_url }}#{{ album.slug }}" class="card-album {% if album.status == 'upcoming' %}card-album--upcoming{% endif %}" style="text-decoration:none">
+        <div class="card-album__cover-placeholder">
+          {{ album.title | truncate: 3, "" | upcase }}
+        </div>
+        <div class="card-album__body">
+          <p class="card-album__year">{{ album.year }}{% if album.note %} · {{ album.note }}{% endif %}</p>
+          <h3 class="card-album__title">{{ album.title }}</h3>
+          <div class="card-album__footer">
+            {% if album.certification %}
+              <span class="badge badge--{{ album.certification }}">
+                {% if album.certification == 'diamant' %}💎{% elsif album.certification == 'triple-platine' %}🥇{% else %}✦{% endif %}
+                {{ album.certification | capitalize }}
+              </span>
+            {% endif %}
+            <span style="font-size:.75rem;color:#6B6860">{{ album.tracks_count }} titres</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ MOMENTS FORTS ══════════════════════ -->
+<section class="section" style="background:#0A0A0A">
+  <div class="container">
+    <div class="section__header text-center">
+      <h2 class="section__title" style="color:#F5F5F0">Moments <span class="text-gold">iconiques</span></h2>
+      <div class="divider-gold divider-gold--center"></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem">
+
+      <div style="background:#111;border:1px solid rgba(201,168,76,.12);border-radius:16px;padding:2rem;position:relative;overflow:hidden">
+        <div style="font-size:3rem;margin-bottom:1rem">🕯️</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:#F5F5F0;margin-bottom:.5rem;letter-spacing:.03em">JO PARIS 2024</h3>
+        <p style="font-size:.875rem;color:#9E9B91;line-height:1.7">Le 8 mai 2024, Jul allume le chaudron olympique à Marseille lors du passage de la flamme. Une consécration nationale pour le rappeur du 12e.</p>
+      </div>
+
+      <div style="background:#111;border:1px solid rgba(201,168,76,.12);border-radius:16px;padding:2rem">
+        <div style="font-size:3rem;margin-bottom:1rem">🏟️</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:#F5F5F0;margin-bottom:.5rem;letter-spacing:.03em">RECORD STADE DE FRANCE</h3>
+        <p style="font-size:.875rem;color:#9E9B91;line-height:1.7">Avril 2025 — 97 816 spectateurs. Jul bat le record absolu du Stade de France, dépassant Indochine (97 036). 25 000 personnes suivent en live stream.</p>
+      </div>
+
+      <div style="background:#111;border:1px solid rgba(201,168,76,.12);border-radius:16px;padding:2rem">
+        <div style="font-size:3rem;margin-bottom:1rem">💎</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:#F5F5F0;margin-bottom:.5rem;letter-spacing:.03em">BANDE ORGANISÉE</h3>
+        <p style="font-size:.875rem;color:#9E9B91;line-height:1.7">2020 — Le son qui a tout changé. #1 des charts, certifié Diamant. Jul, SCH, Kofs, Naps, Soso Maness. Marseille au sommet de la France.</p>
+      </div>
+
+      <div style="background:#111;border:1px solid rgba(201,168,76,.12);border-radius:16px;padding:2rem">
+        <div style="font-size:3rem;margin-bottom:1rem">🎵</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:#F5F5F0;margin-bottom:.5rem;letter-spacing:.03em">5 ANS #1 SPOTIFY FR</h3>
+        <p style="font-size:.875rem;color:#9E9B91;line-height:1.7">2021 à 2025 — Cinq années consécutives au sommet du streaming français. Un record sans précédent, toutes catégories musicales confondues.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CTA FAN ZONE ══════════════════════ -->
+<section style="background:linear-gradient(135deg,#111,#0A0A0A);border-top:1px solid rgba(201,168,76,.1);padding:4rem 0">
+  <div class="container text-center">
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1rem">
+      T'es fan ou <span class="text-gold">t'es fan ?</span>
+    </h2>
+    <p style="color:#9E9B91;margin-bottom:2rem;font-size:1.1rem">Teste tes connaissances sur Jul dans la Fan Zone.</p>
+    <a href="{{ '/fan-zone/' | relative_url }}" class="btn btn--gold btn--lg">
+      <i class="ph ph-game-controller"></i> Quiz Jul
+    </a>
+  </div>
+</section>

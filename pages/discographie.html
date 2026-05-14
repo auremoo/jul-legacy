@@ -1,0 +1,249 @@
+---
+layout: page
+title: Discographie
+label: 27 albums · 2 compilations · +2 300 sons
+description: Tous les albums, tracklists, singles, featurings et sorties à venir de Jul.
+theme: dark
+nav_order: 3
+nav_title: Discographie
+permalink: /discographie/
+---
+
+<div class="section" style="background:#0A0A0A">
+  <div class="container">
+
+    <!-- Filtres principaux -->
+    <div class="filters" id="main-filters">
+      <button class="filter-btn active" data-filter="albums">Albums studio</button>
+      <button class="filter-btn" data-filter="compilations">Compilations</button>
+      <button class="filter-btn" data-filter="singles">Singles & Clips</button>
+      <button class="filter-btn" data-filter="upcoming">À venir</button>
+    </div>
+
+    <!-- ─── SECTION : Albums studio ──────────────────────────────── -->
+    <div id="section-albums">
+
+      <!-- Album à venir en premier -->
+      {% assign upcoming_albums = site.data.albums | where: "status", "upcoming" %}
+      {% for album in upcoming_albums %}
+      <div style="margin-bottom:3rem" id="{{ album.slug }}">
+        <div class="upcoming-banner" style="margin-bottom:2rem">
+          <div style="width:100px;height:100px;background:linear-gradient(135deg,#1a1a1a,#2a2a2a);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;flex-shrink:0">🔥</div>
+          <div>
+            <span class="badge badge--upcoming" style="margin-bottom:.5rem">Sortie le {{ album.date | date: "%d %B %Y" }}</span>
+            <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em">{{ album.title }}</h2>
+            <p style="color:#9E9B91;margin:.25rem 0 .75rem">{{ album.tracks_count }} titres · {{ album.note }}</p>
+            {% if album.tracklist %}
+              <button class="btn btn--outline-gold btn--sm" onclick="toggleTracklist('{{ album.slug }}-tl')">
+                <i class="ph ph-list-music"></i> Tracklist
+              </button>
+            {% endif %}
+          </div>
+        </div>
+        {% if album.tracklist %}
+        <div class="tracklist" id="{{ album.slug }}-tl" style="display:none">
+          <div class="tracklist__header">
+            <div>
+              <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.03em">{{ album.title }}</h3>
+              <p style="font-size:.8rem;color:#9E9B91;margin-top:.25rem">{{ album.tracks_count }} titres · {{ album.date | date: "%Y" }}</p>
+            </div>
+          </div>
+          {% for track in album.tracklist %}
+          <div class="card-song">
+            <span class="card-song__num">{{ track.num }}</span>
+            <div class="card-song__play"><i class="ph ph-play"></i></div>
+            <div class="card-song__info">
+              <div class="card-song__title">{{ track.title }}</div>
+              {% if track.feat %}<div class="card-song__meta">feat. {{ track.feat }}</div>{% endif %}
+              {% if track.note %}<div class="card-song__meta" style="font-style:italic">{{ track.note }}</div>{% endif %}
+            </div>
+            {% if track.feat %}<span class="badge badge--feat">Feat</span>{% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+
+      <!-- Sous-filtres certification -->
+      <div class="filters" id="cert-filters" style="margin-bottom:2rem">
+        <button class="filter-btn active" data-cert="all">Tous</button>
+        <button class="filter-btn" data-cert="diamant">💎 Diamant</button>
+        <button class="filter-btn" data-cert="triple-platine">🥇 Triple platine</button>
+        <button class="filter-btn" data-cert="double-platine">✦ Double platine</button>
+        <button class="filter-btn" data-cert="platine">— Platine</button>
+      </div>
+
+      <div class="grid-albums" id="albums-grid">
+        {% assign studio_albums = site.data.albums | where: "status", "sorti" | sort: "date" | reverse %}
+        {% for album in studio_albums %}
+        <div class="album-card-wrapper" data-cert="{{ album.certification }}" id="{{ album.slug }}">
+          <div class="card-album" onclick="toggleTracklist('{{ album.slug }}-tl')" style="cursor:pointer">
+            <div class="card-album__cover-placeholder" style="font-size:1.1rem;padding:1rem;text-align:center;word-break:break-word">
+              {{ album.title | upcase }}
+            </div>
+            <div class="card-album__body">
+              <p class="card-album__year">{{ album.year }}</p>
+              <h3 class="card-album__title">{{ album.title }}</h3>
+              <div class="card-album__footer">
+                {% if album.certification %}
+                  <span class="badge badge--{{ album.certification }}">
+                    {% case album.certification %}
+                      {% when 'diamant' %}💎 Diamant
+                      {% when 'triple-platine' %}🥇 3× Platine
+                      {% when 'double-platine' %}✦✦ 2× Platine
+                      {% else %}✦ Platine
+                    {% endcase %}
+                  </span>
+                {% endif %}
+                <span style="font-size:.7rem;color:#6B6860">{{ album.tracks_count }}t</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tracklist dépliable -->
+          {% if album.tracklist %}
+          <div class="tracklist" id="{{ album.slug }}-tl" style="display:none;margin-top:.5rem">
+            {% for track in album.tracklist %}
+            <div class="card-song">
+              <span class="card-song__num">{{ track.num }}</span>
+              <div class="card-song__play"><i class="ph ph-play"></i></div>
+              <div class="card-song__info">
+                <div class="card-song__title">{{ track.title }}</div>
+                {% if track.feat %}<div class="card-song__meta">feat. {{ track.feat }}</div>{% endif %}
+              </div>
+              {% if track.feat %}<span class="badge badge--feat" style="font-size:.65rem">Feat</span>{% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <div class="tracklist" id="{{ album.slug }}-tl" style="display:none;padding:1rem 1.5rem">
+            <p style="color:#6B6860;font-size:.875rem;text-align:center;padding:1rem">Tracklist complète à venir</p>
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- ─── SECTION : Compilations ──────────────────────────────── -->
+    <div id="section-compilations" style="display:none">
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2rem">
+        Compilations Marseille
+      </h2>
+      {% for comp in site.data.compilations %}
+      <div style="margin-bottom:3rem" id="{{ comp.id }}">
+        <div style="background:#111;border:1px solid rgba(201,168,76,.12);border-radius:16px;overflow:hidden">
+          <div style="padding:2rem;display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap">
+            <div style="flex:1;min-width:200px">
+              <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;color:#C9A84C;margin-bottom:.5rem">{{ comp.date | date: "%B %Y" }}</p>
+              <h3 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em">{{ comp.title }}</h3>
+              <p style="color:#9E9B91;font-size:.875rem;margin:.5rem 0">{{ comp.tracks_count }} morceaux · {{ comp.note }}</p>
+              {% if comp.certification %}<span class="badge badge--{{ comp.certification }}">{% if comp.certification == 'diamant' %}💎 Diamant{% else %}✦ {{ comp.certification | capitalize }}{% endif %}</span>{% endif %}
+            </div>
+          </div>
+          <div class="tracklist" style="border-top:1px solid rgba(201,168,76,.08)">
+            {% for track in comp.tracklist %}
+            <div class="card-song">
+              <span class="card-song__num">{{ track.num }}</span>
+              <div class="card-song__play"><i class="ph ph-play"></i></div>
+              <div class="card-song__info">
+                <div class="card-song__title">{{ track.title }}</div>
+                {% if track.artists %}<div class="card-song__meta">{{ track.artists }}</div>{% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- ─── SECTION : Singles & Clips ───────────────────────────── -->
+    <div id="section-singles" style="display:none">
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2rem">
+        Singles & Clips notables
+      </h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem">
+        {% for single in site.data.singles %}
+        <div style="background:#111;border:1px solid rgba(201,168,76,.12);border-radius:16px;padding:1.5rem">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.75rem">
+            <span style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#C9A84C">{{ single.year }}</span>
+            <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+              {% if single.certification %}<span class="badge badge--{{ single.certification }}">{% if single.certification == 'diamant' %}💎{% else %}✦{% endif %} {{ single.certification | capitalize }}</span>{% endif %}
+              <span class="badge badge--{% if single.type == 'feat_single' %}feat{% else %}single{% endif %}">{{ single.type | replace: '_', ' ' | capitalize }}</span>
+            </div>
+          </div>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.25rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.03em;margin-bottom:.25rem">{{ single.title }}</h3>
+          {% if single.feat %}<p style="font-size:.8rem;color:#9E9B91;margin-bottom:.5rem">feat. {{ single.feat }}</p>{% endif %}
+          {% if single.note %}<p style="font-size:.75rem;color:#6B6860;font-style:italic">{{ single.note }}</p>{% endif %}
+          {% if single.youtube_id %}
+          <a href="https://www.youtube.com/watch?v={{ single.youtube_id }}" target="_blank" rel="noopener" class="btn btn--outline-gold btn--sm" style="margin-top:1rem">
+            <i class="ph ph-youtube-logo"></i> Voir le clip
+          </a>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- ─── SECTION : À venir ───────────────────────────────────── -->
+    <div id="section-upcoming" style="display:none">
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2rem">
+        Sorties à venir
+      </h2>
+      {% assign upcoming_all = site.data.albums | where: "status", "upcoming" %}
+      {% for album in upcoming_all %}
+      <div class="upcoming-banner" id="{{ album.slug }}">
+        <div style="width:120px;height:120px;background:linear-gradient(135deg,#1a1a1a,#2a2a2a);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:3rem;flex-shrink:0">🔥</div>
+        <div style="flex:1">
+          <span class="badge badge--upcoming" style="margin-bottom:.75rem">{{ album.date | date: "%d %B %Y" }}</span>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.25rem">{{ album.title }}</h3>
+          <p style="color:#9E9B91;margin-bottom:1rem">{{ album.tracks_count }} titres · {{ album.note }}</p>
+          {% if album.tracklist %}
+          <div class="tracklist" style="margin-top:1rem">
+            {% for track in album.tracklist %}
+            <div class="card-song">
+              <span class="card-song__num">{{ track.num }}</span>
+              <div class="card-song__play"><i class="ph ph-play"></i></div>
+              <div class="card-song__info">
+                <div class="card-song__title">{{ track.title }}</div>
+                {% if track.feat %}<div class="card-song__meta">feat. {{ track.feat }}</div>{% endif %}
+              </div>
+              {% if track.feat %}<span class="badge badge--feat">Feat</span>{% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+
+      <!-- Concerts 2026 -->
+      <div style="margin-top:3rem;background:#111;border:1px solid rgba(245,166,35,.2);border-radius:16px;padding:2rem">
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:#F5A623;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.5rem">🎤 Concerts 2026</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem">
+          {% assign concerts = "15 mai 2026,Stade de France — Paris|16 mai 2026,Stade de France — Paris|29 mai 2026,Orange Vélodrome — Marseille|30 mai 2026,Orange Vélodrome — Marseille" | split: "|" %}
+          {% for concert in concerts %}
+          {% assign parts = concert | split: "," %}
+          <div style="background:#1a1a1a;border-radius:12px;padding:1.25rem;border:1px solid rgba(245,166,35,.1)">
+            <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#F5A623;margin-bottom:.25rem">{{ parts[0] }}</p>
+            <p style="color:#F5F5F0;font-size:.9rem">{{ parts[1] }}</p>
+            <span class="badge badge--upcoming" style="margin-top:.5rem">Sold-out</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function toggleTracklist(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const isHidden = el.style.display === 'none';
+  el.style.display = isHidden ? 'block' : 'none';
+}
+</script>

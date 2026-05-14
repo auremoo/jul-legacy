@@ -1,0 +1,67 @@
+title: "Jul — Site Fan Officieux"
+description: "Le site fan dédié à Jul, rappeur marseillais et artiste le plus streamé de France."
+baseurl: "/jul-legacy"
+url: "https://auremoo.github.io"
+lang: fr
+
+author:
+  name: "La communauté Jul Fan"
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Pagination (actualités)
+paginate: 6
+paginate_path: "/actualites/page/:num/"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Collections
+collections:
+  albums:
+    output: true
+    permalink: /discographie/:name/
+
+# Excludes
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - CLAUDE.md
+  - docs/
+  - "*.sh"
+
+# SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# SEO
+twitter:
+  username: juldetp
+social:
+  name: Jul Fan Site
+  links:
+    - https://www.instagram.com/juldetp/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Équipe Jul Fan"
+  - scope:
+      path: "pages"
+    values:
+      layout: "page"

@@ -1,0 +1,729 @@
+@import 'variables';
+
+// ─── Boutons ─────────────────────────────────────────────────────────────────
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-2;
+  padding: $space-3 $space-6;
+  border-radius: $radius-full;
+  font-family: $font-title;
+  font-size: $text-base;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all $transition;
+  white-space: nowrap;
+
+  &--gold {
+    @include gold-gradient;
+    color: $dark;
+    font-weight: 700;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-gold;
+    }
+    &:active { transform: translateY(0); }
+  }
+
+  &--outline-gold {
+    border: 2px solid $gold;
+    color: $gold;
+
+    &:hover {
+      background: $gold;
+      color: $dark;
+      transform: translateY(-2px);
+    }
+  }
+
+  &--outline-white {
+    border: 2px solid rgba($white, 0.6);
+    color: $white;
+
+    &:hover {
+      border-color: $white;
+      background: rgba($white, 0.1);
+    }
+  }
+
+  &--marseille {
+    @include marseille-gradient;
+    color: $white;
+    font-weight: 700;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px rgba($marseille-blue, 0.4);
+    }
+  }
+
+  &--sm {
+    padding: $space-2 $space-4;
+    font-size: $text-sm;
+  }
+  &--lg {
+    padding: $space-4 $space-8;
+    font-size: $text-lg;
+  }
+}
+
+// ─── Card Album ──────────────────────────────────────────────────────────────
+
+.card-album {
+  @include card-dark;
+  overflow: hidden;
+  position: relative;
+
+  &__cover {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    background: $dark-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $gray-600;
+    font-size: $text-3xl;
+  }
+
+  &__cover-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, $dark-3, $dark-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-title;
+    font-size: $text-3xl;
+    color: rgba($gold, 0.3);
+    letter-spacing: 0.05em;
+  }
+
+  &__body {
+    padding: $space-4;
+  }
+
+  &__year {
+    font-size: $text-xs;
+    color: $gold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: $space-1;
+  }
+
+  &__title {
+    font-family: $font-title;
+    font-size: $text-xl;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: $space-2;
+    color: $white;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: $space-3;
+  }
+
+  &--upcoming {
+    border-color: rgba($sun, 0.3);
+
+    &::before {
+      content: 'BIENTÔT';
+      position: absolute;
+      top: $space-3;
+      right: $space-3;
+      background: $sun;
+      color: $dark;
+      font-family: $font-title;
+      font-size: $text-xs;
+      letter-spacing: 0.1em;
+      padding: 2px $space-2;
+      border-radius: $radius-full;
+    }
+  }
+}
+
+// ─── Card Son ─────────────────────────────────────────────────────────────────
+
+.card-song {
+  display: flex;
+  align-items: center;
+  gap: $space-4;
+  padding: $space-3 $space-4;
+  border-radius: $radius-md;
+  transition: background $transition;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba($gold, 0.06);
+  }
+
+  &__num {
+    width: 28px;
+    text-align: right;
+    font-size: $text-sm;
+    color: $gray-400;
+    flex-shrink: 0;
+  }
+
+  &__play {
+    width: 36px;
+    height: 36px;
+    border-radius: $radius-full;
+    border: 1.5px solid rgba($gold, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: $gold;
+    font-size: 14px;
+    transition: all $transition;
+
+    &:hover {
+      background: $gold;
+      color: $dark;
+      border-color: $gold;
+    }
+  }
+
+  &__info { flex: 1; min-width: 0; }
+
+  &__title {
+    font-size: $text-base;
+    color: $white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__meta {
+    font-size: $text-xs;
+    color: $gray-400;
+    margin-top: 2px;
+  }
+
+  &__badges {
+    display: flex;
+    gap: $space-1;
+    flex-shrink: 0;
+  }
+}
+
+// ─── Card Feat ───────────────────────────────────────────────────────────────
+
+.card-feat {
+  @include card-marseille;
+  padding: $space-6;
+  display: flex;
+  gap: $space-4;
+  align-items: flex-start;
+
+  &__avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: $radius-full;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: $marseille-sand;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $marseille-blue;
+    font-family: $font-title;
+    font-size: $text-xl;
+  }
+
+  &__body { flex: 1; }
+
+  &__artist {
+    font-family: $font-title;
+    font-size: $text-xl;
+    text-transform: uppercase;
+    color: $marseille-blue;
+    letter-spacing: 0.03em;
+  }
+
+  &__song {
+    font-size: $text-base;
+    color: $gray-600;
+    margin: $space-1 0;
+  }
+
+  &__album {
+    font-size: $text-sm;
+    color: $gray-400;
+    font-style: italic;
+  }
+
+  &__year {
+    font-size: $text-sm;
+    font-weight: 600;
+    color: $sun;
+  }
+}
+
+// ─── Filtres ─────────────────────────────────────────────────────────────────
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+  margin-bottom: $space-8;
+
+  @include respond($bp-sm) {
+    gap: $space-1;
+  }
+}
+
+.filter-btn {
+  padding: $space-2 $space-4;
+  border-radius: $radius-full;
+  font-size: $text-sm;
+  font-family: $font-body;
+  font-weight: 500;
+  transition: all $transition;
+  border: 1.5px solid rgba($gold, 0.25);
+  color: $gray-400;
+  background: transparent;
+
+  &:hover {
+    border-color: rgba($gold, 0.6);
+    color: $white;
+  }
+
+  &.active {
+    @include gold-gradient;
+    color: $dark;
+    border-color: transparent;
+    font-weight: 700;
+  }
+
+  &--marseille {
+    border-color: rgba($marseille-blue, 0.25);
+    color: $gray-600;
+
+    &:hover {
+      border-color: $marseille-blue;
+      color: $marseille-blue;
+    }
+
+    &.active {
+      @include marseille-gradient;
+      color: $white;
+      border-color: transparent;
+    }
+  }
+}
+
+// ─── Grid ────────────────────────────────────────────────────────────────────
+
+.grid-albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: $space-6;
+
+  @include respond($bp-md) {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: $space-4;
+  }
+
+  @include respond($bp-sm) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-3;
+  }
+}
+
+.grid-feats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: $space-4;
+
+  @include respond($bp-sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ─── Stat counter ────────────────────────────────────────────────────────────
+
+.stat-block {
+  text-align: center;
+  padding: $space-6;
+
+  &__number {
+    font-family: $font-title;
+    font-size: $text-5xl;
+    line-height: 1;
+    @include text-gold-gradient;
+    display: block;
+    margin-bottom: $space-2;
+
+    @include respond($bp-md) {
+      font-size: $text-4xl;
+    }
+  }
+
+  &__label {
+    font-size: $text-sm;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $gray-400;
+  }
+}
+
+// ─── Timeline ────────────────────────────────────────────────────────────────
+
+.timeline {
+  position: relative;
+  padding-left: $space-8;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, $gold, rgba($gold, 0.1));
+  }
+
+  @include respond($bp-sm) {
+    padding-left: $space-6;
+  }
+}
+
+.timeline__item {
+  position: relative;
+  padding-bottom: $space-8;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -$space-8 - 5px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: $radius-full;
+    background: $gold;
+    box-shadow: 0 0 10px rgba($gold, 0.5);
+
+    @include respond($bp-sm) {
+      left: -$space-6 - 5px;
+    }
+  }
+
+  &--major::before {
+    width: 16px;
+    height: 16px;
+    left: -$space-8 - 7px;
+    background: $gold-light;
+    box-shadow: 0 0 16px rgba($gold, 0.7);
+
+    @include respond($bp-sm) {
+      left: -$space-6 - 7px;
+    }
+  }
+}
+
+.timeline__year {
+  font-family: $font-title;
+  font-size: $text-2xl;
+  color: $gold;
+  letter-spacing: 0.05em;
+  margin-bottom: $space-1;
+}
+
+.timeline__title {
+  font-size: $text-lg;
+  font-weight: 600;
+  color: $white;
+  margin-bottom: $space-2;
+}
+
+.timeline__body {
+  font-size: $text-base;
+  color: $gray-400;
+  line-height: 1.7;
+}
+
+// ─── Hero ─────────────────────────────────────────────────────────────────────
+
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: $nav-height;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 50%, rgba($gold, 0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 20% 80%, rgba($marseille-blue, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__eyebrow {
+  font-size: $text-sm;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $gold;
+  margin-bottom: $space-4;
+}
+
+.hero__title {
+  font-family: $font-title;
+  font-size: $text-hero;
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin-bottom: $space-6;
+  color: $white;
+
+  span { @include text-gold-gradient; }
+}
+
+.hero__sub {
+  font-size: $text-lg;
+  color: $gray-400;
+  max-width: 500px;
+  line-height: 1.7;
+  margin-bottom: $space-8;
+}
+
+.hero__actions {
+  display: flex;
+  gap: $space-4;
+  flex-wrap: wrap;
+}
+
+// ─── Nav pill ─────────────────────────────────────────────────────────────────
+
+.nav-pills {
+  display: flex;
+  gap: $space-2;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: $space-2;
+  margin-bottom: $space-8;
+
+  &::-webkit-scrollbar { display: none; }
+}
+
+// ─── Post card ────────────────────────────────────────────────────────────────
+
+.post-card {
+  @include card-dark;
+  overflow: hidden;
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background: $dark-4;
+  }
+
+  &__body {
+    padding: $space-6;
+  }
+
+  &__date {
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $gold;
+    margin-bottom: $space-2;
+  }
+
+  &__title {
+    font-family: $font-title;
+    font-size: $text-2xl;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: $white;
+    margin-bottom: $space-3;
+    line-height: 1.2;
+  }
+
+  &__excerpt {
+    font-size: $text-sm;
+    color: $gray-400;
+    line-height: 1.7;
+  }
+}
+
+// ─── Quiz ─────────────────────────────────────────────────────────────────────
+
+.quiz-card {
+  @include card-dark;
+  padding: $space-8;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.quiz__question {
+  font-family: $font-title;
+  font-size: $text-2xl;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $white;
+  margin-bottom: $space-6;
+  line-height: 1.3;
+}
+
+.quiz__options {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+}
+
+.quiz__option {
+  padding: $space-4;
+  border-radius: $radius-md;
+  border: 1.5px solid rgba($gold, 0.2);
+  color: $gray-200;
+  text-align: left;
+  transition: all $transition;
+  font-size: $text-base;
+
+  &:hover:not(:disabled) {
+    border-color: $gold;
+    background: $gold-glow;
+    color: $white;
+  }
+
+  &.correct  { border-color: #4ade80; background: rgba(74, 222, 128, 0.1); color: #4ade80; }
+  &.wrong    { border-color: #f87171; background: rgba(248, 113, 113, 0.1); color: #f87171; }
+}
+
+.quiz__progress {
+  display: flex;
+  gap: $space-1;
+  margin-bottom: $space-6;
+
+  span {
+    flex: 1;
+    height: 3px;
+    border-radius: $radius-full;
+    background: $dark-4;
+
+    &.done  { background: $gold; }
+    &.current { background: rgba($gold, 0.4); }
+  }
+}
+
+// ─── Galerie grid ────────────────────────────────────────────────────────────
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $space-2;
+
+  @include respond($bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond($bp-sm) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-1;
+  }
+}
+
+.gallery-item {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: $radius-md;
+  cursor: pointer;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform $transition-slow;
+  }
+
+  &:hover img { transform: scale(1.05); }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba($dark, 0.3);
+    opacity: 0;
+    transition: opacity $transition;
+  }
+
+  &:hover::after { opacity: 1; }
+}
+
+// ─── Embed Spotify / YouTube ─────────────────────────────────────────────────
+
+.embed-wrapper {
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-card;
+
+  iframe {
+    width: 100%;
+    display: block;
+    border: none;
+  }
+}
+
+.embed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $space-6;
+
+  @include respond($bp-sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ─── Tracklist section ───────────────────────────────────────────────────────
+
+.tracklist {
+  background: $dark-2;
+  border-radius: $radius-lg;
+  padding: $space-4 0;
+  border: 1px solid rgba($gold, 0.08);
+}
+
+.tracklist__header {
+  display: flex;
+  align-items: center;
+  gap: $space-4;
+  padding: $space-4 $space-6;
+  border-bottom: 1px solid rgba($gold, 0.08);
+  margin-bottom: $space-2;
+
+  @include respond($bp-sm) {
+    padding: $space-3 $space-4;
+  }
+}
+
+.tracklist__album-info {
+  h3 {
+    font-family: $font-title;
+    font-size: $text-2xl;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 0.03em;
+  }
+  p {
+    font-size: $text-sm;
+    color: $gray-400;
+    margin-top: $space-1;
+  }
+}

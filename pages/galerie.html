@@ -1,0 +1,64 @@
+---
+layout: page
+title: Galerie
+label: Photos & moments
+description: La galerie photos de Jul — concerts, coulisses, moments iconiques.
+theme: marseille
+nav_order: 6
+nav_title: Galerie
+permalink: /galerie/
+---
+
+<div class="section" style="background:#F8F7F2">
+  <div class="container">
+
+    <!-- Filtres -->
+    <div class="filters">
+      <button class="filter-btn filter-btn--marseille active" data-gallery="all">Tous</button>
+      <button class="filter-btn filter-btn--marseille" data-gallery="concerts">Concerts</button>
+      <button class="filter-btn filter-btn--marseille" data-gallery="coulisses">Coulisses</button>
+      <button class="filter-btn filter-btn--marseille" data-gallery="marseille">Marseille</button>
+      <button class="filter-btn filter-btn--marseille" data-gallery="evenements">Événements</button>
+    </div>
+
+    <!-- Galerie placeholder (images à ajouter dans assets/images/gallery/) -->
+    <div class="gallery-grid" id="gallery-grid">
+
+      <!-- Placeholder cards — remplacer par de vraies photos -->
+      {% assign gallery_items = "concerts,🎤,Stade de France — Avril 2025|concerts,🎵,Concert Paris 2025|evenements,🕯️,JO Paris 2024 — Allumage du chaudron|concerts,🏟️,Orange Vélodrome 2024|marseille,☀️,Marseille — Le 12e|coulisses,🎙️,Studio D'Or et de Platine|concerts,🎶,Tournée 2023|marseille,🌊,Marseille Plage|coulisses,📸,Shooting Oubliez-moi 2026|concerts,🔥,13 Organisé — 2020|evenements,🏆,Record Stade de France 2025|marseille,🏠,La Valentine — Les origines" | split: "|" %}
+
+      {% for item in gallery_items %}
+        {% assign parts = item | split: "," %}
+        <div class="gallery-item" data-gallery="{{ parts[0] }}" data-src="" onclick="openLightbox(this, '{{ parts[2] }}')">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#EBF4FF,#F8F7F2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem">
+            <span style="font-size:2.5rem">{{ parts[1] }}</span>
+            <span style="font-size:.65rem;color:#6B6860;text-align:center;padding:0 .5rem;line-height:1.3">{{ parts[2] }}</span>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+
+    <!-- Note contributeurs -->
+    <div style="margin-top:3rem;background:#EBF4FF;border:1px solid rgba(46,109,180,.2);border-radius:16px;padding:1.5rem;text-align:center">
+      <p style="color:#3A3830;font-size:.9rem;line-height:1.7">
+        📸 <strong>Tu as des photos de concerts de Jul ?</strong> Contribue à la galerie en ouvrant une issue sur le repo GitHub.<br>
+        <em>Toutes les photos doivent être libres de droits ou avec l'accord du photographe.</em>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function openLightbox(el, caption) {
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  const src = el.dataset.src;
+  if (src) {
+    img.src = src;
+    img.alt = caption;
+    lb.classList.add('open');
+  }
+}
+</script>

@@ -1,0 +1,503 @@
+# Albums studio de Jul (ordre chronologique)
+# certification: platine | double-platine | triple-platine | diamant
+# status: sorti | upcoming
+
+- id: dans-ma-paranoia
+  title: "Dans ma paranoïa"
+  year: 2014
+  date: "2014-02-24"
+  certification: platine
+  status: sorti
+  tracks_count: 16
+  label: "Liga One Industry"
+  slug: dans-ma-paranoia
+
+- id: lacrizeomic
+  title: "Lacrizeomic"
+  year: 2014
+  date: "2014-06-01"
+  certification: platine
+  status: sorti
+  tracks_count: 18
+  slug: lacrizeomic
+
+- id: je-trouve-pas-le-sommeil
+  title: "Je trouve pas le sommeil"
+  year: 2014
+  date: "2014-12-08"
+  certification: double-platine
+  status: sorti
+  tracks_count: 18
+  slug: je-trouve-pas-le-sommeil
+
+- id: je-tourne-en-rond
+  title: "Je tourne en rond"
+  year: 2015
+  date: "2015-06-01"
+  certification: platine
+  status: sorti
+  tracks_count: 16
+  label: "D'Or et de Platine"
+  slug: je-tourne-en-rond
+
+- id: my-world
+  title: "My World"
+  year: 2015
+  date: "2015-12-01"
+  certification: double-platine
+  status: sorti
+  tracks_count: 17
+  slug: my-world
+
+- id: emotions
+  title: "Émotions"
+  year: 2016
+  date: "2016-06-01"
+  certification: triple-platine
+  status: sorti
+  tracks_count: 18
+  slug: emotions
+
+- id: lovni
+  title: "L'Ovni"
+  year: 2016
+  date: "2016-12-01"
+  certification: diamant
+  status: sorti
+  tracks_count: 19
+  slug: lovni
+
+- id: je-ne-me-vois-pas-briller
+  title: "Je ne me vois pas briller"
+  year: 2017
+  date: "2017-06-01"
+  certification: diamant
+  status: sorti
+  tracks_count: 20
+  slug: je-ne-me-vois-pas-briller
+
+- id: la-tete-dans-les-nuages
+  title: "La Tête dans les nuages"
+  year: 2017
+  date: "2017-12-01"
+  certification: diamant
+  status: sorti
+  tracks_count: 20
+  slug: la-tete-dans-les-nuages
+
+- id: inspi-dailleurs
+  title: "Inspi d'ailleurs"
+  year: 2018
+  date: "2018-06-01"
+  certification: double-platine
+  status: sorti
+  tracks_count: 19
+  slug: inspi-dailleurs
+
+- id: la-zone-en-personne
+  title: "La Zone en personne"
+  year: 2018
+  date: "2018-12-01"
+  certification: double-platine
+  status: sorti
+  tracks_count: 20
+  slug: la-zone-en-personne
+
+- id: rien-100-rien
+  title: "Rien 100 Rien"
+  year: 2019
+  date: "2019-06-01"
+  certification: double-platine
+  status: sorti
+  tracks_count: 19
+  slug: rien-100-rien
+
+- id: cest-pas-des-lol
+  title: "C'est pas des LOL"
+  year: 2019
+  date: "2019-12-01"
+  certification: diamant
+  status: sorti
+  tracks_count: 21
+  slug: cest-pas-des-lol
+
+- id: la-machine
+  title: "La Machine"
+  year: 2020
+  date: "2020-06-01"
+  certification: double-platine
+  status: sorti
+  tracks_count: 20
+  slug: la-machine
+
+- id: loin-du-monde
+  title: "Loin du monde"
+  year: 2020
+  date: "2020-12-01"
+  certification: double-platine
+  status: sorti
+  tracks_count: 19
+  slug: loin-du-monde
+
+- id: demain-ca-ira
+  title: "Demain ça ira"
+  year: 2021
+  date: "2021-06-01"
+  certification: double-platine
+  status: sorti
+  tracks_count: 20
+  slug: demain-ca-ira
+
+- id: independance
+  title: "Indépendance"
+  year: 2021
+  date: "2021-12-01"
+  certification: double-platine
+  status: sorti
+  tracks_count: 21
+  slug: independance
+
+- id: extraterrestre
+  title: "Extraterrestre"
+  year: 2022
+  date: "2022-06-03"
+  certification: double-platine
+  status: sorti
+  tracks_count: 20
+  slug: extraterrestre
+  tracklist:
+    - { num: 1,  title: "Ça tourne dans ma tête" }
+    - { num: 2,  title: "J'ai tout su" }
+    - { num: 3,  title: "J'éteins mon téléphone" }
+    - { num: 4,  title: "Ténébreux" }
+    - { num: 5,  title: "Sur la Costa del Sol" }
+    - { num: 6,  title: "Faut pas (Extraterrestre)" }
+    - { num: 7,  title: "J'ai le démon" }
+    - { num: 8,  title: "Gigi" }
+    - { num: 9,  title: "Sous la Simono" }
+    - { num: 10, title: "Ma drogue" }
+    - { num: 11, title: "Cœur blessé" }
+    - { num: 12, title: "Flouz" }
+    - { num: 13, title: "Comme au bon vieux temps" }
+    - { num: 14, title: "Superstar" }
+    - { num: 15, title: "Je te veux toi" }
+    - { num: 16, title: "Courtoisie" }
+    - { num: 17, title: "Avec José" }
+    - { num: 18, title: "1 fois mais pas 2", feat: "Houari & Moubarak" }
+    - { num: 19, title: "En two two bé" }
+    - { num: 20, title: "Dans la loge" }
+
+- id: coeur-blanc
+  title: "Cœur blanc"
+  year: 2022
+  date: "2022-12-09"
+  certification: double-platine
+  status: sorti
+  tracks_count: 39
+  note: "Double album"
+  slug: coeur-blanc
+  tracklist:
+    - { num: 1,  title: "Namek", feat: "Omah Lay" }
+    - { num: 2,  title: "Le 100 le 100" }
+    - { num: 3,  title: "Canette dans les mains" }
+    - { num: 4,  title: "Chocolata", feat: "Elai" }
+    - { num: 5,  title: "Forbidden" }
+    - { num: 6,  title: "Konami" }
+    - { num: 7,  title: "Grazie la zone", feat: "Rhove" }
+    - { num: 8,  title: "Eh ça va Guy" }
+    - { num: 9,  title: "Héros" }
+    - { num: 10, title: "Pistolet 45", feat: "M Huncho" }
+    - { num: 11, title: "Cœur blanc" }
+    - { num: 12, title: "Camouflage", feat: "3robi" }
+    - { num: 13, title: "Le rrrin" }
+    - { num: 14, title: "C'est pas la mairie", feat: "KVRA" }
+    - { num: 15, title: "Beuh à la noix de coco" }
+    - { num: 16, title: "Europa", feat: "Elai, Morad & Rhove" }
+    - { num: 17, title: "Perché" }
+    - { num: 18, title: "Sous tension", feat: "Samara & Didine Canon 16" }
+    - { num: 19, title: "Bad Gyal", feat: "Bad Gyal" }
+    - { num: 20, title: "La pression" }
+    - { num: 21, title: "Pour l'éternité" }
+    - { num: 22, title: "Amore" }
+    - { num: 23, title: "Sans paroles" }
+    - { num: 24, title: "Le monde est petit" }
+    - { num: 25, title: "Zone de turbulences" }
+    - { num: 26, title: "Cœur de lion" }
+    - { num: 27, title: "Peur de rien" }
+    - { num: 28, title: "La vibe" }
+    - { num: 29, title: "Ouverture" }
+    - { num: 30, title: "Boissons chaudes" }
+    - { num: 31, title: "Ça va aller" }
+    - { num: 32, title: "Blanc comme neige" }
+    - { num: 33, title: "Dans le vent" }
+    - { num: 34, title: "Mauvaise ambiance" }
+    - { num: 35, title: "Les poches pleines" }
+    - { num: 36, title: "Nuit étoilée" }
+    - { num: 37, title: "La lumière" }
+    - { num: 38, title: "Ensemble" }
+    - { num: 39, title: "Fin de soirée" }
+
+- id: cest-quand-quil-steint
+  title: "C'est quand qu'il s'éteint ?"
+  year: 2023
+  date: "2023-06-09"
+  certification: double-platine
+  status: sorti
+  tracks_count: 21
+  slug: cest-quand-quil-steint
+  tracklist:
+    - { num: 1,  title: "La faille" }
+    - { num: 2,  title: "Entraînement" }
+    - { num: 3,  title: "Chagriné" }
+    - { num: 4,  title: "Alcantara" }
+    - { num: 5,  title: "Courtois" }
+    - { num: 6,  title: "Range ton égo" }
+    - { num: 7,  title: "Mazé" }
+    - { num: 8,  title: "Coco", feat: "Vacra" }
+    - { num: 9,  title: "DP sur le maillot" }
+    - { num: 10, title: "Ragnar" }
+    - { num: 11, title: "Faut s'enfuir" }
+    - { num: 12, title: "Montana" }
+    - { num: 13, title: "À la vue" }
+    - { num: 14, title: "Je m'en fous de tout", feat: "Dabeull" }
+    - { num: 15, title: "Mon sucre d'amour", feat: "DJ Sozé" }
+    - { num: 16, title: "UWA Ni Lé", feat: "Medi Meyz & Obilisa" }
+    - { num: 17, title: "Le classique" }
+    - { num: 18, title: "Dribble" }
+    - { num: 19, title: "Solitaire" }
+    - { num: 20, title: "Les fantômes" }
+    - { num: 21, title: "Jusqu'au bout" }
+
+- id: la-route-est-longue
+  title: "La Route est longue"
+  year: 2023
+  date: "2023-12-08"
+  certification: double-platine
+  status: sorti
+  tracks_count: 23
+  slug: la-route-est-longue
+  tracklist:
+    - { num: 1,  title: "Le rappeur à 3 lettres" }
+    - { num: 2,  title: "La máquina" }
+    - { num: 3,  title: "Dans ma mama" }
+    - { num: 4,  title: "La fusion", feat: "Alonzo" }
+    - { num: 5,  title: "Miné sur Paname", feat: "Tiakola" }
+    - { num: 6,  title: "Luffy" }
+    - { num: 7,  title: "C'est pas facile" }
+    - { num: 8,  title: "J'suis pas devin" }
+    - { num: 9,  title: "J'fais plaisir à la zone", feat: "SDM" }
+    - { num: 10, title: "Y'a plus de raison" }
+    - { num: 11, title: "Sensations" }
+    - { num: 12, title: "Au-dessus de l'atlas" }
+    - { num: 13, title: "Postiché", feat: "PLK" }
+    - { num: 14, title: "La route est longue" }
+    - { num: 15, title: "Sali" }
+    - { num: 16, title: "Juste un bisou", feat: "Naza" }
+    - { num: 17, title: "Battistu" }
+    - { num: 18, title: "J'fais que danser" }
+    - { num: 19, title: "La ville lumière" }
+    - { num: 20, title: "Sous les étoiles" }
+    - { num: 21, title: "Rue des palmiers" }
+    - { num: 22, title: "Mémoires" }
+    - { num: 23, title: "Au revoir" }
+
+- id: decennie
+  title: "Décennie"
+  year: 2024
+  date: "2024-01-19"
+  certification: double-platine
+  status: sorti
+  tracks_count: 23
+  slug: decennie
+  tracklist:
+    - { num: 1,  title: "Siège chauffant" }
+    - { num: 2,  title: "D'or et de diamant" }
+    - { num: 3,  title: "Je salue" }
+    - { num: 4,  title: "Avec tonton", feat: "Rim'K" }
+    - { num: 5,  title: "Vacancia" }
+    - { num: 6,  title: "C'est pas grandiose" }
+    - { num: 7,  title: "TP dans le froid", feat: "ZKR & Le Rat Luciano" }
+    - { num: 8,  title: "Love de toi" }
+    - { num: 9,  title: "Blocco", feat: "Baby Gang" }
+    - { num: 10, title: "Le trio ternura", feat: "Alonzo & SCH" }
+    - { num: 11, title: "Tout ce qu'il faut" }
+    - { num: 12, title: "Power" }
+    - { num: 13, title: "Pitchi Mamore" }
+    - { num: 14, title: "Oh qu'elle est belle", feat: "Dystinct" }
+    - { num: 15, title: "Mon top model" }
+    - { num: 16, title: "Ne me fais plus coucou" }
+    - { num: 17, title: "On sent pas les coups", feat: "KVRA" }
+    - { num: 18, title: "Cramoutch" }
+    - { num: 19, title: "Découpage" }
+    - { num: 20, title: "Incognito" }
+    - { num: 21, title: "Couz" }
+    - { num: 22, title: "Sicario", note: "par Houari" }
+    - { num: 23, title: "Corps griffé", note: "par Moubarak" }
+
+- id: mise-a-jour
+  title: "Mise à jour"
+  year: 2024
+  date: "2024-06-07"
+  certification: double-platine
+  status: sorti
+  tracks_count: 22
+  slug: mise-a-jour
+  tracklist:
+    - { num: 1,  title: "Mafiosa" }
+    - { num: 2,  title: "Me prends pas la tête" }
+    - { num: 3,  title: "Tié fou" }
+    - { num: 4,  title: "Je change pas" }
+    - { num: 5,  title: "Le couz du 12" }
+    - { num: 6,  title: "Hola Que Tal ?" }
+    - { num: 7,  title: "Vrai sancho" }
+    - { num: 8,  title: "GTA" }
+    - { num: 9,  title: "Dans l'RS 3" }
+    - { num: 10, title: "Il pleut des balles", feat: "SDM" }
+    - { num: 11, title: "No remords" }
+    - { num: 12, title: "Vida Loca", feat: "Morad" }
+    - { num: 13, title: "I'm sorry" }
+    - { num: 14, title: "Non stop", feat: "A-Deal, Moubarak & Zbig" }
+    - { num: 15, title: "Ça tire" }
+    - { num: 16, title: "Plein de manies" }
+    - { num: 17, title: "BB" }
+    - { num: 18, title: "J'ai pris le mic" }
+    - { num: 19, title: "C'est ce que je voulais" }
+    - { num: 20, title: "L'alien" }
+    - { num: 21, title: "Visage masqué" }
+    - { num: 22, title: "La chanbrand" }
+
+- id: inarretable
+  title: "Inarrêtable"
+  year: 2024
+  date: "2024-12-06"
+  certification: platine
+  status: sorti
+  tracks_count: 23
+  slug: inarretable
+  tracklist:
+    - { num: 1,  title: "Y'a plus de reconnaissance" }
+    - { num: 2,  title: "Je m'habille pas en Versace" }
+    - { num: 3,  title: "Un jour, je l'aurai" }
+    - { num: 4,  title: "Arrête tes manières" }
+    - { num: 5,  title: "Je veux que toi" }
+    - { num: 6,  title: "C'est ça les collègues" }
+    - { num: 7,  title: "Maille", feat: "Bad Gyal" }
+    - { num: 8,  title: "Capata", feat: "Francè Zito" }
+    - { num: 9,  title: "Montblanc" }
+    - { num: 10, title: "Plus de pitié" }
+    - { num: 11, title: "Cœur en or" }
+    - { num: 12, title: "Un heureux, un déçu" }
+    - { num: 13, title: "Partire", feat: "Baby Gang" }
+    - { num: 14, title: "Ma douce" }
+    - { num: 15, title: "Boucle dorée" }
+    - { num: 16, title: "La vie me blesse" }
+    - { num: 17, title: "Wesh alors le deum" }
+    - { num: 18, title: "C'est pas la peine" }
+    - { num: 19, title: "Je suis fait pour" }
+    - { num: 20, title: "Fugati" }
+    - { num: 21, title: "Un point c'est tout" }
+    - { num: 22, title: "Toujours la même" }
+    - { num: 23, title: "Rare comme un diamant" }
+
+- id: dp-a-vie
+  title: "D&P à vie"
+  year: 2025
+  date: "2025-04-25"
+  certification: platine
+  status: sorti
+  tracks_count: 17
+  note: "2e meilleur démarrage rap FR depuis 2000 (123 691 copies S1)"
+  slug: dp-a-vie
+  tracklist:
+    - { num: 1,  title: "Wouaw" }
+    - { num: 2,  title: "Phénoménal" }
+    - { num: 3,  title: "Sous l'eau" }
+    - { num: 4,  title: "Cache ta Rolex" }
+    - { num: 5,  title: "Bentayga" }
+    - { num: 6,  title: "Love et haine", feat: "Le Rat Luciano" }
+    - { num: 7,  title: "Mimi" }
+    - { num: 8,  title: "Je t'aime pour la vie" }
+    - { num: 9,  title: "Ma puce" }
+    - { num: 10, title: "Tu sais d'où je viens" }
+    - { num: 11, title: "2 coups d'avance" }
+    - { num: 12, title: "D&P à vie" }
+    - { num: 13, title: "Après l'apéro" }
+    - { num: 14, title: "Comme tu fais on te fera" }
+    - { num: 15, title: "J'ai besoin d'air" }
+    - { num: 16, title: "Ils le savent" }
+    - { num: 17, title: "4 4 2" }
+
+- id: tp-sur-tp
+  title: "TP sur TP"
+  year: 2025
+  date: "2025-12-05"
+  certification: platine
+  status: sorti
+  tracks_count: 32
+  note: "Double album"
+  slug: tp-sur-tp
+  tracklist:
+    - { num: 1,  title: "BDR" }
+    - { num: 2,  title: "Tu Tenenew" }
+    - { num: 3,  title: "Nostalgique" }
+    - { num: 4,  title: "Des inconnus" }
+    - { num: 5,  title: "Cassage de nuques" }
+    - { num: 6,  title: "Je suis pas comme toi" }
+    - { num: 7,  title: "Triste everyday" }
+    - { num: 8,  title: "Chaud de night" }
+    - { num: 9,  title: "Rien à regretter" }
+    - { num: 10, title: "Fais pas le con" }
+    - { num: 11, title: "Basta" }
+    - { num: 12, title: "La Notch" }
+    - { num: 13, title: "Laissez moi loin" }
+    - { num: 14, title: "Je suis love", feat: "Naza & Salima Chica" }
+    - { num: 15, title: "Que tu quieres", feat: "Morad" }
+    - { num: 16, title: "Ma p'tite prison", feat: "Akon" }
+    - { num: 17, title: "A chacun sa victoire", feat: "I Muvrini" }
+    - { num: 18, title: "Per l'eternita", feat: "Marcu Antone Fantoni" }
+    - { num: 19, title: "Multistrada", feat: "El Chapo Junior" }
+    - { num: 20, title: "Ojala que fueras tu", feat: "Dyce" }
+    - { num: 21, title: "Dans les veines" }
+    - { num: 22, title: "Marseille ou rien" }
+    - { num: 23, title: "Le code" }
+    - { num: 24, title: "Vrai ça" }
+    - { num: 25, title: "La saga" }
+    - { num: 26, title: "Sans escale" }
+    - { num: 27, title: "Forza" }
+    - { num: 28, title: "Lumière du sud" }
+    - { num: 29, title: "Toujours debout" }
+    - { num: 30, title: "La promesse" }
+    - { num: 31, title: "Témoin" }
+    - { num: 32, title: "TP sur TP" }
+
+- id: oubliez-moi
+  title: "Oubliez-moi"
+  year: 2026
+  date: "2026-05-15"
+  certification: ~
+  status: upcoming
+  tracks_count: 21
+  note: "26e album studio"
+  slug: oubliez-moi
+  tracklist:
+    - { num: 1,  title: "Amnésia" }
+    - { num: 2,  title: "La street" }
+    - { num: 3,  title: "J'oublie tout" }
+    - { num: 4,  title: "La fusée" }
+    - { num: 5,  title: "Loin de tout" }
+    - { num: 6,  title: "La miss" }
+    - { num: 7,  title: "Wesh alors" }
+    - { num: 8,  title: "Limitless" }
+    - { num: 9,  title: "Parasite", feat: "Morad" }
+    - { num: 10, title: "La calle", feat: "Houari" }
+    - { num: 11, title: "Oubliez-moi" }
+    - { num: 12, title: "Le fantôme" }
+    - { num: 13, title: "Sans retour" }
+    - { num: 14, title: "Libre" }
+    - { num: 15, title: "La vérité" }
+    - { num: 16, title: "Sombre" }
+    - { num: 17, title: "Dans le vide" }
+    - { num: 18, title: "L'inconnu" }
+    - { num: 19, title: "Perdu" }
+    - { num: 20, title: "La chute" }
+    - { num: 21, title: "Renaissance" }

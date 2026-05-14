@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="page-content">
+  <div class="page-hero page-hero--{{ page.theme | default: 'dark' }}">
+    <div class="container">
+      <div class="page-hero__content">
+        {% if page.label %}
+          <p class="page-hero__label" style="color: {% if page.theme == 'marseille' %}var(--marseille-blue, #2E6DB4){% else %}#C9A84C{% endif %}">
+            {{ page.label }}
+          </p>
+        {% endif %}
+        <h1 class="page-hero__title" style="color: {% if page.theme == 'marseille' %}#1A1A1A{% else %}#F5F5F0{% endif %}">
+          {{ page.title }}
+        </h1>
+        {% if page.description %}
+          <p class="page-hero__desc">{{ page.description }}</p>
+        {% endif %}
+        <div class="divider-gold"></div>
+      </div>
+    </div>
+  </div>
+
+  {{ content }}
+</div>

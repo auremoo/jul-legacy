@@ -1,0 +1,158 @@
+// ─── Couleurs ────────────────────────────────────────────────────────────────
+
+// Dark & Doré (thème principal sombre)
+$dark:          #0A0A0A;
+$dark-2:        #111111;
+$dark-3:        #1A1A1A;
+$dark-4:        #242424;
+$gold:          #C9A84C;
+$gold-light:    #E8C97A;
+$gold-dark:     #A07828;
+$gold-glow:     rgba(201, 168, 76, 0.15);
+
+// Marseille Vibes (thème clair)
+$marseille-blue:  #2E6DB4;
+$marseille-sky:   #5BA4E5;
+$sky-light:       #EBF4FF;
+$sun:             #F5A623;
+$sun-light:       #FFD166;
+$marseille-white: #F8F7F2;
+$marseille-sand:  #EDE8DC;
+
+// Neutres
+$white:         #F5F5F0;
+$gray-100:      #F0EFE9;
+$gray-200:      #DDDBD3;
+$gray-400:      #9E9B91;
+$gray-600:      #6B6860;
+$gray-800:      #3A3830;
+$black:         #050505;
+
+// Certifications
+$cert-platine:  #B0BEC5;
+$cert-or:       #FFD700;
+$cert-diamant:  #A5F3FC;
+
+// ─── Typographie ─────────────────────────────────────────────────────────────
+
+$font-title:  'Bebas Neue', Impact, sans-serif;
+$font-body:   'Inter', system-ui, -apple-system, sans-serif;
+
+// Scale 1.25 (minor third), base 16px
+$text-xs:   0.64rem;   // 10px
+$text-sm:   0.8rem;    // 13px
+$text-base: 1rem;      // 16px
+$text-lg:   1.25rem;   // 20px
+$text-xl:   1.563rem;  // 25px
+$text-2xl:  1.953rem;  // 31px
+$text-3xl:  2.441rem;  // 39px
+$text-4xl:  3.052rem;  // 49px
+$text-5xl:  4rem;      // 64px
+$text-hero: clamp(3rem, 10vw, 7rem);
+
+// ─── Espacement ──────────────────────────────────────────────────────────────
+
+$space-1:  0.25rem;
+$space-2:  0.5rem;
+$space-3:  0.75rem;
+$space-4:  1rem;
+$space-6:  1.5rem;
+$space-8:  2rem;
+$space-12: 3rem;
+$space-16: 4rem;
+$space-24: 6rem;
+
+// ─── Breakpoints ─────────────────────────────────────────────────────────────
+
+$bp-sm:  480px;
+$bp-md:  768px;
+$bp-lg:  1024px;
+$bp-xl:  1280px;
+$bp-2xl: 1536px;
+
+// ─── Layout ──────────────────────────────────────────────────────────────────
+
+$container-max: 1200px;
+$nav-height:    64px;
+$nav-height-sm: 56px;
+
+// ─── Effets ──────────────────────────────────────────────────────────────────
+
+$radius-sm:  4px;
+$radius-md:  8px;
+$radius-lg:  16px;
+$radius-xl:  24px;
+$radius-full: 9999px;
+
+$shadow-gold: 0 0 24px rgba(201, 168, 76, 0.3);
+$shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+$shadow-card-hover: 0 8px 40px rgba(0, 0, 0, 0.6);
+
+$transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+// ─── Mixins ──────────────────────────────────────────────────────────────────
+
+@mixin respond($bp) {
+  @media (max-width: $bp) { @content; }
+}
+
+@mixin respond-min($bp) {
+  @media (min-width: $bp) { @content; }
+}
+
+@mixin container {
+  width: 100%;
+  max-width: $container-max;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $space-6;
+  padding-right: $space-6;
+
+  @include respond($bp-sm) {
+    padding-left: $space-4;
+    padding-right: $space-4;
+  }
+}
+
+@mixin gold-gradient {
+  background: linear-gradient(135deg, $gold-dark 0%, $gold 50%, $gold-light 100%);
+}
+
+@mixin marseille-gradient {
+  background: linear-gradient(135deg, $marseille-blue 0%, $marseille-sky 100%);
+}
+
+@mixin text-gold-gradient {
+  background: linear-gradient(135deg, $gold 0%, $gold-light 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin card-dark {
+  background: $dark-3;
+  border: 1px solid rgba($gold, 0.12);
+  border-radius: $radius-lg;
+  box-shadow: $shadow-card;
+  transition: transform $transition, box-shadow $transition, border-color $transition;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-card-hover;
+    border-color: rgba($gold, 0.3);
+  }
+}
+
+@mixin card-marseille {
+  background: $white;
+  border: 1px solid rgba($marseille-blue, 0.15);
+  border-radius: $radius-lg;
+  box-shadow: 0 4px 20px rgba($marseille-blue, 0.08);
+  transition: transform $transition, box-shadow $transition;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba($marseille-blue, 0.18);
+  }
+}

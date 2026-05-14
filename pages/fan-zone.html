@@ -1,0 +1,102 @@
+---
+layout: page
+title: Fan Zone
+label: Quiz · Anecdotes · Records
+description: Teste tes connaissances sur Jul. Anecdotes, chiffres fous et culture Jul.
+theme: marseille
+nav_order: 7
+nav_title: Fan Zone
+permalink: /fan-zone/
+---
+
+<div class="section" style="background:#F8F7F2">
+  <div class="container">
+
+    <!-- Quiz -->
+    <div style="max-width:700px;margin:0 auto">
+
+      <div class="quiz-card" id="quiz-container">
+        <div class="quiz__progress" id="quiz-progress">
+          {% for q in site.data.quiz %}
+          <span {% if forloop.first %}class="current"{% endif %}></span>
+          {% endfor %}
+        </div>
+
+        <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;color:#C9A84C;margin-bottom:.75rem" id="quiz-counter">Question 1 / {{ site.data.quiz.size }}</p>
+
+        <div id="quiz-question" class="quiz__question">{{ site.data.quiz[0].question }}</div>
+
+        <div class="quiz__options" id="quiz-options">
+          {% for opt in site.data.quiz[0].options %}
+          <button class="quiz__option" data-index="{{ forloop.index0 }}">{{ opt }}</button>
+          {% endfor %}
+        </div>
+
+        <div id="quiz-explanation" style="display:none;margin-top:1.5rem;padding:1rem;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:12px;font-size:.875rem;color:#DDDBD3;line-height:1.7"></div>
+
+        <div style="margin-top:1.5rem;display:flex;justify-content:flex-end">
+          <button id="quiz-next" class="btn btn--gold" style="display:none">Suivant →</button>
+        </div>
+
+        <div id="quiz-result" style="display:none;text-align:center;padding:2rem 0">
+          <div style="font-size:4rem;margin-bottom:1rem" id="result-emoji">🎵</div>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.5rem" id="result-title"></h3>
+          <p style="color:#9E9B91;margin-bottom:2rem" id="result-score"></p>
+          <button class="btn btn--gold" onclick="restartQuiz()">Rejouer</button>
+        </div>
+      </div>
+
+      <!-- Anecdotes -->
+      <div style="margin-top:3rem">
+        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.5rem">
+          Le saviez-vous ? 🤔
+        </h2>
+
+        {% assign anecdotes = "Jul n'a quasiment jamais passé à la radio. Il a bâti son empire uniquement via le streaming et les réseaux sociaux.,Jul est le seul rappeur français à avoir été artiste le plus streamé sur Spotify France 5 années de suite (2021–2025).,Il sort 2 albums par an sans exception depuis ses débuts en 2014 — une cadence jamais vue dans le rap français.,Lors du record du Stade de France en avril 2025, 25 000 personnes supplémentaires ont suivi le concert en live stream.,Jul a allumé le chaudron olympique à Marseille le 8 mai 2024 — une reconnaissance nationale pour un rappeur underground devenu légende.,Tous ses albums studio sont certifiés au minimum Platine. 5 sont certifiés Diamant.,Son vrai nom est Julien François Alain Mari Bogaert. Ses amis l'appellent 'Jul' depuis l'enfance.,Il a commencé dans le groupe Ghetto Phénomène avec Houari — son ami d'enfance qui apparaît toujours dans ses projets.,D&P à vie (2025) a réalisé le 2e meilleur démarrage du rap français depuis 2000 avec 123 691 copies la première semaine.,Jul possède plus de 2 300 sons à son actif — l'une des discographies les plus volumineuses du rap mondial." | split: "," %}
+
+        <div style="display:grid;gap:1rem">
+          {% for anecdote in anecdotes %}
+          <div style="background:#fff;border:1px solid rgba(46,109,180,.1);border-radius:12px;padding:1.25rem;display:flex;gap:1rem;align-items:flex-start;box-shadow:0 2px 12px rgba(46,109,180,.05)">
+            <span style="font-size:1.25rem;flex-shrink:0">💡</span>
+            <p style="font-size:.9rem;color:#3A3830;line-height:1.7;margin:0">{{ anecdote }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Top certifications -->
+      <div style="margin-top:3rem;background:#fff;border:1px solid rgba(46,109,180,.1);border-radius:16px;padding:2rem;box-shadow:0 4px 20px rgba(46,109,180,.06)">
+        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:1.75rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.5rem">
+          Albums certifiés Diamant 💎
+        </h2>
+        <div style="display:flex;flex-direction:column;gap:.75rem">
+          {% assign diamant_albums = site.data.albums | where: "certification", "diamant" %}
+          {% for album in diamant_albums %}
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:.75rem 1rem;background:#F8F7F2;border-radius:8px;border:1px solid rgba(161,243,252,.3)">
+            <div>
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:#1A1A1A;text-transform:uppercase;letter-spacing:.03em">{{ album.title }}</span>
+              <span style="color:#6B6860;font-size:.8rem;margin-left:.75rem">{{ album.year }}</span>
+            </div>
+            <span class="badge badge--diamant">💎 Diamant</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Quiz data pour JS -->
+<script>
+const QUIZ_DATA = [
+  {% for q in site.data.quiz %}
+  {
+    question: {{ q.question | jsonify }},
+    options: {{ q.options | jsonify }},
+    answer: {{ q.answer }},
+    explanation: {{ q.explanation | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+</script>

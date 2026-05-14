@@ -1,0 +1,56 @@
+# Timeline biographique de Jul
+
+- year: "1990"
+  title: "Naissance à Marseille"
+  body: "Julien François Alain Mari Bogaert naît le 14 janvier 1990 dans le 12e arrondissement de Marseille. Il grandit à Saint-Jean du Désert puis dans le quartier de La Valentine."
+  major: true
+
+- year: "2006-2012"
+  title: "Études & premières armes"
+  body: "Il étudie à l'Université de Marseille (5e arrondissement). Il commence à rapper dans le groupe marseillais Ghetto Phénomène aux côtés de Houari, son ami d'enfance."
+  major: false
+
+- year: "2014"
+  title: "Explosion solo — 3 albums en un an"
+  body: "Jul signe sur Liga One Industry et sort trois albums en un an : Dans ma paranoïa (février), Lacrizeomic (juin) et Je trouve pas le sommeil (décembre). Sa productivité hallucinante et son style trap mélodique auto-tuné font immédiatement parler."
+  major: true
+
+- year: "2015"
+  title: "Indépendance totale — D'Or et de Platine"
+  body: "Suite à des désaccords avec Liga One Industry, Jul crée son propre label : D'Or et de Platine. Cette indépendance lui permet une liberté créative et une cadence de sorties inégalée dans le rap français."
+  major: true
+
+- year: "2016-2019"
+  title: "L'ascension irrésistible"
+  body: "Album après album (deux par an, sans exception), Jul construit un empire. L'Ovni (2016) et Je ne me vois pas briller (2017) sont certifiés Diamant. Il cumule déjà 5 certifications diamant sur cette période, sans jamais passer à la radio."
+  major: false
+
+- year: "2020"
+  title: "Bande Organisée — #1 des charts"
+  body: "Le 9 octobre, Jul co-dirige 13 Organisé, la compilation 100% marseillaise avec SCH, Kofs, Naps, Soso Maness et bien d'autres. Le single Bande Organisée atteint la #1 place des charts français et est certifié Diamant. Jul est déclaré l'artiste rap le plus vendu de France à 30 ans."
+  major: true
+
+- year: "2021"
+  title: "Premier Spotify France 5 ans de suite"
+  body: "Pour la première de cinq années consécutives, Jul est l'artiste le plus streamé sur Spotify France. Un record sans précédent dans la musique française, toutes catégories confondues."
+  major: true
+
+- year: "2022-2023"
+  title: "L'extraterrestre confirme son statut"
+  body: "Deux doubles albums (Cœur blanc — 39 titres, 2022) et des collaborations internationales (Omah Lay, M Huncho, Morad, Rhove) prouvent que Jul transcende le rap français. Deux concerts sold-out au Vélodrome de Marseille."
+  major: false
+
+- year: "2024"
+  title: "Les JO, 13 Organisé 2 & les records"
+  body: "Le 8 mai 2024, Jul allume le chaudron olympique à Marseille lors du passage de la flamme des Jeux Olympiques de Paris 2024 — une consécration nationale. Il sort Décennie (janvier) et Mise à Jour (juin), puis co-dirige 13 Organisé 2 (octobre, 34 titres, 150+ artistes)."
+  major: true
+
+- year: "2025"
+  title: "Record du Stade de France"
+  body: "En avril 2025, Jul établit le record de fréquentation du Stade de France avec 97 816 spectateurs, dépassant le record d'Indochine (2022). D&P à vie (avril) réalise le 2e meilleur démarrage du rap français depuis 2000. TP sur TP (décembre) est un double album de 32 titres avec Akon, I Muvrini et Morad."
+  major: true
+
+- year: "2026"
+  title: "Oubliez-moi — le présent"
+  body: "Le 15 mai 2026, Jul sort son 26e album studio Oubliez-moi, avec un seul featuring (Houari, son ami d'enfance de Ghetto Phénomène). Les concerts au Stade de France (15-16 mai) et à l'Orange Vélodrome (29-30 mai) sont sold-out. La légende continue."
+  major: true

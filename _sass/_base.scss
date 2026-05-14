@@ -1,0 +1,163 @@
+@import 'variables';
+
+// ─── Reset ───────────────────────────────────────────────────────────────────
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font-body;
+  font-size: $text-base;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol { list-style: none; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button { cursor: pointer; border: none; background: none; }
+
+// ─── Thème Dark & Doré ───────────────────────────────────────────────────────
+
+body.theme-dark,
+[data-theme="dark"] {
+  background-color: $dark;
+  color: $white;
+
+  ::selection {
+    background: $gold;
+    color: $dark;
+  }
+}
+
+// ─── Thème Marseille ─────────────────────────────────────────────────────────
+
+body.theme-marseille,
+[data-theme="marseille"] {
+  background-color: $marseille-white;
+  color: $gray-800;
+
+  ::selection {
+    background: $marseille-blue;
+    color: $white;
+  }
+}
+
+// ─── Container ───────────────────────────────────────────────────────────────
+
+.container {
+  @include container;
+}
+
+.container--narrow {
+  @include container;
+  max-width: 800px;
+}
+
+// ─── Typography globals ──────────────────────────────────────────────────────
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.text-gold    { @include text-gold-gradient; }
+.text-center  { text-align: center; }
+.text-upper   { text-transform: uppercase; letter-spacing: 0.1em; }
+
+// ─── Section ─────────────────────────────────────────────────────────────────
+
+.section {
+  padding: $space-16 0;
+
+  @include respond($bp-md) {
+    padding: $space-12 0;
+  }
+
+  @include respond($bp-sm) {
+    padding: $space-8 0;
+  }
+}
+
+.section__title {
+  font-family: $font-title;
+  font-size: $text-4xl;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: $space-3;
+
+  @include respond($bp-md) {
+    font-size: $text-3xl;
+  }
+  @include respond($bp-sm) {
+    font-size: $text-2xl;
+  }
+}
+
+.section__subtitle {
+  font-size: $text-lg;
+  opacity: 0.7;
+  margin-bottom: $space-8;
+}
+
+.section__header {
+  margin-bottom: $space-12;
+
+  @include respond($bp-md) {
+    margin-bottom: $space-8;
+  }
+}
+
+// ─── Badge certification ──────────────────────────────────────────────────────
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-1;
+  padding: $space-1 $space-3;
+  border-radius: $radius-full;
+  font-size: $text-xs;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+
+  &--platine  { background: rgba($cert-platine, 0.15); color: $cert-platine; border: 1px solid rgba($cert-platine, 0.3); }
+  &--or       { background: rgba($cert-or, 0.15);      color: $cert-or;      border: 1px solid rgba($cert-or, 0.3); }
+  &--diamant  { background: rgba($cert-diamant, 0.15); color: $cert-diamant; border: 1px solid rgba($cert-diamant, 0.3); }
+  &--upcoming { background: rgba($sun, 0.15);          color: $sun;          border: 1px solid rgba($sun, 0.3); }
+  &--single   { background: rgba($gold, 0.15);         color: $gold;         border: 1px solid rgba($gold, 0.3); }
+  &--feat     { background: rgba($marseille-sky, 0.15); color: $marseille-sky; border: 1px solid rgba($marseille-sky, 0.3); }
+}
+
+// ─── Scrollbar personnalisée ─────────────────────────────────────────────────
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: $dark-2; }
+::-webkit-scrollbar-thumb { background: $gold-dark; border-radius: $radius-full; }
+::-webkit-scrollbar-thumb:hover { background: $gold; }

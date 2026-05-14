@@ -1,0 +1,128 @@
+---
+layout: page
+title: Médias
+label: Clips · Playlists · Podcasts
+description: Les meilleurs clips de Jul, ses playlists Spotify et toutes ses vidéos incontournables.
+theme: dark
+nav_order: 8
+nav_title: Médias
+permalink: /medias/
+---
+
+<div class="section" style="background:#0A0A0A">
+  <div class="container">
+
+    <!-- Clip du moment -->
+    <div style="margin-bottom:4rem">
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.5rem">Clip du moment</h2>
+      <div class="divider-gold"></div>
+      <div style="margin-top:1.5rem;border-radius:20px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.6)">
+        <div style="position:relative;padding-bottom:56.25%;height:0">
+          <iframe
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"
+            src="https://www.youtube.com/embed/-eGKhLZfkaU"
+            title="Jul — Parasite feat. Morad (extrait Oubliez-moi)"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      <p style="font-size:.8rem;color:#6B6860;margin-top:.75rem;text-align:center">Jul — Parasite feat. Morad · 1er extrait de « Oubliez-moi » (2026)</p>
+    </div>
+
+    <!-- Clips incontournables -->
+    <div style="margin-bottom:4rem">
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.5rem">Clips incontournables</h2>
+      <div class="divider-gold"></div>
+      <div class="embed-grid" style="margin-top:1.5rem">
+
+        {% assign clips = "TKkm6U_sxVE,Bande organisée (feat. SCH·Kofs·Naps·Soso Maness·Elams·Solda·Houari) — 2020|2I4gW8UiMkc,Le Classico Organisé — 2021" | split: "|" %}
+
+        {% for clip in clips %}
+        {% assign parts = clip | split: "," %}
+        <div>
+          <div class="embed-wrapper">
+            <div style="position:relative;padding-bottom:56.25%;height:0">
+              <iframe
+                style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"
+                src="https://www.youtube.com/embed/{{ parts[0] }}"
+                title="{{ parts[1] }}"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+          <p style="font-size:.75rem;color:#6B6860;margin-top:.5rem;text-align:center">{{ parts[1] }}</p>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+
+    <!-- Spotify -->
+    <div style="margin-bottom:4rem">
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.5rem">
+        <i class="ph ph-spotify-logo" style="color:#1DB954"></i> Écouter sur Spotify
+      </h2>
+      <div class="divider-gold"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin-top:1.5rem">
+
+        <!-- Artiste Jul -->
+        <div>
+          <p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:#C9A84C;margin-bottom:.75rem">Profil artiste</p>
+          <div class="embed-wrapper">
+            <iframe
+              src="https://open.spotify.com/embed/artist/3IW7ScrzXmPvZhB27hmfgy?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- D&P à vie -->
+        <div>
+          <p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:#C9A84C;margin-bottom:.75rem">D&P à vie (2025)</p>
+          <div class="embed-wrapper">
+            <iframe
+              src="https://open.spotify.com/embed/album/4pBSIbpMEJE8AJUD1WOoBV?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- 13 Organisé -->
+        <div>
+          <p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:#C9A84C;margin-bottom:.75rem">13 Organisé (2020)</p>
+          <div class="embed-wrapper">
+            <iframe
+              src="https://open.spotify.com/embed/album/3BjbNrFoNHWZ96GPJV5fXQ?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Canal YouTube -->
+    <div style="background:#111;border:1px solid rgba(201,168,76,.12);border-radius:20px;padding:2.5rem;text-align:center">
+      <i class="ph ph-youtube-logo" style="font-size:3rem;color:#FF0000;display:block;margin-bottom:1rem"></i>
+      <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.75rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.5rem">Chaîne YouTube officielle</h3>
+      <p style="color:#9E9B91;font-size:.9rem;margin-bottom:1.5rem">Tous les clips officiels de Jul sur sa chaîne D'Or et de Platine.</p>
+      <a href="https://www.youtube.com/@JulDorEtDePlatine" target="_blank" rel="noopener" class="btn btn--gold">
+        <i class="ph ph-youtube-logo"></i> Visiter la chaîne
+      </a>
+    </div>
+
+  </div>
+</div>

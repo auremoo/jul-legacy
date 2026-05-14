@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Cercle extérieur -->
+  <circle cx="100" cy="100" r="88" stroke="currentColor" stroke-width="4"/>
+
+  <!-- Main gauche (miroir de la droite) -->
+  <!-- Paume + poignet gauche -->
+  <path d="M62 155 C55 145 50 130 52 115 C54 100 58 90 62 82
+             L62 68 C62 63 66 60 70 61 C74 62 76 66 76 71
+             L76 75
+             L76 62 C76 57 80 54 84 55 C88 56 90 60 90 65
+             L90 70
+             L90 62 C90 57 94 54 98 55 C102 56 104 60 104 65
+             L104 72"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Annulaire gauche replié -->
+  <path d="M76 75 C76 82 74 86 72 88 C71 90 71 94 73 96"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Majeur gauche droit -->
+  <path d="M90 70 L90 58 C90 53 94 50 98 51 C102 52 104 56 104 61 L104 72"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Index gauche levé -->
+  <path d="M62 82 L62 48 C62 43 66 40 70 41 C74 42 76 46 76 51 L76 68"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Auriculaire gauche -->
+  <path d="M104 72 L104 78 C104 83 108 86 112 84 C115 83 116 79 116 74 L116 85 C116 90 118 95 120 100"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Pouce gauche -->
+  <path d="M62 115 C56 112 52 106 54 98 C56 90 62 88 68 90"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Main droite -->
+  <!-- Paume + poignet droit -->
+  <path d="M138 155 C145 145 150 130 148 115 C146 100 142 90 138 82
+             L138 68 C138 63 134 60 130 61 C126 62 124 66 124 71
+             L124 75
+             L124 62 C124 57 120 54 116 55 C112 56 110 60 110 65
+             L110 70
+             L110 62 C110 57 106 54 102 55 C98 56 96 60 96 65
+             L96 72"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Annulaire droit replié -->
+  <path d="M124 75 C124 82 126 86 128 88 C129 90 129 94 127 96"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Index droit levé -->
+  <path d="M138 82 L138 48 C138 43 134 40 130 41 C126 42 124 46 124 51 L124 68"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Auriculaire droit -->
+  <path d="M96 72 L96 78 C96 83 92 86 88 84 C85 83 84 79 84 74 L84 85 C84 90 82 95 80 100"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Pouce droit -->
+  <path d="M138 115 C144 112 148 106 146 98 C144 90 138 88 132 90"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

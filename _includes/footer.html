@@ -1,0 +1,57 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <a href="{{ '/' | relative_url }}" class="nav__logo" style="margin-bottom:1rem;display:inline-flex">
+          <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="Logo Jul" width="32" height="32" style="color:#C9A84C">
+          <span>Jul <em>Fan</em></span>
+        </a>
+        <p>Site fan non officiel dédié à Jul — rappeur marseillais, artiste le plus streamé de France 5 années de suite.</p>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/juldetp/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram de Jul">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+          <a href="https://open.spotify.com/artist/3IW7ScrzXmPvZhB27hmfgy" target="_blank" rel="noopener" class="social-link" aria-label="Spotify de Jul">
+            <i class="ph ph-spotify-logo"></i>
+          </a>
+          <a href="https://www.youtube.com/@JulDorEtDePlatine" target="_blank" rel="noopener" class="social-link" aria-label="YouTube de Jul">
+            <i class="ph ph-youtube-logo"></i>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__title">Navigation</p>
+        <nav class="footer__links" aria-label="Liens du footer">
+          <a href="{{ '/' | relative_url }}">Accueil</a>
+          <a href="{{ '/biographie/' | relative_url }}">Biographie</a>
+          <a href="{{ '/discographie/' | relative_url }}">Discographie</a>
+          <a href="{{ '/collaborations/' | relative_url }}">Collaborations</a>
+          <a href="{{ '/actualites/' | relative_url }}">Actualités</a>
+          <a href="{{ '/galerie/' | relative_url }}">Galerie</a>
+          <a href="{{ '/fan-zone/' | relative_url }}">Fan Zone</a>
+          <a href="{{ '/medias/' | relative_url }}">Médias</a>
+        </nav>
+      </div>
+
+      <div>
+        <p class="footer__title">Jul en chiffres</p>
+        <div class="footer__links" style="gap:.75rem">
+          <span style="color:#9E9B91;font-size:.8rem">🎵 +2 300 sons</span>
+          <span style="color:#9E9B91;font-size:.8rem">💿 27 albums studio</span>
+          <span style="color:#9E9B91;font-size:.8rem">📀 10M+ albums vendus</span>
+          <span style="color:#9E9B91;font-size:.8rem">🏟️ Record Stade de France 2025</span>
+          <span style="color:#9E9B91;font-size:.8rem">🔥 #1 Spotify FR 5 ans de suite</span>
+          <span style="color:#9E9B91;font-size:.8rem">🕯️ JO Paris 2024</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>© {{ 'now' | date: "%Y" }} Jul Fan Site — Site fan non officiel</p>
+      <span>Fait avec ❤️ depuis Marseille</span>
+    </div>
+  </div>
+</footer>

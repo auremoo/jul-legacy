@@ -1,0 +1,44 @@
+# Compilations Marseille co-dirigées par Jul
+
+- id: 13-organise
+  title: "13 Organisé"
+  year: 2020
+  date: "2020-10-09"
+  certification: diamant
+  status: sorti
+  tracks_count: 13
+  note: "Compilation 100% Marseille"
+  tracklist:
+    - { num: 1,  title: "Bande organisée", artists: "Jul, SCH, Kofs, Naps, Soso Maness, Elams, Solda, Houari" }
+    - { num: 2,  title: "L'étoile sur le maillot", artists: "L'Algérino, Alonzo, Stone Black, Le Rat Luciano, SCH, Jul, As, Veazy" }
+    - { num: 3,  title: "Combien", artists: "Many, Jul, Solda, Moubarak, Soprano, Elams, Soso Maness, Veazy, Jhonson" }
+    - { num: 4,  title: "Partout c'est la même", artists: "Saf, Jul, As, Elams, Fahar, Friz, Vincenzo, Drime" }
+    - { num: 5,  title: "Ma gadji", artists: "Kofs, Oussagaza, Don Choa, Saf, Soso Maness, 2Bang, Youzi, Jul" }
+    - { num: 6,  title: "Tout a changé", artists: "Le Rat Luciano, Soprano, Jul, L'Algérino, Sysa, Solda, Menzo, Stone Black" }
+    - { num: 7,  title: "War Zone", artists: "Thabiti, Naps, Alonzo, Houari, Jul, As, Zbig, AM La Scampia" }
+    - { num: 8,  title: "Heat", artists: "Keny Arkana, Graya, 100 Blaze, Sauzer, Jul, Elams, Sat L'Artificier, Banguiz" }
+    - { num: 9,  title: "Miami Vice", artists: "Thabiti, Sysa, Drime, Jul, Kamikaz, Zbig, Moubarak" }
+    - { num: 10, title: "C'est maintenant", artists: "Sat L'Artificier, Alonzo, Kofs, Naps, SCH, Jul, Kamikaz, L'Algérino" }
+    - { num: 11, title: "13 balles", artists: "Kofs, Moh, 100 Blaze, Jul, Naps, Dadinho, A-Deal, Zak & Diego" }
+    - { num: 12, title: "La nuit", artists: "Tonyno, Soso Maness, Kara, Jul, Djazz, Bylk, Fahar, Kamikaz, Djiha" }
+    - { num: 13, title: "Je suis Marseille", artists: "Akhenaton, Jul, L'Algérino, Alonzo, Shurik'n, Fahar, SCH, Le Rat Luciano" }
+
+- id: 13-organise-2
+  title: "13 Organisé 2"
+  year: 2024
+  date: "2024-10-04"
+  certification: platine
+  status: sorti
+  tracks_count: 34
+  note: "150+ rappeurs marseillais"
+  tracklist:
+    - { num: 1,  title: "Bande organisée 2", artists: "Jul, SCH, Kofs, Alonzo, Naps, Soso Maness, Elams, Solda, Houari" }
+    - { num: 2,  title: "Mentalité Sosa" }
+    - { num: 3,  title: "Miséria" }
+    - { num: 4,  title: "Mélodie des loups" }
+    - { num: 5,  title: "Tôt ou tard" }
+    - { num: 6,  title: "Ce monde est cruel" }
+    - { num: 7,  title: "Affaire classée" }
+    - { num: 8,  title: "Tour du monde" }
+    - { num: 9,  title: "4 Motion" }
+    - { num: 10, title: "Marseille résonne" }
