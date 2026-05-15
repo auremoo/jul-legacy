@@ -5,7 +5,7 @@
       <span>Jul <em>Fan</em></span>
     </a>
 
-    <div class="nav__links" id="nav-links" role="list">
+    <div class="nav__links" role="list">
       {% assign pages_list = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
       {% for p in pages_list %}
         <a href="{{ p.url | relative_url }}"
@@ -16,9 +16,20 @@
       {% endfor %}
     </div>
 
-    <button class="nav__hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+    <button class="nav__hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-overlay">
       <i class="ph-bold ph-list nav__hamburger-icon nav__hamburger-icon--open"></i>
       <i class="ph-bold ph-x   nav__hamburger-icon nav__hamburger-icon--close"></i>
     </button>
   </div>
 </nav>
+
+<!-- Overlay mobile séparé du <nav> — évite le bug iOS Safari position:fixed + backdrop-filter -->
+<div class="nav__overlay" id="nav-overlay" aria-hidden="true">
+  {% assign pages_list = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
+  {% for p in pages_list %}
+    <a href="{{ p.url | relative_url }}"
+       class="nav__overlay-link{% if page.url == p.url %} active{% endif %}">
+      {{ p.nav_title | default: p.title }}
+    </a>
+  {% endfor %}
+</div>
