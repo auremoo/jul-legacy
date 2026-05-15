@@ -1,20 +1,21 @@
 # Singles & extraits promotionnels notables de Jul
 # (sons sortis avec clip officiel / forte visibilité, hors albums ou en avance sur albums)
+# type: single | feat_single | album_gratuit | freestyle
 
 - title: "Bande organisée"
   year: 2020
   feat: "SCH, Kofs, Naps, Soso Maness, Elams, Solda, Houari"
   certification: diamant
   type: single
-  note: "#1 charts FR"
-  youtube_id: "TKkm6U_sxVE"
+  note: "#1 charts FR — quadruple Diamant, record historique"
+  youtube_id: "-CVn3-3g_BI"
 
-- title: "Le Classico Organisé"
-  year: 2021
-  feat: "Koba LaD, PLK, SCH, Gazo, Soso Maness, Kofs, Guy2bezbar, Naps"
+- title: "Bande organisée 2"
+  year: 2024
+  feat: "SCH, Kofs, Alonzo, Naps, Soso Maness, Elams, Solda, Houari"
   certification: platine
   type: single
-  youtube_id: "2I4gW8UiMkc"
+  note: "Lead single de 13 Organisé 2"
 
 - title: "Fruit de la zone"
   year: 2018
@@ -35,14 +36,12 @@
   feat: ~
   type: single
   note: "Clip officiel avant D&P à vie"
-  youtube_id: "dQw4w9WgXcQ"
 
 - title: "Parasite"
   year: 2026
   feat: "Morad"
   type: single
   note: "1er extrait de 'Oubliez-moi'"
-  youtube_id: "-eGKhLZfkaU"
 
 - title: "Un jour, je l'aurai"
   year: 2024
@@ -56,9 +55,74 @@
   type: single
   note: "1er extrait de C'est quand qu'il s'éteint ?"
 
-- title: "Bande organisée 2"
-  year: 2024
-  feat: "SCH, Kofs, Alonzo, Naps, Soso Maness, Elams, Solda, Houari"
+- title: "Moulaga"
+  year: 2019
+  feat: "Heuss L'Enfoiré"
   certification: platine
-  type: single
-  note: "Lead single de 13 Organisé 2"
+  type: feat_single
+  note: "Single de Heuss L'Enfoiré feat. Jul — clip à +100M vues"
+
+- title: "Dybala"
+  year: 2020
+  feat: "Maes"
+  certification: diamant
+  type: feat_single
+  note: "Single de Maes feat. Jul — extrait de Les Derniers Salopards"
+
+- title: "Planète Mars 2021"
+  year: 2021
+  feat: "Soprano, SCH & Alonzo"
+  type: feat_single
+  note: "Extrait de l'album Chasseur d'étoiles de Soprano"
+
+# ─── Albums Gratuits (projets offerts gratuitement, hors albums commerciaux) ───
+
+- title: "Album Gratuit Vol. 1"
+  year: 2016
+  feat: ~
+  type: album_gratuit
+  note: "30 titres — avec Alonzo, Soprano, Moubarak"
+
+- title: "Album Gratuit Vol. 2"
+  year: 2016
+  feat: ~
+  type: album_gratuit
+  note: "16 titres — avec Ghetto Phénomène, Houari, Moubarak"
+
+- title: "Album Gratuit Vol. 3"
+  year: 2017
+  feat: ~
+  type: album_gratuit
+  note: "15 titres"
+
+- title: "Album Gratuit Vol. 4"
+  year: 2017
+  feat: ~
+  type: album_gratuit
+  note: "4 titres"
+
+- title: "Album Gratuit Vol. 5"
+  year: 2019
+  feat: ~
+  type: album_gratuit
+  note: "17 titres — avec Heuss L'Enfoiré"
+
+- title: "Planète Rap Gratuit"
+  year: 2020
+  feat: "Houari, Zbig, Bil-K, Kamikaz"
+  type: album_gratuit
+  note: "10 titres — sorti le 19 juin 2020 sur toutes les plateformes"
+
+# ─── Freestyles Planète Rap ──────────────────────────────────────────────────
+
+- title: "Freestyle Extraterrestre (Planète Rap)"
+  year: 2021
+  feat: ~
+  type: freestyle
+  note: "16 minutes — disponible sur toutes les plateformes"
+
+- title: "Freestyle Indépendance (Planète Rap)"
+  year: 2021
+  feat: "Gips, Houari & Moubarak"
+  type: freestyle
+  note: "15 minutes — enregistré live au Vélodrome"

@@ -193,49 +193,50 @@
   date: "2022-12-09"
   certification: double-platine
   status: sorti
-  tracks_count: 39
+  tracks_count: 40
   note: "Double album"
   slug: coeur-blanc
   tracklist:
-    - { num: 1,  title: "Namek", feat: "Omah Lay" }
-    - { num: 2,  title: "Le 100 le 100" }
-    - { num: 3,  title: "Canette dans les mains" }
-    - { num: 4,  title: "Chocolata", feat: "Elai" }
-    - { num: 5,  title: "Forbidden" }
-    - { num: 6,  title: "Konami" }
-    - { num: 7,  title: "Grazie la zone", feat: "Rhove" }
-    - { num: 8,  title: "Eh ça va Guy" }
-    - { num: 9,  title: "Héros" }
-    - { num: 10, title: "Pistolet 45", feat: "M Huncho" }
-    - { num: 11, title: "Cœur blanc" }
+    - { num: 1,  title: "Cœur blanc" }
+    - { num: 2,  title: "Namek", feat: "Omah Lay" }
+    - { num: 3,  title: "Le 100 le 100" }
+    - { num: 4,  title: "Canette dans les mains" }
+    - { num: 5,  title: "Chocolata", feat: "Elai" }
+    - { num: 6,  title: "Forbidden" }
+    - { num: 7,  title: "Konami" }
+    - { num: 8,  title: "Grazie la zone", feat: "Rhove" }
+    - { num: 9,  title: "Eh ça va Guy" }
+    - { num: 10, title: "Héros" }
+    - { num: 11, title: "Pistolet 45", feat: "M Huncho" }
     - { num: 12, title: "Camouflage", feat: "3robi" }
-    - { num: 13, title: "Le rrrin" }
+    - { num: 13, title: "Le Rrrin" }
     - { num: 14, title: "C'est pas la mairie", feat: "KVRA" }
     - { num: 15, title: "Beuh à la noix de coco" }
     - { num: 16, title: "Europa", feat: "Elai, Morad & Rhove" }
     - { num: 17, title: "Perché" }
-    - { num: 18, title: "Sous tension", feat: "Samara & Didine Canon 16" }
-    - { num: 19, title: "Bad Gyal", feat: "Bad Gyal" }
-    - { num: 20, title: "La pression" }
-    - { num: 21, title: "Pour l'éternité" }
-    - { num: 22, title: "Amore" }
-    - { num: 23, title: "Sans paroles" }
-    - { num: 24, title: "Le monde est petit" }
-    - { num: 25, title: "Zone de turbulences" }
-    - { num: 26, title: "Cœur de lion" }
-    - { num: 27, title: "Peur de rien" }
-    - { num: 28, title: "La vibe" }
-    - { num: 29, title: "Ouverture" }
-    - { num: 30, title: "Boissons chaudes" }
-    - { num: 31, title: "Ça va aller" }
-    - { num: 32, title: "Blanc comme neige" }
-    - { num: 33, title: "Dans le vent" }
-    - { num: 34, title: "Mauvaise ambiance" }
-    - { num: 35, title: "Les poches pleines" }
-    - { num: 36, title: "Nuit étoilée" }
-    - { num: 37, title: "La lumière" }
-    - { num: 38, title: "Ensemble" }
-    - { num: 39, title: "Fin de soirée" }
+    - { num: 18, title: "Sous tension", feat: "Didine Canon 16 & Samara" }
+    - { num: 19, title: "La vie de rêve", feat: "Mula B" }
+    - { num: 20, title: "L'âme abimée" }
+    - { num: 21, title: "Je le savais", feat: "Morad" }
+    - { num: 22, title: "Ils m'ont fait mal" }
+    - { num: 23, title: "U pistulettu" }
+    - { num: 24, title: "Bé", feat: "Anna" }
+    - { num: 25, title: "J'ai fait le tri" }
+    - { num: 26, title: "Jhota ou mero" }
+    - { num: 27, title: "Je deviens loco" }
+    - { num: 28, title: "Mon cœur pour toi", feat: "Any González" }
+    - { num: 29, title: "Première League", feat: "French The Kid" }
+    - { num: 30, title: "N'importe quoi" }
+    - { num: 31, title: "Aqua dans la Mercedes", feat: "Paky" }
+    - { num: 32, title: "Ma rue" }
+    - { num: 33, title: "Néo" }
+    - { num: 34, title: "Au bord de la mer" }
+    - { num: 35, title: "Potion" }
+    - { num: 36, title: "A.C.C.C" }
+    - { num: 37, title: "Numéro ten" }
+    - { num: 38, title: "J'ai vidé le magnum" }
+    - { num: 39, title: "Sur la selle" }
+    - { num: 40, title: "J'fais comme je peux" }
 
 - id: cest-quand-quil-steint
   title: "C'est quand qu'il s'éteint ?"
@@ -262,11 +263,11 @@
     - { num: 14, title: "Je m'en fous de tout", feat: "Dabeull" }
     - { num: 15, title: "Mon sucre d'amour", feat: "DJ Sozé" }
     - { num: 16, title: "UWA Ni Lé", feat: "Medi Meyz & Obilisa" }
-    - { num: 17, title: "Le classique" }
-    - { num: 18, title: "Dribble" }
-    - { num: 19, title: "Solitaire" }
-    - { num: 20, title: "Les fantômes" }
-    - { num: 21, title: "Jusqu'au bout" }
+    - { num: 17, title: "Opérationnel" }
+    - { num: 18, title: "Droit au but" }
+    - { num: 19, title: "Ma gentillesse" }
+    - { num: 20, title: "Sentimental" }
+    - { num: 21, title: "Cœur démoli", feat: "Nia" }
 
 - id: la-route-est-longue
   title: "La Route est longue"
@@ -295,11 +296,11 @@
     - { num: 16, title: "Juste un bisou", feat: "Naza" }
     - { num: 17, title: "Battistu" }
     - { num: 18, title: "J'fais que danser" }
-    - { num: 19, title: "La ville lumière" }
-    - { num: 20, title: "Sous les étoiles" }
-    - { num: 21, title: "Rue des palmiers" }
-    - { num: 22, title: "Mémoires" }
-    - { num: 23, title: "Au revoir" }
+    - { num: 19, title: "Sherbet" }
+    - { num: 20, title: "Y'a pas d'âge pour pleurer" }
+    - { num: 21, title: "Beuh d'hollande" }
+    - { num: 22, title: "En revenant d'Alicante" }
+    - { num: 23, title: "Business" }
 
 - id: decennie
   title: "Décennie"
