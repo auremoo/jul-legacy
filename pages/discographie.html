@@ -20,11 +20,24 @@ permalink: /discographie/
       <button class="filter-btn" data-filter="upcoming">À venir</button>
     </div>
 
+    <!-- Calcul automatique sorti/upcoming par date de build -->
+    {% assign today = site.time | date: '%Y-%m-%d' %}
+    {% assign upcoming_albums = "" | split: "|" %}
+    {% assign released_albums = "" | split: "|" %}
+    {% for a in site.data.albums %}
+      {% assign adate = a.date | date: '%Y-%m-%d' %}
+      {% if adate > today %}
+        {% assign upcoming_albums = upcoming_albums | push: a %}
+      {% else %}
+        {% assign released_albums = released_albums | push: a %}
+      {% endif %}
+    {% endfor %}
+    {% assign released_albums = released_albums | sort: "date" | reverse %}
+
     <!-- ─── SECTION : Albums studio ──────────────────────────────── -->
     <div id="section-albums">
 
-      <!-- Album à venir en premier -->
-      {% assign upcoming_albums = site.data.albums | where: "status", "upcoming" %}
+      <!-- Albums à venir en premier -->
       {% for album in upcoming_albums %}
       <div style="margin-bottom:3rem" id="{{ album.slug }}">
         <div class="upcoming-banner" style="margin-bottom:2rem">
@@ -75,10 +88,11 @@ permalink: /discographie/
       </div>
 
       <div class="grid-albums" id="albums-grid">
-        {% assign studio_albums = site.data.albums | where: "status", "sorti" | sort: "date" | reverse %}
+        {% assign studio_albums = released_albums %}
         {% for album in studio_albums %}
         <div class="album-card-wrapper" data-cert="{{ album.certification }}" id="{{ album.slug }}">
-          <div class="card-album" onclick="toggleTracklist('{{ album.slug }}-tl')" style="cursor:pointer">
+          {% assign adate = album.date | date: '%Y-%m-%d' %}
+          <div class="card-album{% if adate > today %} card-album--upcoming{% endif %}" onclick="toggleTracklist('{{ album.slug }}-tl')" style="cursor:pointer">
             <div class="card-album__cover-placeholder" style="font-size:1.1rem;padding:1rem;text-align:center;word-break:break-word">
               {{ album.title | upcase }}
             </div>
@@ -192,8 +206,7 @@ permalink: /discographie/
       <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2rem">
         Sorties à venir
       </h2>
-      {% assign upcoming_all = site.data.albums | where: "status", "upcoming" %}
-      {% for album in upcoming_all %}
+      {% for album in upcoming_albums %}
       <div class="upcoming-banner" id="{{ album.slug }}">
         <div style="width:120px;height:120px;background:linear-gradient(135deg,#1a1a1a,#2a2a2a);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:3rem;flex-shrink:0">🔥</div>
         <div style="flex:1">

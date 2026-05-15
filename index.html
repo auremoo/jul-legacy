@@ -33,7 +33,12 @@ title: Accueil
 </section>
 
 <!-- ═══════════════════════ ALBUM SORTANT ═══════════════════════ -->
-{% assign upcoming = site.data.albums | where: "status", "upcoming" | first %}
+{% assign today = site.time | date: '%Y-%m-%d' %}
+{% assign upcoming = nil %}
+{% for _a in site.data.albums %}
+  {% assign _adate = _a.date | date: '%Y-%m-%d' %}
+  {% if _adate > today %}{% unless upcoming %}{% assign upcoming = _a %}{% endunless %}{% endif %}
+{% endfor %}
 {% if upcoming %}
 <section style="background:#111111;border-top:1px solid rgba(201,168,76,.1);border-bottom:1px solid rgba(201,168,76,.1)">
   <div class="container" style="padding-top:3rem;padding-bottom:3rem">
@@ -91,7 +96,8 @@ title: Accueil
     <div class="grid-albums">
       {% assign recent_albums = site.data.albums | sort: "date" | reverse | limit: 6 %}
       {% for album in recent_albums %}
-      <a href="{{ '/discographie/' | relative_url }}#{{ album.slug }}" class="card-album {% if album.status == 'upcoming' %}card-album--upcoming{% endif %}" style="text-decoration:none">
+      {% assign _rdate = album.date | date: '%Y-%m-%d' %}
+      <a href="{{ '/discographie/' | relative_url }}#{{ album.slug }}" class="card-album{% if _rdate > today %} card-album--upcoming{% endif %}" style="text-decoration:none">
         <div class="card-album__cover-placeholder">
           {{ album.title | truncate: 3, "" | upcase }}
         </div>

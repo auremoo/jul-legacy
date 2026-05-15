@@ -475,9 +475,9 @@
   year: 2026
   date: "2026-05-15"
   certification: ~
-  status: upcoming
+  status: sorti
   tracks_count: 21
-  note: "26e album studio"
+  note: "26e album studio · 1 feat : Houari"
   slug: oubliez-moi
   tracklist:
     - { num: 1,  title: "Amnésia" }
@@ -488,7 +488,7 @@
     - { num: 6,  title: "La miss" }
     - { num: 7,  title: "Wesh alors" }
     - { num: 8,  title: "Limitless" }
-    - { num: 9,  title: "Parasite", feat: "Morad" }
+    - { num: 9,  title: "Parasite" }
     - { num: 10, title: "La calle", feat: "Houari" }
     - { num: 11, title: "Oubliez-moi" }
     - { num: 12, title: "Le fantôme" }

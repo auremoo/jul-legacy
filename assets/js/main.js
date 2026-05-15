@@ -1,46 +1,35 @@
 // ─── Navigation ───────────────────────────────────────────────────────────────
 
-const nav = document.getElementById('site-nav');
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+const nav        = document.getElementById('site-nav');
+const hamburger  = document.getElementById('hamburger');
+const navOverlay = document.getElementById('nav-overlay');
 
-// Scroll : fond nav
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
 
-// Hamburger
+function closeMenu() {
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  navOverlay?.classList.remove('open');
+  navOverlay?.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
 hamburger?.addEventListener('click', () => {
   const isOpen = hamburger.classList.toggle('open');
-  hamburger.setAttribute('aria-expanded', isOpen);
-  navLinks.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', String(isOpen));
+  navOverlay?.classList.toggle('open', isOpen);
+  navOverlay?.setAttribute('aria-hidden', String(!isOpen));
   document.body.style.overflow = isOpen ? 'hidden' : '';
-
-  // Ajouter classe open-item aux liens en mobile
-  navLinks.querySelectorAll('.nav__link').forEach(link => {
-    link.classList.toggle('open-item', isOpen);
-  });
 });
 
-// Fermer nav au clic sur un lien
-navLinks?.querySelectorAll('.nav__link').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', false);
-    navLinks.classList.remove('open');
-    document.body.style.overflow = '';
-    navLinks.querySelectorAll('.nav__link').forEach(l => l.classList.remove('open-item'));
-  });
+navOverlay?.querySelectorAll('.nav__overlay-link').forEach(link => {
+  link.addEventListener('click', closeMenu);
 });
 
-// Fermer nav en appuyant Escape
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && navLinks.classList.contains('open')) {
-    hamburger.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', false);
-    navLinks.classList.remove('open');
-    document.body.style.overflow = '';
-  }
+  if (e.key === 'Escape' && navOverlay?.classList.contains('open')) closeMenu();
 });
 
 // ─── Compteurs animés ────────────────────────────────────────────────────────
