@@ -175,20 +175,36 @@ permalink: /discographie/
 
     <!-- ─── SECTION : Singles & Clips ───────────────────────────── -->
     <div id="section-singles" style="display:none">
-      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2rem">
-        Singles & Clips notables
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.5rem">
+        Singles, Featurings & Projets hors-album
       </h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem">
+
+      <div class="filters" id="singles-type-filters" style="margin-bottom:2rem">
+        <button class="filter-btn active" data-singles="all">Tout</button>
+        <button class="filter-btn" data-singles="single">Singles</button>
+        <button class="filter-btn" data-singles="feat_single">Featurings</button>
+        <button class="filter-btn" data-singles="album_gratuit">Albums Gratuits</button>
+        <button class="filter-btn" data-singles="freestyle">Freestyles</button>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem" id="singles-grid">
         {% for single in site.data.singles %}
-        <div style="background:#111;border:1px solid rgba(201,168,76,.12);border-radius:16px;padding:1.5rem">
+        <div class="single-card-wrapper" data-singles-type="{{ single.type }}" style="background:#111;border:1px solid rgba(201,168,76,.12);border-radius:16px;padding:1.5rem">
           <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.75rem">
             <span style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#C9A84C">{{ single.year }}</span>
             <div style="display:flex;gap:.5rem;flex-wrap:wrap">
-              {% if single.certification %}<span class="badge badge--{{ single.certification }}">{% if single.certification == 'diamant' %}💎{% else %}✦{% endif %} {{ single.certification | capitalize }}</span>{% endif %}
-              <span class="badge badge--{% if single.type == 'feat_single' %}feat{% else %}single{% endif %}">{{ single.type | replace: '_', ' ' | capitalize }}</span>
+              {% if single.certification %}
+                <span class="badge badge--{{ single.certification }}">{% if single.certification == 'diamant' %}💎{% elsif single.certification == 'platine' %}✦{% else %}✦{% endif %} {{ single.certification | capitalize }}</span>
+              {% endif %}
+              {% case single.type %}
+                {% when 'feat_single' %}<span class="badge badge--feat">Feat</span>
+                {% when 'album_gratuit' %}<span class="badge" style="background:rgba(46,109,180,.15);color:#2E6DB4;border:1px solid rgba(46,109,180,.3)">Gratuit</span>
+                {% when 'freestyle' %}<span class="badge" style="background:rgba(201,168,76,.1);color:#C9A84C;border:1px solid rgba(201,168,76,.3)">Freestyle</span>
+                {% else %}<span class="badge badge--single">Single</span>
+              {% endcase %}
             </div>
           </div>
-          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.25rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.03em;margin-bottom:.25rem">{{ single.title }}</h3>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:#F5F5F0;text-transform:uppercase;letter-spacing:.03em;margin-bottom:.25rem">{{ single.title }}</h3>
           {% if single.feat %}<p style="font-size:.8rem;color:#9E9B91;margin-bottom:.5rem">feat. {{ single.feat }}</p>{% endif %}
           {% if single.note %}<p style="font-size:.75rem;color:#6B6860;font-style:italic">{{ single.note }}</p>{% endif %}
           {% if single.youtube_id %}

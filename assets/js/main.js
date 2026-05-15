@@ -119,6 +119,24 @@ certFilterBtns.forEach(btn => {
   });
 });
 
+// Filtres singles (par type)
+const singlesTypeBtns = document.querySelectorAll('#singles-type-filters .filter-btn');
+singlesTypeBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    singlesTypeBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.singles;
+    document.querySelectorAll('#singles-grid .single-card-wrapper').forEach(card => {
+      if (filter === 'all' || card.dataset.singlesType === filter) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
 // Filtres featurings (collaborations)
 const featFilterBtns = document.querySelectorAll('#feat-filters .filter-btn');
 featFilterBtns.forEach(btn => {

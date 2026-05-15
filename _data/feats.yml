@@ -1,4 +1,79 @@
 # Featurings de Jul en tant qu'invité sur des projets d'autres artistes
+# category: marseille | rap-fr | international
+# certification: platine | double-platine | triple-platine | diamant | or (optionnel)
+
+# ─── 2014 ────────────────────────────────────────────────────────────────────
+
+- artist: "L'Algérino"
+  song: "On m'a dit"
+  album: "Aigle Royal"
+  year: 2014
+  category: marseille
+
+- artist: "DJ Kayz"
+  song: "Fidèle à ma team"
+  album: "Paris Oran New York"
+  year: 2014
+  category: rap-fr
+
+- artist: "DJ Kayz"
+  song: "Jnouné"
+  feat_with: "Rim'K & Dieselle"
+  album: "Paris Oran New York"
+  year: 2014
+  category: rap-fr
+
+- artist: "Kenza Farah"
+  song: "Problèmes"
+  album: "Karismatik"
+  year: 2014
+  category: rap-fr
+
+# ─── 2015 ────────────────────────────────────────────────────────────────────
+
+- artist: "Alonzo"
+  song: "Normal"
+  album: "Capo Dei Capi Vol. 1"
+  year: 2015
+  note: "+26M vues YouTube"
+  category: marseille
+
+- artist: "Kamikaz"
+  song: "Dans mes rêves"
+  album: "Street Réalité"
+  year: 2015
+  category: marseille
+
+- artist: "DJ Abdel"
+  song: "Fais le moonwalk"
+  feat_with: "Soprano"
+  album: "Double Face"
+  year: 2015
+  category: rap-fr
+
+# ─── 2016 ────────────────────────────────────────────────────────────────────
+
+- artist: "Hooss"
+  song: "La zone"
+  album: "French Riviera Vol. 2"
+  year: 2016
+  category: marseille
+
+# ─── 2017 ────────────────────────────────────────────────────────────────────
+
+- artist: "Ghetto Phénomène"
+  song: "María María"
+  album: "La Vida Loca"
+  year: 2017
+  category: marseille
+
+- artist: "Ghetto Phénomène"
+  song: "En chaleur"
+  album: "La Vida Loca"
+  year: 2017
+  category: marseille
+
+# ─── 2018 ────────────────────────────────────────────────────────────────────
 
 - artist: "Soolking"
   song: "Fruit de la zone"
@@ -7,55 +82,235 @@
   certification: platine
   category: rap-fr
 
-- artist: "Alonzo"
-  song: "La Seleçao"
-  feat_with: "Naps"
-  album: "—"
-  year: 2021
-  certification: platine
+# ─── 2019 ────────────────────────────────────────────────────────────────────
+
+- artist: "Hooss"
+  song: "Stone"
+  feat_with: "Soprano"
+  album: "French Riviera Vol. 3"
+  year: 2019
   category: marseille
 
-- artist: "Alonzo"
-  song: "La fusion"
-  album: "Longue Vie à Nous"
-  year: 2025
+- artist: "Elams"
+  song: "Sortez les bouteilles"
+  album: "Ce que l'on vit (Réédition)"
+  year: 2019
   category: marseille
 
-- artist: "Koba LaD, PLK, SCH, Gazo, Soso Maness, Kofs, Guy2bezbar, Naps"
-  song: "Le Classico Organisé"
-  album: "Single collectif"
-  year: 2021
+- artist: "Heuss L'Enfoiré"
+  song: "Moulaga"
+  album: "Single"
+  year: 2019
   certification: platine
   category: rap-fr
 
-- artist: "Soprano"
-  song: "Titre feat. Jul, Alonzo & SCH"
-  album: "Album Soprano"
-  year: 2020
-  category: rap-fr
+# ─── 2020 ────────────────────────────────────────────────────────────────────
 
 - artist: "Soolking"
   song: "CNLZ"
+  feat_with: "Kliff"
   album: "Vintage"
   year: 2020
   category: rap-fr
 
-- artist: "Naps"
-  song: "Feat avec Jul"
-  album: "Les mains faites pour l'or"
+- artist: "Maes"
+  song: "Dybala"
+  album: "Les Derniers Salopards"
+  year: 2020
+  certification: diamant
+  category: rap-fr
+
+- artist: "Lacrim"
+  song: "Eric Cantona"
+  album: "R.I.P.R.O. Volume IV"
+  year: 2020
+  certification: or
+  category: rap-fr
+
+- artist: "Kalash Criminel"
+  song: "Dans la zone"
+  album: "Sélection naturelle"
+  year: 2020
+  category: rap-fr
+
+- artist: "13 Organisé"
+  song: "Bande organisée"
+  feat_with: "SCH, Kofs, Naps, Soso Maness, Elams, Solda, Houari"
+  album: "13 Organisé"
+  year: 2020
+  certification: diamant
+  note: "Record historique — quadruple Diamant"
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "L'étoile sur le maillot"
+  feat_with: "L'Algérino, Alonzo, SCH, Stone Black, Le Rat Luciano, As, Veazy"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "Combien"
+  feat_with: "Many, Solda, Moubarak, Soprano, Elams, Soso Maness, Veazy, Jhonson"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "Partout c'est la même"
+  feat_with: "Saf, As, Elams, Fahar, Friz, Vincenzo, Drime"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "War Zone"
+  feat_with: "Thabiti, Naps, Alonzo, Houari, As, Zbig, AM La Scampia"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "Heat"
+  feat_with: "Keny Arkana, Graya, 100 Blaze, Sauzer, Elams, Sat L'Artificier, Banguiz"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "Miami Vice"
+  feat_with: "Thabiti, Sysa, Drime, Kamikaz, Zbig, Moubarak"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "C'est maintenant"
+  feat_with: "Sat L'Artificier, Alonzo, Kofs, Naps, SCH, Kamikaz, L'Algérino"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "13 balles"
+  feat_with: "Kofs, Moh, 100 Blaze, Naps, Dadinho, A-Deal, Zak & Diego"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "La nuit"
+  feat_with: "Tonyno, Soso Maness, Kara, Djazz, Bylk, Fahar, Kamikaz, Djiha"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "Tout a changé"
+  feat_with: "Le Rat Luciano, Soprano, L'Algérino, Sysa, Solda, Menzo, Stone Black"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+- artist: "13 Organisé"
+  song: "Ma gadji"
+  feat_with: "Kofs, Oussagaza, Don Choa, Saf, Soso Maness, 2Bang, Youzi"
+  album: "13 Organisé"
+  year: 2020
+  category: marseille
+
+# ─── 2021 ────────────────────────────────────────────────────────────────────
+
+- artist: "Alonzo"
+  song: "La Seleçao"
+  feat_with: "Naps"
+  album: "Capo Dei Capi Vol. II & III"
+  year: 2021
+  certification: platine
+  category: marseille
+
+- artist: "SCH"
+  song: "Mode Akimbo"
+  album: "JVLIVS II"
+  year: 2021
+  note: "Piste 17"
+  category: marseille
+
+- artist: "Soprano"
+  song: "Planète Mars 2021"
+  feat_with: "SCH & Alonzo"
+  album: "Chasseur d'étoiles"
+  year: 2021
+  category: rap-fr
+
+- artist: "Classico Organisé"
+  song: "Les galactiques"
+  feat_with: "Rohff, Kaaris, GIMS, Alonzo, Naps, Soso Maness"
+  album: "Le Classico Organisé"
+  year: 2021
+  category: rap-fr
+
+- artist: "Classico Organisé"
+  song: "Loi de la calle"
+  feat_with: "Lacrim, Alonzo, Mister You, Niro, Kofs, Le Rat Luciano, DA Uzi"
+  album: "Le Classico Organisé"
+  year: 2021
+  category: rap-fr
+
+- artist: "Soso Maness"
+  song: "Puta Madre"
+  album: "Avec le temps"
   year: 2021
   category: marseille
 
-- artist: "Tiakola"
-  song: "Miné sur Paname"
-  album: "—"
-  year: 2023
-  note: "Jul apparaît en tant qu'invité sur le son"
-  category: rap-fr
+# ─── 2023 ────────────────────────────────────────────────────────────────────
 
-- artist: "Ghetto Phénomène"
-  song: "Titres divers"
-  album: "Débuts (2012-2013)"
-  year: 2013
-  note: "Avant sa carrière solo"
+- artist: "Kofs"
+  song: "Le fameux"
+  album: "Matrixé"
+  year: 2023
+  note: "Piste 7"
+  category: marseille
+
+- artist: "Naps"
+  song: "Vue sur la Mer"
+  album: "Single"
+  year: 2023
+  category: marseille
+
+- artist: "Naps"
+  song: "Dans les Tropiques"
+  album: "Single"
+  year: 2023
+  category: marseille
+
+- artist: "Morad"
+  song: "Se Grita"
+  album: "Reinsertado"
+  year: 2023
+  category: international
+
+# ─── 2024 ────────────────────────────────────────────────────────────────────
+
+- artist: "13 Organisé"
+  song: "Bande organisée 2"
+  feat_with: "SCH, Kofs, Alonzo, Naps, Soso Maness, Elams, Solda, Houari"
+  album: "13 Organisé 2"
+  year: 2024
+  certification: platine
+  note: "9M+ vues en 2 semaines"
+  category: marseille
+
+- artist: "Houari"
+  song: "Vanillée"
+  album: "C'est de la Cali"
+  year: 2024
+  category: marseille
+
+# ─── 2025 ────────────────────────────────────────────────────────────────────
+
+- artist: "Houari"
+  song: "Tana"
+  album: "Insomnia"
+  year: 2025
   category: marseille
