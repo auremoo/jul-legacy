@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main, master, claude/jul-fan-website-2H1yK]
+  schedule:
+    - cron: '0 6 * * *'  # Rebuild quotidien à 6h UTC — met à jour statut albums auto
   workflow_dispatch:
 
 permissions:
