@@ -8,9 +8,27 @@
   date: "2014-02-24"
   certification: platine
   status: sorti
-  tracks_count: 16
+  tracks_count: 17
   label: "Liga One Industry"
   slug: dans-ma-paranoia
+  tracklist:
+    - { num: 1,  title: "Winners" }
+    - { num: 2,  title: "Malade", feat: "Kalif Hardcore" }
+    - { num: 3,  title: "Dans mon dél" }
+    - { num: 4,  title: "Grillé" }
+    - { num: 5,  title: "J'oublie tout" }
+    - { num: 6,  title: "Au quartier" }
+    - { num: 7,  title: "Jeune de cité", feat: "Soso Maness" }
+    - { num: 8,  title: "Sort le cross volé" }
+    - { num: 9,  title: "N'importe quoi" }
+    - { num: 10, title: "Dans ma paranoïa" }
+    - { num: 11, title: "Tu la love" }
+    - { num: 12, title: "T'es pas le seul", feat: "Kamikaz" }
+    - { num: 13, title: "C'est trop" }
+    - { num: 14, title: "Audi volée", feat: "Kalif Hardcore" }
+    - { num: 15, title: "Tout seul" }
+    - { num: 16, title: "Le sang" }
+    - { num: 17, title: "Mon son vient d'ailleurs" }
 
 - id: lacrizeomic
   title: "Lacrizeomic"
@@ -20,6 +38,25 @@
   status: sorti
   tracks_count: 18
   slug: lacrizeomic
+  tracklist:
+    - { num: 1,  title: "Anti BDH" }
+    - { num: 2,  title: "Ça veut ton cash" }
+    - { num: 3,  title: "Briganté" }
+    - { num: 4,  title: "Je profite" }
+    - { num: 5,  title: "Loin", feat: "GP" }
+    - { num: 6,  title: "L'histoire" }
+    - { num: 7,  title: "N'imite pas" }
+    - { num: 8,  title: "On survit", feat: "Houari" }
+    - { num: 9,  title: "Posé à la place 2", feat: "Saiah" }
+    - { num: 10, title: "Pour un rien" }
+    - { num: 11, title: "Regardes pas de travers" }
+    - { num: 12, title: "Ça me dégoûte" }
+    - { num: 13, title: "Sens interdit" }
+    - { num: 14, title: "T'as coulé" }
+    - { num: 15, title: "Terter", feat: "Font-Vert" }
+    - { num: 16, title: "Au top", feat: "Kalif Hardcore" }
+    - { num: 17, title: "On squatte le béton", feat: "Kamikaz" }
+    - { num: 18, title: "Neymar", feat: "Soso Maness" }
 
 - id: je-trouve-pas-le-sommeil
   title: "Je trouve pas le sommeil"
@@ -27,8 +64,29 @@
   date: "2014-12-08"
   certification: double-platine
   status: sorti
-  tracks_count: 18
+  tracks_count: 20
   slug: je-trouve-pas-le-sommeil
+  tracklist:
+    - { num: 1,  title: "Message aux Rageux" }
+    - { num: 2,  title: "J'm'évade" }
+    - { num: 3,  title: "Ma Life" }
+    - { num: 4,  title: "Arrête de parler" }
+    - { num: 5,  title: "Je trouve pas le sommeil" }
+    - { num: 6,  title: "Señora" }
+    - { num: 7,  title: "Le regard des gens", feat: "Cheb Khalass" }
+    - { num: 8,  title: "La Fusée" }
+    - { num: 9,  title: "Marseille – Paris", feat: "Mister You" }
+    - { num: 10, title: "Nique-le" }
+    - { num: 11, title: "Seul au monde" }
+    - { num: 12, title: "Dans l'game" }
+    - { num: 13, title: "Mets les en I", feat: "Le Rat Luciano" }
+    - { num: 14, title: "Qu'ils me laissent" }
+    - { num: 15, title: "Lacrizeomic" }
+    - { num: 16, title: "Poto où t'es", feat: "Simo" }
+    - { num: 17, title: "T'as le boule" }
+    - { num: 18, title: "Trop de vice" }
+    - { num: 19, title: "Pourquoi tu me fais le gros", feat: "Liga One" }
+    - { num: 20, title: "Vida Loca" }
 
 - id: je-tourne-en-rond
   title: "Je tourne en rond"
@@ -36,9 +94,30 @@
   date: "2015-06-01"
   certification: platine
   status: sorti
-  tracks_count: 16
+  tracks_count: 20
   label: "D'Or et de Platine"
   slug: je-tourne-en-rond
+  tracklist:
+    - { num: 1,  title: "Ça vient de là" }
+    - { num: 2,  title: "Dans ma cité" }
+    - { num: 3,  title: "Je tourne en rond" }
+    - { num: 4,  title: "Vis mon malheur" }
+    - { num: 5,  title: "Gros" }
+    - { num: 6,  title: "1er dans la bataille" }
+    - { num: 7,  title: "Je peux pas me les blairer" }
+    - { num: 8,  title: "Hors la loi" }
+    - { num: 9,  title: "Plus de respect" }
+    - { num: 10, title: "Mon rêve" }
+    - { num: 11, title: "Ça" }
+    - { num: 12, title: "Lady" }
+    - { num: 13, title: "Goodbye" }
+    - { num: 14, title: "C'est ça que je te reproche" }
+    - { num: 15, title: "Je suis comme un autre" }
+    - { num: 16, title: "Tout droit" }
+    - { num: 17, title: "J'ai fini seul" }
+    - { num: 18, title: "Terter" }
+    - { num: 19, title: "Ils sont jaloux", feat: "Friz, Kamikaz, Bilk, Houari, Veazy" }
+    - { num: 20, title: "Perdu" }
 
 - id: my-world
   title: "My World"
@@ -46,8 +125,30 @@
   date: "2015-12-01"
   certification: double-platine
   status: sorti
-  tracks_count: 17
+  tracks_count: 21
   slug: my-world
+  tracklist:
+    - { num: 1,  title: "Amnesia" }
+    - { num: 2,  title: "Dans la légende" }
+    - { num: 3,  title: "Encore des paroles", feat: "Julie Gonzalez" }
+    - { num: 4,  title: "Il me faut des billets" }
+    - { num: 5,  title: "Comme d'hab", feat: "Alonzo" }
+    - { num: 6,  title: "En Y" }
+    - { num: 7,  title: "Dans l'appart" }
+    - { num: 8,  title: "Pour les taulards" }
+    - { num: 9,  title: "Mamacita" }
+    - { num: 10, title: "Ghost Rider" }
+    - { num: 11, title: "Dans le futur" }
+    - { num: 12, title: "C'est réel" }
+    - { num: 13, title: "La gâchette", feat: "Houari" }
+    - { num: 14, title: "Lova" }
+    - { num: 15, title: "Mama" }
+    - { num: 16, title: "Ne m'en voulez pas" }
+    - { num: 17, title: "Wesh alors" }
+    - { num: 18, title: "Ils m'ignorent" }
+    - { num: 19, title: "Pour les vaillants" }
+    - { num: 20, title: "En place", feat: "A-Deal" }
+    - { num: 21, title: "Mercé", feat: "Benjamin Mendy & Didi" }
 
 - id: emotions
   title: "Émotions"
@@ -55,8 +156,29 @@
   date: "2016-06-01"
   certification: triple-platine
   status: sorti
-  tracks_count: 18
+  tracks_count: 20
   slug: emotions
+  tracklist:
+    - { num: 1,  title: "Je trace ma route" }
+    - { num: 2,  title: "Allez le sang" }
+    - { num: 3,  title: "Je pense à eux" }
+    - { num: 4,  title: "J'attends" }
+    - { num: 5,  title: "Rien à cirer" }
+    - { num: 6,  title: "Émotions" }
+    - { num: 7,  title: "Mon bijou" }
+    - { num: 8,  title: "Je picole" }
+    - { num: 9,  title: "Mon poto" }
+    - { num: 10, title: "La classe" }
+    - { num: 11, title: "Fusiller" }
+    - { num: 12, title: "Mon petit" }
+    - { num: 13, title: "Ciro" }
+    - { num: 14, title: "On est trop", feat: "Ghetto Phénomène" }
+    - { num: 15, title: "Vivre mes rêves" }
+    - { num: 16, title: "Toujours la dalle" }
+    - { num: 17, title: "C'est rien" }
+    - { num: 18, title: "Traître", feat: "Wanted" }
+    - { num: 19, title: "C'est pas beau" }
+    - { num: 20, title: "Où je vais" }
 
 - id: lovni
   title: "L'Ovni"
@@ -64,8 +186,32 @@
   date: "2016-12-01"
   certification: diamant
   status: sorti
-  tracks_count: 19
+  tracks_count: 23
   slug: lovni
+  tracklist:
+    - { num: 1,  title: "On m'appelle l'ovni" }
+    - { num: 2,  title: "C'est le son de la gratte" }
+    - { num: 3,  title: "C'est ça" }
+    - { num: 4,  title: "Je m'en fous de ta nana" }
+    - { num: 5,  title: "Qui a dit ?" }
+    - { num: 6,  title: "Je dis rien, je vois tout, j'entends" }
+    - { num: 7,  title: "E.T." }
+    - { num: 8,  title: "Je fais le sourd" }
+    - { num: 9,  title: "Elle et l'autre" }
+    - { num: 10, title: "Y'a pas de stress" }
+    - { num: 11, title: "J'ai dit…" }
+    - { num: 12, title: "Ah c'est comme ça !", feat: "Ghetto Phénomène & Axèle" }
+    - { num: 13, title: "Jusqu'ici tout va bien" }
+    - { num: 14, title: "J'ai fumé ma ganja" }
+    - { num: 15, title: "Je te voyais comme…", feat: "Moubarak" }
+    - { num: 16, title: "Je sais ce que je vaux" }
+    - { num: 17, title: "Peu m'importe" }
+    - { num: 18, title: "¿Qué Pasa?" }
+    - { num: 19, title: "¿Cómo Te Llamas?" }
+    - { num: 20, title: "Je suis pas fou" }
+    - { num: 21, title: "Carnalito" }
+    - { num: 22, title: "Mais qu'est-ce qu'on s'en bat les couilles !" }
+    - { num: 23, title: "Tchikita" }
 
 - id: je-ne-me-vois-pas-briller
   title: "Je ne me vois pas briller"
@@ -73,8 +219,33 @@
   date: "2017-06-01"
   certification: diamant
   status: sorti
-  tracks_count: 20
+  tracks_count: 24
   slug: je-ne-me-vois-pas-briller
+  tracklist:
+    - { num: 1,  title: "Qui sait" }
+    - { num: 2,  title: "Je ne me vois pas briller" }
+    - { num: 3,  title: "Saoule" }
+    - { num: 4,  title: "Va te faire foutre" }
+    - { num: 5,  title: "Beely" }
+    - { num: 6,  title: "C'est pas ma faute" }
+    - { num: 7,  title: "Full option", feat: "Le Rat Luciano" }
+    - { num: 8,  title: "Ça rêve" }
+    - { num: 9,  title: "Ma jolie" }
+    - { num: 10, title: "Je suis resté le même" }
+    - { num: 11, title: "Le 46 de Rossi" }
+    - { num: 12, title: "À la cité" }
+    - { num: 13, title: "Monde violent" }
+    - { num: 14, title: "Survêt du Milan", feat: "Moubarak" }
+    - { num: 15, title: "Mon tiek ti amo", feat: "Norey FZ" }
+    - { num: 16, title: "Y'a plus de doute" }
+    - { num: 17, title: "Comment te dire" }
+    - { num: 18, title: "Cagoule", feat: "Kalash Criminel" }
+    - { num: 19, title: "Vendetta" }
+    - { num: 20, title: "La zone", feat: "Hors Ligne" }
+    - { num: 21, title: "Je ne joue pas les thugs" }
+    - { num: 22, title: "Flècheur fou" }
+    - { num: 23, title: "Quand on est pas là", feat: "Ger" }
+    - { num: 24, title: "Tutto va bene" }
 
 - id: la-tete-dans-les-nuages
   title: "La Tête dans les nuages"
@@ -82,8 +253,28 @@
   date: "2017-12-01"
   certification: diamant
   status: sorti
-  tracks_count: 20
+  tracks_count: 19
   slug: la-tete-dans-les-nuages
+  tracklist:
+    - { num: 1,  title: "Amigo" }
+    - { num: 2,  title: "Henrico" }
+    - { num: 3,  title: "Délicieuse" }
+    - { num: 4,  title: "Tu mentiras" }
+    - { num: 5,  title: "La tête dans les nuages" }
+    - { num: 6,  title: "Ou lalala" }
+    - { num: 7,  title: "Je vais t'oublier", feat: "Marwa Loud" }
+    - { num: 8,  title: "Je traîne seul" }
+    - { num: 9,  title: "Comme les gens d'ici" }
+    - { num: 10, title: "Fratellu" }
+    - { num: 11, title: "Madame", feat: "Le Rat Luciano" }
+    - { num: 12, title: "Le jaloux" }
+    - { num: 13, title: "Je ne vous oublie pas" }
+    - { num: 14, title: "Je ne veux pas partir" }
+    - { num: 15, title: "Samantha", feat: "Hors Ligne, Ger, Moubarak & Norey FZ" }
+    - { num: 16, title: "Facilement" }
+    - { num: 17, title: "Comme un fou" }
+    - { num: 18, title: "Mauvaise journée" }
+    - { num: 19, title: "Temps d'avant" }
 
 - id: inspi-dailleurs
   title: "Inspi d'ailleurs"
@@ -91,8 +282,31 @@
   date: "2018-06-01"
   certification: double-platine
   status: sorti
-  tracks_count: 19
+  tracks_count: 22
   slug: inspi-dailleurs
+  tracklist:
+    - { num: 1,  title: "Inspi d'ailleurs" }
+    - { num: 2,  title: "Bientôt je me taille" }
+    - { num: 3,  title: "Je pilote" }
+    - { num: 4,  title: "Fais-moi la passe" }
+    - { num: 5,  title: "Quelqu'un d'autre t'aimera", feat: "Alonzo" }
+    - { num: 6,  title: "Bwo" }
+    - { num: 7,  title: "Mélancolie du soir" }
+    - { num: 8,  title: "Je fais mes bails" }
+    - { num: 9,  title: "Tkt", feat: "Soprano" }
+    - { num: 10, title: "Coup de genou" }
+    - { num: 11, title: "Toto et Ninetta" }
+    - { num: 12, title: "Petit frère" }
+    - { num: 13, title: "Pim Pom", feat: "Shay" }
+    - { num: 14, title: "Au pire" }
+    - { num: 15, title: "Tout grailler", feat: "Sofiane" }
+    - { num: 16, title: "Pekenio" }
+    - { num: 17, title: "Les temps changent comme les gens" }
+    - { num: 18, title: "Mauvaises tentations", feat: "Moubarak" }
+    - { num: 19, title: "Dans sa bulle" }
+    - { num: 20, title: "Loca" }
+    - { num: 21, title: "La rue dans le Cayenne", feat: "Aymen Serhani" }
+    - { num: 22, title: "En attendant" }
 
 - id: la-zone-en-personne
   title: "La Zone en personne"
@@ -100,8 +314,50 @@
   date: "2018-12-01"
   certification: double-platine
   status: sorti
-  tracks_count: 20
+  tracks_count: 40
+  note: "Double album"
   slug: la-zone-en-personne
+  tracklist:
+    - { num: 1,  title: "La zone en personne" }
+    - { num: 2,  title: "Poussette" }
+    - { num: 3,  title: "Je vais tout casser" }
+    - { num: 4,  title: "La vie est faite comme ça" }
+    - { num: 5,  title: "T'as tout gagné" }
+    - { num: 6,  title: "Hallelujah" }
+    - { num: 7,  title: "Oh fou", feat: "Alonzo" }
+    - { num: 8,  title: "Pablito" }
+    - { num: 9,  title: "Ma che beauté" }
+    - { num: 10, title: "Come vai", feat: "Soolking" }
+    - { num: 11, title: "Chiron" }
+    - { num: 12, title: "Le deum" }
+    - { num: 13, title: "Sur pépé" }
+    - { num: 14, title: "Si tu savais", feat: "Landy" }
+    - { num: 15, title: "Sangoten" }
+    - { num: 16, title: "VNTM", feat: "Gambino, ZackMess, Metah, Oscar, Miklo, Moubarak & TK" }
+    - { num: 17, title: "Qu'est-ce que je t'ai fait ?", feat: "Djena Della" }
+    - { num: 18, title: "Amore" }
+    - { num: 19, title: "Je vais danser" }
+    - { num: 20, title: "Dors petit dors" }
+    - { num: 21, title: "Asalto" }
+    - { num: 22, title: "Je suis pas solo" }
+    - { num: 23, title: "Ma chérie", feat: "Maître Gims" }
+    - { num: 24, title: "Avant GTR" }
+    - { num: 25, title: "Qu'est-ce que tu me dis ?" }
+    - { num: 26, title: "On m'a tourné le dos", feat: "Loredana" }
+    - { num: 27, title: "Tu vois je veux dire" }
+    - { num: 28, title: "Ya foye" }
+    - { num: 29, title: "Et je deviens fou", feat: "Ninho" }
+    - { num: 30, title: "J'ai la mort" }
+    - { num: 31, title: "Dans tes yeux" }
+    - { num: 32, title: "J'ai des images" }
+    - { num: 33, title: "Je réponds plus" }
+    - { num: 34, title: "Chez moi" }
+    - { num: 35, title: "Avec la chapka" }
+    - { num: 36, title: "Le jeune" }
+    - { num: 37, title: "Je dirais plus je t'aime" }
+    - { num: 38, title: "Je t'aimais bien" }
+    - { num: 39, title: "Pour un violet" }
+    - { num: 40, title: "En quarantaine" }
 
 - id: rien-100-rien
   title: "Rien 100 Rien"
@@ -109,8 +365,32 @@
   date: "2019-06-01"
   certification: double-platine
   status: sorti
-  tracks_count: 19
+  tracks_count: 23
   slug: rien-100-rien
+  tracklist:
+    - { num: 1,  title: "La bandite" }
+    - { num: 2,  title: "JCVD" }
+    - { num: 3,  title: "Salvatrucha" }
+    - { num: 4,  title: "Tokyo" }
+    - { num: 5,  title: "Sous la lune" }
+    - { num: 6,  title: "Tel me", feat: "Ninho" }
+    - { num: 7,  title: "BDG" }
+    - { num: 8,  title: "Pas de love", feat: "TK" }
+    - { num: 9,  title: "Je parle pas chinois" }
+    - { num: 10, title: "Hey" }
+    - { num: 11, title: "GTA", feat: "Heuss L'Enfoiré" }
+    - { num: 12, title: "Professor" }
+    - { num: 13, title: "Mademoiselle" }
+    - { num: 14, title: "Faux poto" }
+    - { num: 15, title: "Sakakini" }
+    - { num: 16, title: "Bagarre" }
+    - { num: 17, title: "J'suis loin", feat: "Vald" }
+    - { num: 18, title: "Fatigué", feat: "Moubarak" }
+    - { num: 19, title: "Papa maman" }
+    - { num: 20, title: "Ratata", feat: "Mula B" }
+    - { num: 21, title: "La folie du ter ter", feat: "La Famax" }
+    - { num: 22, title: "Je fais mon tour" }
+    - { num: 23, title: "La Machine" }
 
 - id: cest-pas-des-lol
   title: "C'est pas des LOL"
@@ -118,8 +398,48 @@
   date: "2019-12-01"
   certification: diamant
   status: sorti
-  tracks_count: 21
+  tracks_count: 38
+  note: "Double album"
   slug: cest-pas-des-lol
+  tracklist:
+    - { num: 1,  title: "6.35" }
+    - { num: 2,  title: "Ibiza", feat: "Jimmy Sax" }
+    - { num: 3,  title: "Mexico" }
+    - { num: 4,  title: "Mon bébé d'amour" }
+    - { num: 5,  title: "Oh maman" }
+    - { num: 6,  title: "Cremosso" }
+    - { num: 7,  title: "Faut que je me tire de là" }
+    - { num: 8,  title: "Dans le club" }
+    - { num: 9,  title: "Bouge-moi de là", feat: "A-Deal, Gambi, Gips, Houari, Kamikaz, Le.K, Miklo, Moubarak & TK" }
+    - { num: 10, title: "Ça tombe du ciel" }
+    - { num: 11, title: "Santchelita" }
+    - { num: 12, title: "Tant pis pour toi" }
+    - { num: 13, title: "Pow pow" }
+    - { num: 14, title: "Y'a la police", feat: "Gips, Moubarak & TK" }
+    - { num: 15, title: "Fréquenter" }
+    - { num: 16, title: "Un casse" }
+    - { num: 17, title: "Ça mange la barre" }
+    - { num: 18, title: "C'est pas des LOL" }
+    - { num: 19, title: "Cassage de nuques, Pt. 3" }
+    - { num: 20, title: "Collé au mic" }
+    - { num: 21, title: "Au péage" }
+    - { num: 22, title: "La doudoune" }
+    - { num: 23, title: "Beuh magique" }
+    - { num: 24, title: "Flu" }
+    - { num: 25, title: "Crocodile" }
+    - { num: 26, title: "J'm'en bats les couilles" }
+    - { num: 27, title: "Nia" }
+    - { num: 28, title: "Ça a tiré" }
+    - { num: 29, title: "Je mets le way", feat: "Vladimir Cauchemar" }
+    - { num: 30, title: "T'es un gonflé" }
+    - { num: 31, title: "Le combat" }
+    - { num: 32, title: "J'ai passé l'âge" }
+    - { num: 33, title: "Emmenez-moi" }
+    - { num: 34, title: "Cartel de platine", feat: "Gips, TK & Moubarak" }
+    - { num: 35, title: "Tout seul", feat: "Moubarak" }
+    - { num: 36, title: "Kish kush kash", feat: "TK" }
+    - { num: 37, title: "Touloutoutou" }
+    - { num: 38, title: "Ibiza (Edit)", feat: "Jimmy Sax" }
 
 - id: la-machine
   title: "La Machine"
@@ -127,17 +447,68 @@
   date: "2020-06-01"
   certification: double-platine
   status: sorti
-  tracks_count: 20
+  tracks_count: 30
+  note: "Double album"
   slug: la-machine
+  tracklist:
+    - { num: 1,  title: "Folie" }
+    - { num: 2,  title: "Italia" }
+    - { num: 3,  title: "Ça sent bon" }
+    - { num: 4,  title: "Pour la street" }
+    - { num: 5,  title: "Rentrez pas dans ma tête", feat: "Nessbeal" }
+    - { num: 6,  title: "Eh ouais fils" }
+    - { num: 7,  title: "J'suis pas parti" }
+    - { num: 8,  title: "Toi-même tu sais", feat: "Doria" }
+    - { num: 9,  title: "Je suis pas ton pote" }
+    - { num: 10, title: "Bravo" }
+    - { num: 11, title: "Veste Quechua" }
+    - { num: 12, title: "Toute la nuit", feat: "Jimmy Sax" }
+    - { num: 13, title: "Laisse-moi là seul", feat: "Moubarak" }
+    - { num: 14, title: "Grande" }
+    - { num: 15, title: "Fait d'or" }
+    - { num: 16, title: "Sousou" }
+    - { num: 17, title: "C'est un bonbon" }
+    - { num: 18, title: "Confinement" }
+    - { num: 19, title: "Toute la ligne" }
+    - { num: 20, title: "Que ça dure", feat: "Bigflo & Oli" }
+    - { num: 21, title: "Davai davai" }
+    - { num: 22, title: "Vatos Locos", feat: "Morad" }
+    - { num: 23, title: "J'ai tout essayé" }
+    - { num: 24, title: "En cas de…" }
+    - { num: 25, title: "Fais tes comptes", feat: "Ghetto Phénomène, Kamikaz & Moubarak" }
+    - { num: 26, title: "Ce soir" }
+    - { num: 27, title: "Pas méchant" }
+    - { num: 28, title: "Pourquoi tu mens ?" }
+    - { num: 29, title: "Zubrowska" }
+    - { num: 30, title: "Macbook" }
 
 - id: loin-du-monde
   title: "Loin du monde"
   year: 2020
-  date: "2020-12-01"
+  date: "2020-12-18"
   certification: double-platine
   status: sorti
-  tracks_count: 19
+  tracks_count: 18
   slug: loin-du-monde
+  tracklist:
+    - { num: 1,  title: "La pharmacie" }
+    - { num: 2,  title: "Brouncha" }
+    - { num: 3,  title: "Mother F***", feat: "SCH" }
+    - { num: 4,  title: "La Passat" }
+    - { num: 5,  title: "Un autre monde" }
+    - { num: 6,  title: "Sous terre" }
+    - { num: 7,  title: "Son ex" }
+    - { num: 8,  title: "Guytoune", feat: "Naps" }
+    - { num: 9,  title: "Comme un voyou", feat: "Le Rat Luciano" }
+    - { num: 10, title: "S.U.V" }
+    - { num: 11, title: "Dors on te piétine", feat: "Gazo" }
+    - { num: 12, title: "Hold-Up", feat: "Alonzo & L'Algérino" }
+    - { num: 13, title: "Guadalajara" }
+    - { num: 14, title: "Loin de tout", feat: "Wejdene" }
+    - { num: 15, title: "Je vais pas redonner" }
+    - { num: 16, title: "Les gens", feat: "Gips, Houari & Moubarak" }
+    - { num: 17, title: "Mauvais garçon" }
+    - { num: 18, title: "Feu", feat: "Poupie" }
 
 - id: demain-ca-ira
   title: "Demain ça ira"
@@ -145,17 +516,60 @@
   date: "2021-06-01"
   certification: double-platine
   status: sorti
-  tracks_count: 20
+  tracks_count: 18
   slug: demain-ca-ira
+  tracklist:
+    - { num: 1,  title: "Alors la zone" }
+    - { num: 2,  title: "Assassinat" }
+    - { num: 3,  title: "Le bouton" }
+    - { num: 4,  title: "Je hill au mic" }
+    - { num: 5,  title: "Pic et pic, alcool et drame" }
+    - { num: 6,  title: "Je n'ai pas que des potes" }
+    - { num: 7,  title: "Rosé Jetski Playa" }
+    - { num: 8,  title: "Tragique" }
+    - { num: 9,  title: "Transporteur" }
+    - { num: 10, title: "Tereza" }
+    - { num: 11, title: "Je m'endors mal luné", feat: "Nordo" }
+    - { num: 12, title: "Limitless" }
+    - { num: 13, title: "G-Shock" }
+    - { num: 14, title: "C'est la cité", feat: "Naps" }
+    - { num: 15, title: "Tchyco" }
+    - { num: 16, title: "Mental d'or et de platine" }
+    - { num: 17, title: "Cassage de nuques, Pt. 4" }
+    - { num: 18, title: "Finito" }
 
 - id: independance
   title: "Indépendance"
   year: 2021
-  date: "2021-12-01"
+  date: "2021-12-10"
   certification: double-platine
   status: sorti
-  tracks_count: 21
+  tracks_count: 23
   slug: independance
+  tracklist:
+    - { num: 1,  title: "Aghju capitu" }
+    - { num: 2,  title: "Le charbon c'est le casino" }
+    - { num: 3,  title: "Beuh à la framboise" }
+    - { num: 4,  title: "Toda la noche", feat: "Morad & Naps" }
+    - { num: 5,  title: "Love de moi" }
+    - { num: 6,  title: "Rallumer le toupew" }
+    - { num: 7,  title: "Que ça se mêle" }
+    - { num: 8,  title: "Flow mitraillette" }
+    - { num: 9,  title: "La miss" }
+    - { num: 10, title: "Que la vérité" }
+    - { num: 11, title: "La street", feat: "Morad" }
+    - { num: 12, title: "Je calcule personne" }
+    - { num: 13, title: "Cette fois" }
+    - { num: 14, title: "La sacem à Madonna" }
+    - { num: 15, title: "La frappe de Tanger", feat: "Gips, Houari & Moubarak" }
+    - { num: 16, title: "Maison Margiela" }
+    - { num: 17, title: "N'oublie pas tes métaux" }
+    - { num: 18, title: "Nine" }
+    - { num: 19, title: "Dans la zon" }
+    - { num: 20, title: "Boulevard des problèmes" }
+    - { num: 21, title: "Dans la cour" }
+    - { num: 22, title: "Chemin de Morgiou" }
+    - { num: 23, title: "Ma Casio" }
 
 - id: extraterrestre
   title: "Extraterrestre"
