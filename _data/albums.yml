@@ -894,3 +894,25 @@
   tracks_count: 21
   note: "26e album studio · 1 feat : Houari"
   slug: oubliez-moi
+  tracklist:
+    - { num: 1,  title: "Parasite" }
+    - { num: 2,  title: "Je pardonne tout" }
+    - { num: 3,  title: "Je t'aime" }
+    - { num: 4,  title: "Cantona" }
+    - { num: 5,  title: "C'est dur d'aimer" }
+    - { num: 6,  title: "Le monde est à moi" }
+    - { num: 7,  title: "À la vie, à la mort" }
+    - { num: 8,  title: "Tié un tigre" }
+    - { num: 9,  title: "1000 RR" }
+    - { num: 10, title: "Ne me déçois pas" }
+    - { num: 11, title: "Je les laisse croire" }
+    - { num: 12, title: "No se porque" }
+    - { num: 13, title: "Romanzo criminel" }
+    - { num: 14, title: "Marseillais" }
+    - { num: 15, title: "Paix à toi" }
+    - { num: 16, title: "La calle", feat: "Houari" }
+    - { num: 17, title: "J'ai pas d'associé" }
+    - { num: 18, title: "Coucher du soleil" }
+    - { num: 19, title: "Ils sont pas carré" }
+    - { num: 20, title: "Je sens pas" }
+    - { num: 21, title: "On parlera plus ensemble" }
