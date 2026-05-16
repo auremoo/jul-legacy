@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Discographie
-label: 27 albums · 2 compilations · +2 300 sons
+label: 27 albums studio · 6 albums gratuits · 2 compilations · +2 300 sons
 description: Tous les albums, tracklists, singles, featurings et sorties à venir de Jul.
 theme: dark
 nav_order: 3
@@ -15,8 +15,9 @@ permalink: /discographie/
     <!-- Filtres principaux -->
     <div class="filters" id="main-filters">
       <button class="filter-btn active" data-filter="albums">Albums studio</button>
+      <button class="filter-btn" data-filter="gratuits">Albums Gratuits</button>
       <button class="filter-btn" data-filter="compilations">Compilations</button>
-      <button class="filter-btn" data-filter="singles">Singles & Clips</button>
+      <button class="filter-btn" data-filter="singles">Singles & Featurings</button>
       <button class="filter-btn" data-filter="upcoming">À venir</button>
     </div>
 
@@ -135,6 +136,36 @@ permalink: /discographie/
             <p style="color:#6B6860;font-size:.875rem;text-align:center;padding:1rem">Tracklist complète à venir</p>
           </div>
           {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- ─── SECTION : Albums Gratuits ───────────────────────────── -->
+    <div id="section-gratuits" style="display:none">
+      <div style="background:rgba(46,109,180,.06);border:1px solid rgba(46,109,180,.2);border-radius:16px;padding:1.5rem 2rem;margin-bottom:2.5rem">
+        <p style="font-size:.875rem;color:#9E9B91;line-height:1.7;margin:0">
+          <span style="color:#2E6DB4;font-weight:600">Albums Gratuits</span> — Entre 2016 et 2020, Jul a offert 6 projets complets gratuitement à ses fans, hors tout circuit commercial. Ces albums ne sont pas comptabilisés dans les 27 albums studio officiels mais représentent +90 titres inédits.
+        </p>
+      </div>
+
+      <div class="grid-albums">
+        {% for ag in site.data.albums_gratuits %}
+        <div class="card-album" style="cursor:default">
+          <div class="card-album__cover-placeholder" style="font-size:.95rem;padding:1rem;text-align:center;word-break:break-word;background:linear-gradient(135deg,#0d1f33,#1a2d4a)">
+            {{ ag.title | upcase }}
+          </div>
+          <div class="card-album__body">
+            <p class="card-album__year">{{ ag.year }} · {{ ag.tracks_count }} titres</p>
+            <h3 class="card-album__title">{{ ag.title }}</h3>
+            <div class="card-album__footer" style="flex-direction:column;align-items:flex-start;gap:.4rem">
+              {% if ag.note %}<span style="font-size:.75rem;color:#9E9B91;font-style:italic">{{ ag.note }}</span>{% endif %}
+              {% if ag.feats_notables and ag.feats_notables != '~' %}
+                <span style="font-size:.7rem;color:#6B6860">feat. {{ ag.feats_notables }}</span>
+              {% endif %}
+              <span class="badge" style="background:rgba(46,109,180,.15);color:#2E6DB4;border:1px solid rgba(46,109,180,.3);margin-top:.25rem">Gratuit</span>
+            </div>
+          </div>
         </div>
         {% endfor %}
       </div>

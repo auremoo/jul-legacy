@@ -75,44 +75,6 @@
   type: feat_single
   note: "Extrait de l'album Chasseur d'étoiles de Soprano"
 
-# ─── Albums Gratuits (projets offerts gratuitement, hors albums commerciaux) ───
-
-- title: "Album Gratuit Vol. 1"
-  year: 2016
-  feat: ~
-  type: album_gratuit
-  note: "30 titres — avec Alonzo, Soprano, Moubarak"
-
-- title: "Album Gratuit Vol. 2"
-  year: 2016
-  feat: ~
-  type: album_gratuit
-  note: "16 titres — avec Ghetto Phénomène, Houari, Moubarak"
-
-- title: "Album Gratuit Vol. 3"
-  year: 2017
-  feat: ~
-  type: album_gratuit
-  note: "15 titres"
-
-- title: "Album Gratuit Vol. 4"
-  year: 2017
-  feat: ~
-  type: album_gratuit
-  note: "4 titres"
-
-- title: "Album Gratuit Vol. 5"
-  year: 2019
-  feat: ~
-  type: album_gratuit
-  note: "17 titres — avec Heuss L'Enfoiré"
-
-- title: "Planète Rap Gratuit"
-  year: 2020
-  feat: "Houari, Zbig, Bil-K, Kamikaz"
-  type: album_gratuit
-  note: "10 titres — sorti le 19 juin 2020 sur toutes les plateformes"
-
 # ─── Freestyles Planète Rap ──────────────────────────────────────────────────
 
 - title: "Freestyle Extraterrestre (Planète Rap)"

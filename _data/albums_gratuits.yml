@@ -1,0 +1,56 @@
+# Albums Gratuits de Jul — projets offerts gratuitement, hors circuit commercial
+# Distribués directement via les réseaux et plateformes de streaming
+
+- id: album-gratuit-vol-1
+  title: "Album Gratuit Vol. 1"
+  year: 2016
+  date: "2016-04-01"
+  slug: album-gratuit-vol-1
+  tracks_count: 30
+  note: "1 titre par jour en avril 2016"
+  feats_notables: "Alonzo, Soprano, Moubarak, Les Moustiques"
+
+- id: album-gratuit-vol-2
+  title: "Album Gratuit Vol. 2"
+  year: 2016
+  date: "2016-10-01"
+  slug: album-gratuit-vol-2
+  tracks_count: 16
+  note: "Automne 2016"
+  feats_notables: "Ghetto Phénomène, Houari, Moubarak"
+
+- id: album-gratuit-vol-3
+  title: "Album Gratuit Vol. 3"
+  year: 2017
+  date: "2017-03-01"
+  slug: album-gratuit-vol-3
+  tracks_count: 15
+  note: "Mars 2017"
+  feats_notables: "~"
+
+- id: album-gratuit-vol-4
+  title: "Album Gratuit Vol. 4"
+  year: 2017
+  date: "2017-09-01"
+  slug: album-gratuit-vol-4
+  tracks_count: 4
+  note: "Septembre 2017"
+  feats_notables: "~"
+
+- id: album-gratuit-vol-5
+  title: "Album Gratuit Vol. 5"
+  year: 2019
+  date: "2019-03-01"
+  slug: album-gratuit-vol-5
+  tracks_count: 17
+  note: "Mars 2019"
+  feats_notables: "Heuss L'Enfoiré"
+
+- id: planete-rap-gratuit
+  title: "Planète Rap Gratuit"
+  year: 2020
+  date: "2020-06-19"
+  slug: planete-rap-gratuit
+  tracks_count: 10
+  note: "Sorti le 19 juin 2020 sur toutes les plateformes"
+  feats_notables: "Houari, Zbig, Bil-K, Kamikaz"

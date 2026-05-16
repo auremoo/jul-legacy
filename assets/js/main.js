@@ -84,6 +84,7 @@ document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(
 const mainFilterBtns = document.querySelectorAll('#main-filters .filter-btn');
 const sections = {
   albums: document.getElementById('section-albums'),
+  gratuits: document.getElementById('section-gratuits'),
   compilations: document.getElementById('section-compilations'),
   singles: document.getElementById('section-singles'),
   upcoming: document.getElementById('section-upcoming'),
