@@ -894,25 +894,3 @@
   tracks_count: 21
   note: "26e album studio · 1 feat : Houari"
   slug: oubliez-moi
-  tracklist:
-    - { num: 1,  title: "Amnésia" }
-    - { num: 2,  title: "La street" }
-    - { num: 3,  title: "J'oublie tout" }
-    - { num: 4,  title: "La fusée" }
-    - { num: 5,  title: "Loin de tout" }
-    - { num: 6,  title: "La miss" }
-    - { num: 7,  title: "Wesh alors" }
-    - { num: 8,  title: "Limitless" }
-    - { num: 9,  title: "Parasite" }
-    - { num: 10, title: "La calle", feat: "Houari" }
-    - { num: 11, title: "Oubliez-moi" }
-    - { num: 12, title: "Le fantôme" }
-    - { num: 13, title: "Sans retour" }
-    - { num: 14, title: "Libre" }
-    - { num: 15, title: "La vérité" }
-    - { num: 16, title: "Sombre" }
-    - { num: 17, title: "Dans le vide" }
-    - { num: 18, title: "L'inconnu" }
-    - { num: 19, title: "Perdu" }
-    - { num: 20, title: "La chute" }
-    - { num: 21, title: "Renaissance" }
