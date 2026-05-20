@@ -1,0 +1,42 @@
+name: Sync discographie Spotify
+
+on:
+  schedule:
+    - cron: '50 5 * * *'   # 5h50 UTC — avant le rebuild quotidien de 6h
+  workflow_dispatch:         # déclenchement manuel possible
+
+permissions:
+  contents: write            # nécessaire pour committer le YAML mis à jour
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Sync depuis Spotify
+        env:
+          SPOTIFY_CLIENT_ID:     ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        run: python scripts/sync_spotify.py
+
+      - name: Commit si nouvel album détecté
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet && echo "Rien à committer." || (
+            git add _data/albums.yml _data/records.yml &&
+            git commit -m "chore(auto): nouvel album détecté via Spotify" &&
+            git push
+          )
