@@ -279,35 +279,26 @@ permalink: /discographie/
       </div>
       {% endfor %}
 
-      <!-- Concerts 2026 -->
+      <!-- Concerts — statut auto par date de build -->
       <div style="margin-top:3rem;background:#111;border:1px solid rgba(245,166,35,.2);border-radius:16px;padding:2rem">
         <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:#F5A623;text-transform:uppercase;letter-spacing:.04em;margin-bottom:1.5rem">🎤 Tournée 2026</h3>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem">
-
-          <div style="background:#1a1a1a;border-radius:12px;padding:1.25rem;border:1px solid rgba(255,255,255,.06);opacity:.6">
-            <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#9E9B91;margin-bottom:.25rem">15 mai 2026</p>
-            <p style="color:#F5F5F0;font-size:.9rem">Stade de France — Paris</p>
-            <span class="badge" style="margin-top:.5rem;background:rgba(255,255,255,.05);color:#6B6860;border:1px solid rgba(255,255,255,.08)">Terminé</span>
-          </div>
-
-          <div style="background:#1a1a1a;border-radius:12px;padding:1.25rem;border:1px solid rgba(255,255,255,.06);opacity:.6">
-            <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#9E9B91;margin-bottom:.25rem">16 mai 2026</p>
-            <p style="color:#F5F5F0;font-size:.9rem">Stade de France — Paris</p>
-            <span class="badge" style="margin-top:.5rem;background:rgba(255,255,255,.05);color:#6B6860;border:1px solid rgba(255,255,255,.08)">Terminé</span>
-          </div>
-
-          <div style="background:#1a1a1a;border-radius:12px;padding:1.25rem;border:1px solid rgba(245,166,35,.15)">
-            <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#F5A623;margin-bottom:.25rem">29 mai 2026</p>
-            <p style="color:#F5F5F0;font-size:.9rem">Orange Vélodrome — Marseille</p>
-            <span class="badge badge--upcoming" style="margin-top:.5rem">Sold-out</span>
-          </div>
-
-          <div style="background:#1a1a1a;border-radius:12px;padding:1.25rem;border:1px solid rgba(245,166,35,.15)">
-            <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#F5A623;margin-bottom:.25rem">30 mai 2026</p>
-            <p style="color:#F5F5F0;font-size:.9rem">Orange Vélodrome — Marseille</p>
-            <span class="badge badge--upcoming" style="margin-top:.5rem">Sold-out</span>
-          </div>
-
+          {% for concert in site.data.concerts %}
+            {% assign cdate = concert.date | date: '%Y-%m-%d' %}
+            {% if cdate <= today %}
+            <div style="background:#1a1a1a;border-radius:12px;padding:1.25rem;border:1px solid rgba(255,255,255,.06);opacity:.55">
+              <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#9E9B91;margin-bottom:.25rem">{{ concert.date | date: "%d %B %Y" }}</p>
+              <p style="color:#F5F5F0;font-size:.9rem">{{ concert.venue }} — {{ concert.city }}</p>
+              <span class="badge" style="margin-top:.5rem;background:rgba(255,255,255,.05);color:#6B6860;border:1px solid rgba(255,255,255,.08)">Terminé</span>
+            </div>
+            {% else %}
+            <div style="background:#1a1a1a;border-radius:12px;padding:1.25rem;border:1px solid rgba(245,166,35,.15)">
+              <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#F5A623;margin-bottom:.25rem">{{ concert.date | date: "%d %B %Y" }}</p>
+              <p style="color:#F5F5F0;font-size:.9rem">{{ concert.venue }} — {{ concert.city }}</p>
+              <span class="badge badge--upcoming" style="margin-top:.5rem">{{ concert.note }}</span>
+            </div>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>

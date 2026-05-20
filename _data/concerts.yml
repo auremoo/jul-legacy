@@ -1,0 +1,22 @@
+# Concerts de Jul — gestion automatique passé/à venir par date de build
+# status calculé automatiquement via site.time dans les templates
+
+- date: "2026-05-15"
+  venue: "Stade de France"
+  city: "Paris"
+  note: "Sold-out"
+
+- date: "2026-05-16"
+  venue: "Stade de France"
+  city: "Paris"
+  note: "Sold-out"
+
+- date: "2026-05-29"
+  venue: "Orange Vélodrome"
+  city: "Marseille"
+  note: "Sold-out"
+
+- date: "2026-05-30"
+  venue: "Orange Vélodrome"
+  city: "Marseille"
+  note: "Sold-out"
