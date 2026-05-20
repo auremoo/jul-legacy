@@ -52,7 +52,7 @@ def spotify_get(token, url, params=None):
 def get_studio_albums(token):
     """Récupère tous les albums studio de Jul (Jul en artiste principal)."""
     albums, url = [], f'https://api.spotify.com/v1/artists/{ARTIST_ID}/albums'
-    params = {'include_groups': 'album', 'limit': 20}
+    params = {'include_groups': 'album'}
     while url:
         data = spotify_get(token, url, params)
         for a in data['items']:
@@ -66,7 +66,7 @@ def get_studio_albums(token):
 
 def get_tracks(token, album_id):
     tracks, url = [], f'https://api.spotify.com/v1/albums/{album_id}/tracks'
-    params = {'limit': 20}
+    params = {}
     while url:
         data = spotify_get(token, url, params)
         tracks.extend(data['items'])
