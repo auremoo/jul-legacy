@@ -41,6 +41,8 @@ def spotify_get(token, url, params=None):
         params=params or {},
         timeout=15,
     )
+    if not resp.ok:
+        print(f'   ⚠️  HTTP {resp.status_code}: {resp.text[:300]}')
     resp.raise_for_status()
     return resp.json()
 
@@ -50,7 +52,7 @@ def spotify_get(token, url, params=None):
 def get_studio_albums(token):
     """Récupère tous les albums studio de Jul (Jul en artiste principal)."""
     albums, url = [], f'https://api.spotify.com/v1/artists/{ARTIST_ID}/albums'
-    params = {'include_groups': 'album', 'market': 'FR', 'limit': 50}
+    params = {'include_groups': 'album', 'limit': 50}
     while url:
         data = spotify_get(token, url, params)
         for a in data['items']:
@@ -64,7 +66,7 @@ def get_studio_albums(token):
 
 def get_tracks(token, album_id):
     tracks, url = [], f'https://api.spotify.com/v1/albums/{album_id}/tracks'
-    params = {'limit': 50, 'market': 'FR'}
+    params = {'limit': 50}
     while url:
         data = spotify_get(token, url, params)
         tracks.extend(data['items'])
