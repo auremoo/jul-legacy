@@ -9,12 +9,11 @@ stats:
     value: 2300
     display: "+2 300"
     icon: "ph-music-note"
-  - label: "Albums studio"
-    value: 27
-    display: "27"
+  - label: "Albums 33
+    display: "33"
     icon: "ph-disc"
   - label: "Années #1 Spotify FR"
-    value: 5
+    value: 33
     display: "5"
     icon: "ph-spotify-logo"
   - label: "Certifications platine"

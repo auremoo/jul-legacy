@@ -916,3 +916,225 @@
     - { num: 19, title: "Ils sont pas carré" }
     - { num: 20, title: "Je sens pas" }
     - { num: 21, title: "On parlera plus ensemble" }
+
+- id: jul
+  title: "Jul"
+  year: 2015
+  date: "2015-05-19"
+  certification: ~
+  status: sorti
+  tracks_count: 15
+  slug: jul
+  tracklist:
+    - { num: 1, title: "J'ai pas que ça à faire" }
+    - { num: 2, title: "Frangin" }
+    - { num: 3, title: "Dur dur" }
+    - { num: 4, title: "Là où la vie me mène" }
+    - { num: 5, title: "A bout de nerfs" }
+    - { num: 6, title: "Oubliez-moi" }
+    - { num: 7, title: "On s'en bat les...", feat: "Houari" }
+    - { num: 8, title: "Je vise le sommet" }
+    - { num: 9, title: "Phénomène du ghetto", feat: "Ghetto Phénomène" }
+    - { num: 10, title: "Je t'avais dit de l'oublier" }
+    - { num: 11, title: "Le temps passe" }
+    - { num: 12, title: "Je me jette à l'eau" }
+    - { num: 13, title: "Respecte" }
+    - { num: 14, title: "Jack Miel" }
+    - { num: 15, title: "On veut le million", feat: "Kamikaz" }
+
+- id: my-world-edition-collector
+  title: "My World (Edition collector)"
+  year: 2016
+  date: "2016-03-04"
+  certification: ~
+  status: sorti
+  tracks_count: 29
+  slug: my-world-edition-collector
+  tracklist:
+    - { num: 1, title: "Coucou" }
+    - { num: 2, title: "Ils m'ignorent" }
+    - { num: 3, title: "Mama" }
+    - { num: 4, title: "Dans le futur" }
+    - { num: 5, title: "My World" }
+    - { num: 6, title: "Encore des paroles", feat: "Julie Gonzalez" }
+    - { num: 7, title: "Ne m'en voulez pas" }
+    - { num: 8, title: "Lova" }
+    - { num: 9, title: "Amnésia" }
+    - { num: 10, title: "Wesh alors" }
+    - { num: 11, title: "Ghost Rider" }
+    - { num: 12, title: "Mamasita" }
+    - { num: 13, title: "Elle te balade" }
+    - { num: 14, title: "Il me faut des billets" }
+    - { num: 15, title: "Dans l'appart" }
+    - { num: 16, title: "C’est chaud" }
+    - { num: 17, title: "Dans la légende" }
+    - { num: 18, title: "Pour les taulards" }
+    - { num: 19, title: "Du jour au lendemain" }
+    - { num: 20, title: "En Y" }
+    - { num: 21, title: "Comme d'hab", feat: "Alonzo" }
+    - { num: 22, title: "En place", feat: "A-Deal" }
+    - { num: 23, title: "Le patron" }
+    - { num: 24, title: "La gâchette", feat: "Houari" }
+    - { num: 25, title: "Mercé", feat: "Benjamin Mendy, Mehdi" }
+    - { num: 26, title: "C'est réel" }
+    - { num: 27, title: "Pour les vaillants" }
+    - { num: 28, title: "En Y (Version instrumentale)" }
+    - { num: 29, title: "Wesh Alors (Version instrumentale)" }
+
+- id: rien-100-rien-reedition
+  title: "Rien 100 Rien (Réédition)"
+  year: 2019
+  date: "2019-10-04"
+  certification: ~
+  status: sorti
+  tracks_count: 32
+  slug: rien-100-rien-reedition
+  tracklist:
+    - { num: 1, title: "La bandite" }
+    - { num: 2, title: "JCVD" }
+    - { num: 3, title: "Salvatrucha" }
+    - { num: 4, title: "Tokyo" }
+    - { num: 5, title: "Sous la lune" }
+    - { num: 6, title: "Tel Me", feat: "Ninho" }
+    - { num: 7, title: "BDG" }
+    - { num: 8, title: "Pas de love", feat: "TK" }
+    - { num: 9, title: "Je parle pas chinois" }
+    - { num: 10, title: "Hey" }
+    - { num: 11, title: "GTA", feat: "Heuss L'enfoiré" }
+    - { num: 12, title: "Professor" }
+    - { num: 13, title: "Mademoiselle" }
+    - { num: 14, title: "Faux poto" }
+    - { num: 15, title: "Sakakini" }
+    - { num: 16, title: "Bagarre" }
+    - { num: 17, title: "J'suis loin", feat: "Vald" }
+    - { num: 18, title: "Fatigué", feat: "Moubarak" }
+    - { num: 19, title: "Papa Maman" }
+    - { num: 20, title: "Ratata", feat: "Mula B" }
+    - { num: 21, title: "La folie du ter ter", feat: "La Famax" }
+    - { num: 22, title: "Je fais mon tour" }
+    - { num: 23, title: "La machine" }
+    - { num: 24, title: "Le loup" }
+    - { num: 25, title: "Rien100Rien - Instru concours" }
+    - { num: 26, title: "Africa Twin" }
+    - { num: 27, title: "C'est pas des LOL" }
+    - { num: 28, title: "J'ai tout donné" }
+    - { num: 29, title: "Like Ya", feat: "Nyanda" }
+    - { num: 30, title: "T'as tout perdu" }
+    - { num: 31, title: "Quoi que je fasse" }
+    - { num: 32, title: "Bruce Lee" }
+
+- id: live-au-velodrome
+  title: "Live au Vélodrome"
+  year: 2022
+  date: "2022-06-02"
+  certification: ~
+  status: sorti
+  tracks_count: 36
+  slug: live-au-velodrome
+  tracklist:
+    - { num: 1, title: "Intro - Live au Vélodrome, Marseille" }
+    - { num: 2, title: "En Y - Live au Vélodrome, Marseille" }
+    - { num: 3, title: "JCVD - Live au Vélodrome, Marseille" }
+    - { num: 4, title: "Wesh alors - Live au Vélodrome, Marseille" }
+    - { num: 5, title: "Ibiza - Live au Vélodrome, Marseille", feat: "Jimmy Sax" }
+    - { num: 6, title: "Bwo - Live au Vélodrome, Marseille" }
+    - { num: 7, title: "Ma jolie - Live au Vélodrome, Marseille" }
+    - { num: 8, title: "La classe - Live au Vélodrome, Marseille" }
+    - { num: 9, title: "C'est pas des LOL - Live au Vélodrome, Marseille", feat: "Jimmy Sax" }
+    - { num: 10, title: "Ma Casio - Live au Vélodrome, Marseille" }
+    - { num: 11, title: "Mon bijou - Live au Vélodrome, Marseille" }
+    - { num: 12, title: "La miss - Live au Vélodrome, Marseille" }
+    - { num: 13, title: "Sous la lune - Live au Vélodrome, Marseille" }
+    - { num: 14, title: "Comme les gens d'ici - Live au Vélodrome, Marseille" }
+    - { num: 15, title: "Je suis pas fou - Live au Vélodrome, Marseille" }
+    - { num: 16, title: "Mama - Live au Vélodrome, Marseille" }
+    - { num: 17, title: "Superstar - Live au Vélodrome, Marseille" }
+    - { num: 18, title: "Jeu avec le public - Live au Vélodrome, Marseille" }
+    - { num: 19, title: "Dis moi pourquoi - Live au Vélodrome, Marseille", feat: "Moubarak" }
+    - { num: 20, title: "Combien - Live au Vélodrome, Marseille", feat: "Moubarak" }
+    - { num: 21, title: "Génération nique tout - Live au Vélodrome, Marseille", feat: "Houari" }
+    - { num: 22, title: "Medley - Live au Vélodrome, Marseille" }
+    - { num: 23, title: "Instru en live - Live au Vélodrome, Marseille" }
+    - { num: 24, title: "Professor - Live au Vélodrome, Marseille" }
+    - { num: 25, title: "Salvatrucha - Live au Vélodrome, Marseille" }
+    - { num: 26, title: "Italia - Live au Vélodrome, Marseille" }
+    - { num: 27, title: "Tchikita - Live au Vélodrome, Marseille" }
+    - { num: 28, title: "Pic et pic, alcool et drame - Live au Vélodrome, Marseille" }
+    - { num: 29, title: "Asalto - Live au Vélodrome, Marseille" }
+    - { num: 30, title: "On m'appelle l'Ovni - Live au Vélodrome, Marseille" }
+    - { num: 31, title: "Normal - Live au Vélodrome, Marseille", feat: "Alonzo" }
+    - { num: 32, title: "Comme d'hab - Live au Vélodrome, Marseille", feat: "Alonzo" }
+    - { num: 33, title: "La Seleçao - Live au Vélodrome, Marseille", feat: "Alonzo, Naps" }
+    - { num: 34, title: "Intro Bande Organisée - Live au Vélodrome, Marseille", feat: "13 Organisé, Houari, Solda, Elams, Soso Maness, Kofs, Naps, SCH" }
+    - { num: 35, title: "Bande Organisée - Live au Vélodrome, Marseille", feat: "13 Organisé, Houari, Solda, Elams, Soso Maness, Kofs, Naps, SCH" }
+    - { num: 36, title: "J'oublie tout - Live au Vélodrome, Marseille" }
+
+- id: extraterrestre-edition-velodrome
+  title: "Extraterrestre (Édition Vélodrome)"
+  year: 2022
+  date: "2022-06-21"
+  certification: ~
+  status: sorti
+  tracks_count: 24
+  slug: extraterrestre-edition-velodrome
+  tracklist:
+    - { num: 1, title: "Ça tourne dans ma tête" }
+    - { num: 2, title: "J'ai tout su" }
+    - { num: 3, title: "J'éteins mon téléphone" }
+    - { num: 4, title: "Ténébreux" }
+    - { num: 5, title: "Sur la Costa del Sol" }
+    - { num: 6, title: "Faut pas (Extraterrestre)" }
+    - { num: 7, title: "J'ai le démon" }
+    - { num: 8, title: "Gigi" }
+    - { num: 9, title: "Sous la Simond" }
+    - { num: 10, title: "Ma drogue" }
+    - { num: 11, title: "Cœur blessé" }
+    - { num: 12, title: "Flouz" }
+    - { num: 13, title: "Comme au bon vieux temps" }
+    - { num: 14, title: "Superstar" }
+    - { num: 15, title: "Je te veux toi" }
+    - { num: 16, title: "Courtoisie" }
+    - { num: 17, title: "Avec José" }
+    - { num: 18, title: "1 fois mais pas 2", feat: "Houari, Moubarak" }
+    - { num: 19, title: "En two two bé" }
+    - { num: 20, title: "Dans la loge" }
+    - { num: 21, title: "Frozen" }
+    - { num: 22, title: "Pas de panique" }
+    - { num: 23, title: "La Dragon" }
+    - { num: 24, title: "4 Juin 2022", feat: "Team Jul" }
+
+- id: cest-quand-quil-seteint
+  title: "C'est quand qu'il s'éteint ?"
+  year: 2023
+  date: "2023-06-16"
+  certification: ~
+  status: sorti
+  tracks_count: 26
+  slug: cest-quand-quil-seteint
+  tracklist:
+    - { num: 1, title: "La faille" }
+    - { num: 2, title: "Entraînement" }
+    - { num: 3, title: "Chagriné" }
+    - { num: 4, title: "Alcantara" }
+    - { num: 5, title: "Courtois" }
+    - { num: 6, title: "Range ton égo" }
+    - { num: 7, title: "Mazé" }
+    - { num: 8, title: "Coco", feat: "Vacra" }
+    - { num: 9, title: "DP sur le maillot" }
+    - { num: 10, title: "Ragnar" }
+    - { num: 11, title: "Faut s'enfuir" }
+    - { num: 12, title: "Montana" }
+    - { num: 13, title: "À la vue" }
+    - { num: 14, title: "Je m'en fous de tout", feat: "Dabeull" }
+    - { num: 15, title: "Mon sucre d'amour", feat: "DJ Sozé" }
+    - { num: 16, title: "Uwa Ni Lé", feat: "Obilisa, Medi Meyz" }
+    - { num: 17, title: "Opérationnel" }
+    - { num: 18, title: "Droit au but" }
+    - { num: 19, title: "Ma gentillesse" }
+    - { num: 20, title: "Sentimental" }
+    - { num: 21, title: "Cœur démoli", feat: "Nia" }
+    - { num: 22, title: "Tropical" }
+    - { num: 23, title: "C'est quand qu'il s'éteint ?" }
+    - { num: 24, title: "Le cœur avant tout" }
+    - { num: 25, title: "Buakaw" }
+    - { num: 26, title: "En roue libre", feat: "Moubarak, Houari" }
