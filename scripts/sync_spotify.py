@@ -21,7 +21,7 @@ EXCLUDED_TITLE_FRAGMENTS = [
 ]
 
 
-# ─── Auth ────────────────────────────────────────────────────────────────────
+# ─── Auth ──────────────────────────────────────────────────────────────────────────
 
 def get_token():
     resp = requests.post(
@@ -47,7 +47,7 @@ def spotify_get(token, url, params=None):
     return resp.json()
 
 
-# ─── Spotify data ─────────────────────────────────────────────────────────────
+# ─── Spotify data ──────────────────────────────────────────────────────────────────
 
 def get_studio_albums(token):
     """Récupère tous les albums studio de Jul (Jul en artiste principal)."""
@@ -74,11 +74,11 @@ def get_tracks(token, album_id):
     return sorted(tracks, key=lambda t: t['track_number'])
 
 
-# ─── Helpers ─────────────────────────────────────────────────────────────────
+# ─── Helpers ────────────────────────────────────────────────────────────────────────
 
 def make_slug(title):
     s = title.lower()
-    for src, dst in [("'", ''), ("'", ''), ('é', 'e'), ('è', 'e'), ('ê', 'e'),
+    for src, dst in [("'", ''), ("’", ''), ('é', 'e'), ('è', 'e'), ('ê', 'e'),
                      ('à', 'a'), ('â', 'a'), ('î', 'i'), ('ï', 'i'), ('ô', 'o'),
                      ('ù', 'u'), ('û', 'u'), ('ç', 'c'), ('œ', 'oe'), ('æ', 'ae'),
                      ('?', ''), ('!', ''), ('.', '')]:
@@ -137,19 +137,21 @@ def update_records_count(new_count):
     with open(RECORDS_FILE) as f:
         content = f.read()
     content = re.sub(
-        r'(- label: "Albums studio"\n    value: )\d+(\n    display: ")\d+(")',
-        lambda m: f'{m.group(0).split(chr(10))[0].rsplit(" ", 1)[0]} {new_count}\n'
-                  f'    display: "{new_count}"',
+        r'(- label: "Albums studio"\n    value: )\d+',
+        rf'\g<1>{new_count}',
         content,
     )
-    # Simpler regex approach:
-    content = re.sub(r'(?<=value: )\d+(?=\n    display: "\d+")', str(new_count), content)
-    content = re.sub(r'(?<=display: ")\d+(?=" \n    icon: "ph-disc)', str(new_count), content)
+    content = re.sub(
+        r'(- label: "Albums studio".*?display: ")\d+(")',
+        rf'\g<1>{new_count}\g<2>',
+        content,
+        flags=re.DOTALL,
+    )
     with open(RECORDS_FILE, 'w') as f:
         f.write(content)
 
 
-# ─── Main ─────────────────────────────────────────────────────────────────────
+# ─── Main ─────────────────────────────────────────────────────────────────────────────
 
 def main():
     if not os.environ.get('SPOTIFY_CLIENT_ID'):
