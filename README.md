@@ -1,3 +1,6 @@
+> Créé par Aurélien Moote - Moo - 2026. Logiciel libre (licence MIT) :
+> réutilisable à condition de conserver la mention de l'auteur.
+
 # Jul Fan Website
 
 Site fan statique dédié à Jul — rappeur marseillais, artiste le plus certifié du rap français, recordman du Stade de France (97 816 spectateurs, avril 2025).
@@ -78,3 +81,9 @@ Merci de respecter la charte graphique définie dans `_sass/_variables.scss`.
 Contenu éditorial sous [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).  
 Le code source est sous licence MIT.  
 Les photos et visuels appartiennent à leurs propriétaires respectifs.
+
+## Auteur & licence
+
+Créé par **Aurélien Moote - Moo - 2026**.  
+Logiciel libre distribué sous [licence MIT](LICENSE).  
+Réutilisable à condition de conserver la mention de l'auteur.

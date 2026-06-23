@@ -1,3 +1,5 @@
+// jul-legacy — Auteur : Aurélien Moote - Moo - 2026 — Licence MIT
+
 // ─── Navigation ───────────────────────────────────────────────────────────────
 
 const nav        = document.getElementById('site-nav');
